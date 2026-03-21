@@ -1,0 +1,35 @@
+[ 44%] Built target generate_urdf_5
+[ 44%] Built target generate_urdf_2
+[ 44%] Built target generate_urdf_4
+[ 44%] Built target generate_urdf_7
+[ 55%] Built target generate_urdf_8
+[ 66%] Built target generate_urdf_1
+[ 77%] Built target generate_urdf_6
+[ 88%] Built target generate_urdf
+[100%] Built target generate_urdf_3
+-- Install configuration: ""
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/urdf
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/urdf/tello_3.urdf
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/urdf/tello_4.urdf
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/urdf/tello.urdf
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/urdf/tello_5.urdf
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/urdf/tello_8.urdf
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/urdf/tello_7.urdf
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/urdf/tello_1.urdf
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/urdf/tello_2.urdf
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/urdf/tello_6.urdf
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/ament_index/resource_index/package_run_dependencies/tello_description
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/ament_index/resource_index/parent_prefix_path/tello_description
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/environment/path.sh
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/environment/path.dsv
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/local_setup.bash
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/local_setup.sh
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/local_setup.zsh
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/local_setup.dsv
+-- Installing: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.dsv
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/ament_index/resource_index/packages/tello_description
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/cmake/tello_descriptionConfig.cmake
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/cmake/tello_descriptionConfig-version.cmake
+-- Up-to-date: /home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.xml

@@ -1,0 +1,4 @@
+[console_scripts]
+aruco_controller = my_drone_vision.aruco_controller:main
+aruco_detector = my_drone_vision.aruco_detector:main
+

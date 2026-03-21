@@ -1,0 +1,483 @@
+[0.087s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.087s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ca55e864310>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ca55e969210>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ca55e969210>>, mixin_verb=('build',))
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.155s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tyler/ros_workspaces/drone_simulation'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extension 'ros'
+[0.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_drone_vision' with type 'ros.ament_python' and name 'my_drone_vision'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ros'
+[0.164s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_shared' with type 'ros.ament_cmake' and name 'ros2_shared'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'ros'
+[0.165s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_description' with type 'ros.ament_cmake' and name 'tello_description'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'ros'
+[0.166s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_driver' with type 'ros.ament_cmake' and name 'tello_driver'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'ros'
+[0.166s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_gazebo' with type 'ros.ament_cmake' and name 'tello_gazebo'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_msgs' with type 'ros.ament_cmake' and name 'tello_msgs'
+[0.167s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.167s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.167s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.167s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.167s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.179s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/tyler/ros_workspaces/drone_simulation/install
+[0.179s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 204 installed packages in /opt/ros/humble
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_target' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.197s] DEBUG:colcon.colcon_core.verb:Building package 'my_drone_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tyler/ros_workspaces/drone_simulation/build/my_drone_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision', 'merge_install': False, 'path': '/home/tyler/ros_workspaces/drone_simulation/src/my_drone_vision', 'symlink_install': False, 'test_result_base': None}
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_clean_cache' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_clean_first' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_force_configure' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'ament_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'catkin_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_shared' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared', 'merge_install': False, 'path': '/home/tyler/ros_workspaces/drone_simulation/src/ros2_shared', 'symlink_install': False, 'test_result_base': None}
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'tello_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tyler/ros_workspaces/drone_simulation/build/tello_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tyler/ros_workspaces/drone_simulation/install/tello_description', 'merge_install': False, 'path': '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_description', 'symlink_install': False, 'test_result_base': None}
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'tello_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tyler/ros_workspaces/drone_simulation/build/tello_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs', 'merge_install': False, 'path': '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'tello_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tyler/ros_workspaces/drone_simulation/build/tello_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver', 'merge_install': False, 'path': '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver', 'symlink_install': False, 'test_result_base': None}
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'tello_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.199s] DEBUG:colcon.colcon_core.verb:Building package 'tello_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tyler/ros_workspaces/drone_simulation/build/tello_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo', 'merge_install': False, 'path': '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.199s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.199s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.200s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_msgs' with build type 'ament_cmake'
+[0.200s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_msgs'
+[0.202s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.202s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.202s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.203s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tyler/ros_workspaces/drone_simulation/src/ros2_shared' with build type 'ament_cmake'
+[0.204s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tyler/ros_workspaces/drone_simulation/src/ros2_shared'
+[0.204s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.204s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.205s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tyler/ros_workspaces/drone_simulation/src/my_drone_vision' with build type 'ament_python'
+[0.206s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_drone_vision', 'ament_prefix_path')
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/ament_prefix_path.ps1'
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/ament_prefix_path.dsv'
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/ament_prefix_path.sh'
+[0.207s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.207s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.208s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_description' with build type 'ament_cmake'
+[0.208s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_description'
+[0.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.209s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --build /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs -- -j24 -l24
+[0.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --build /home/tyler/ros_workspaces/drone_simulation/build/ros2_shared -- -j24 -l24
+[0.334s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tyler/ros_workspaces/drone_simulation/src/my_drone_vision'
+[0.334s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.334s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --build /home/tyler/ros_workspaces/drone_simulation/build/tello_description -- -j24 -l24
+[0.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --build /home/tyler/ros_workspaces/drone_simulation/build/ros2_shared -- -j24 -l24
+[0.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --install /home/tyler/ros_workspaces/drone_simulation/build/ros2_shared
+[0.353s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_shared)
+[0.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --install /home/tyler/ros_workspaces/drone_simulation/build/ros2_shared
+[0.355s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared' for CMake module files
+[0.355s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared' for CMake config files
+[0.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_shared', 'cmake_prefix_path')
+[0.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.ps1'
+[0.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.dsv'
+[0.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.sh'
+[0.356s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/bin'
+[0.356s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/lib/pkgconfig/ros2_shared.pc'
+[0.356s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/lib/python3.10/site-packages'
+[0.356s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/bin'
+[0.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/package.ps1'
+[0.357s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/package.dsv'
+[0.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/package.sh'
+[0.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/package.bash'
+[0.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/package.zsh'
+[0.359s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/colcon-core/packages/ros2_shared)
+[0.360s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_shared)
+[0.360s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared' for CMake module files
+[0.360s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared' for CMake config files
+[0.360s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_shared', 'cmake_prefix_path')
+[0.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.ps1'
+[0.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.dsv'
+[0.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.sh'
+[0.362s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/bin'
+[0.362s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/lib/pkgconfig/ros2_shared.pc'
+[0.362s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/lib/python3.10/site-packages'
+[0.362s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/bin'
+[0.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/package.ps1'
+[0.363s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/package.dsv'
+[0.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/package.sh'
+[0.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/package.bash'
+[0.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/ros2_shared/package.zsh'
+[0.364s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared/share/colcon-core/packages/ros2_shared)
+[0.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --build /home/tyler/ros_workspaces/drone_simulation/build/tello_description -- -j24 -l24
+[0.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --install /home/tyler/ros_workspaces/drone_simulation/build/tello_description
+[0.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_description)
+[0.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --install /home/tyler/ros_workspaces/drone_simulation/build/tello_description
+[0.386s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description' for CMake module files
+[0.386s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description' for CMake config files
+[0.386s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_description', 'cmake_prefix_path')
+[0.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/hook/cmake_prefix_path.ps1'
+[0.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/hook/cmake_prefix_path.dsv'
+[0.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/hook/cmake_prefix_path.sh'
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/bin'
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/lib/pkgconfig/tello_description.pc'
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/lib/python3.10/site-packages'
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/bin'
+[0.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.ps1'
+[0.388s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.dsv'
+[0.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.sh'
+[0.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.bash'
+[0.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.zsh'
+[0.389s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/colcon-core/packages/tello_description)
+[0.389s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_description)
+[0.389s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description' for CMake module files
+[0.389s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description' for CMake config files
+[0.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_description', 'cmake_prefix_path')
+[0.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/hook/cmake_prefix_path.ps1'
+[0.389s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/hook/cmake_prefix_path.dsv'
+[0.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/hook/cmake_prefix_path.sh'
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/bin'
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/lib/pkgconfig/tello_description.pc'
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/lib/python3.10/site-packages'
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/bin'
+[0.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.ps1'
+[0.391s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.dsv'
+[0.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.sh'
+[0.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.bash'
+[0.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/tello_description/package.zsh'
+[0.391s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tyler/ros_workspaces/drone_simulation/install/tello_description/share/colcon-core/packages/tello_description)
+[0.393s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --build /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs -- -j24 -l24
+[0.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --install /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs
+[0.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_msgs)
+[0.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --install /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs
+[0.429s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs' for CMake module files
+[0.429s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs' for CMake config files
+[0.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'cmake_prefix_path')
+[0.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.ps1'
+[0.430s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.dsv'
+[0.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.sh'
+[0.430s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib'
+[0.430s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'ld_library_path_lib')
+[0.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.ps1'
+[0.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.dsv'
+[0.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.sh'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/bin'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/pkgconfig/tello_msgs.pc'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/python3.10/site-packages'
+[0.432s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/bin'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/package.ps1'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/package.dsv'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/package.sh'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/package.bash'
+[0.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/package.zsh'
+[0.433s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/colcon-core/packages/tello_msgs)
+[0.433s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_msgs)
+[0.433s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs' for CMake module files
+[0.434s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs' for CMake config files
+[0.434s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'cmake_prefix_path')
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.ps1'
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.dsv'
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.sh'
+[0.434s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib'
+[0.435s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'ld_library_path_lib')
+[0.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.ps1'
+[0.435s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.dsv'
+[0.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.sh'
+[0.435s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/bin'
+[0.435s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/pkgconfig/tello_msgs.pc'
+[0.435s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/python3.10/site-packages'
+[0.436s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/bin'
+[0.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/package.ps1'
+[0.436s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/package.dsv'
+[0.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/package.sh'
+[0.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/package.bash'
+[0.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/tello_msgs/package.zsh'
+[0.437s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/share/colcon-core/packages/tello_msgs)
+[0.437s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver' with build type 'ament_cmake'
+[0.437s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver'
+[0.437s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.437s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.440s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_gazebo' with build type 'ament_cmake'
+[0.440s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_gazebo'
+[0.440s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.440s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_gazebo': CMAKE_PREFIX_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs:/home/tyler/ros_workspaces/drone_simulation/install/tello_description:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver:/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/nvidia:/usr/lib/x86_64-linux-gnu/nvidia /usr/bin/cmake --build /home/tyler/ros_workspaces/drone_simulation/build/tello_gazebo -- -j24 -l24
+[0.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_driver': CMAKE_PREFIX_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs:/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared:/home/tyler/ros_workspaces/drone_simulation/install/tello_description:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/nvidia:/usr/lib/x86_64-linux-gnu/nvidia /usr/bin/cmake --build /home/tyler/ros_workspaces/drone_simulation/build/tello_driver -- -j24 -l24
+[0.515s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs:/home/tyler/ros_workspaces/drone_simulation/install/tello_description:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver:/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/nvidia:/usr/lib/x86_64-linux-gnu/nvidia /usr/bin/cmake --build /home/tyler/ros_workspaces/drone_simulation/build/tello_gazebo -- -j24 -l24
+[0.516s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_gazebo': CMAKE_PREFIX_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs:/home/tyler/ros_workspaces/drone_simulation/install/tello_description:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver:/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/nvidia:/usr/lib/x86_64-linux-gnu/nvidia /usr/bin/cmake --install /home/tyler/ros_workspaces/drone_simulation/build/tello_gazebo
+[0.531s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_gazebo)
+[0.531s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo' for CMake module files
+[0.532s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo' for CMake config files
+[0.532s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tyler/ros_workspaces/drone_simulation/src/my_drone_vision': PYTHONPATH=/home/tyler/ros_workspaces/drone_simulation/build/my_drone_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_drone_vision build --build-base /home/tyler/ros_workspaces/drone_simulation/build/my_drone_vision/build install --record /home/tyler/ros_workspaces/drone_simulation/build/my_drone_vision/install.log --single-version-externally-managed install_data
+[0.532s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs:/home/tyler/ros_workspaces/drone_simulation/install/tello_description:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver:/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/nvidia:/usr/lib/x86_64-linux-gnu/nvidia /usr/bin/cmake --install /home/tyler/ros_workspaces/drone_simulation/build/tello_gazebo
+[0.532s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_gazebo', 'cmake_prefix_path')
+[0.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/cmake_prefix_path.ps1'
+[0.533s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/cmake_prefix_path.dsv'
+[0.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/cmake_prefix_path.sh'
+[0.533s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib'
+[0.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_gazebo', 'ld_library_path_lib')
+[0.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/ld_library_path_lib.ps1'
+[0.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/ld_library_path_lib.dsv'
+[0.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/ld_library_path_lib.sh'
+[0.534s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/bin'
+[0.534s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib/pkgconfig/tello_gazebo.pc'
+[0.534s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib/python3.10/site-packages'
+[0.534s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/bin'
+[0.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.ps1'
+[0.535s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.dsv'
+[0.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.sh'
+[0.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.bash'
+[0.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.zsh'
+[0.535s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/colcon-core/packages/tello_gazebo)
+[0.536s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_gazebo)
+[0.536s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo' for CMake module files
+[0.536s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo' for CMake config files
+[0.536s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_gazebo', 'cmake_prefix_path')
+[0.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/cmake_prefix_path.ps1'
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/cmake_prefix_path.dsv'
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/cmake_prefix_path.sh'
+[0.537s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib'
+[0.537s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_gazebo', 'ld_library_path_lib')
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/ld_library_path_lib.ps1'
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/ld_library_path_lib.dsv'
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/hook/ld_library_path_lib.sh'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/bin'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib/pkgconfig/tello_gazebo.pc'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib/python3.10/site-packages'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/bin'
+[0.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.ps1'
+[0.538s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.dsv'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.sh'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.bash'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.zsh'
+[0.539s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/share/colcon-core/packages/tello_gazebo)
+[0.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_driver' returned '0': CMAKE_PREFIX_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs:/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared:/home/tyler/ros_workspaces/drone_simulation/install/tello_description:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/nvidia:/usr/lib/x86_64-linux-gnu/nvidia /usr/bin/cmake --build /home/tyler/ros_workspaces/drone_simulation/build/tello_driver -- -j24 -l24
+[0.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_driver': CMAKE_PREFIX_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs:/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared:/home/tyler/ros_workspaces/drone_simulation/install/tello_description:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/nvidia:/usr/lib/x86_64-linux-gnu/nvidia /usr/bin/cmake --install /home/tyler/ros_workspaces/drone_simulation/build/tello_driver
+[0.548s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_driver)
+[0.549s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver' for CMake module files
+[0.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tyler/ros_workspaces/drone_simulation/build/tello_driver' returned '0': CMAKE_PREFIX_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs:/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared:/home/tyler/ros_workspaces/drone_simulation/install/tello_description:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_gazebo/lib:/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/nvidia:/usr/lib/x86_64-linux-gnu/nvidia /usr/bin/cmake --install /home/tyler/ros_workspaces/drone_simulation/build/tello_driver
+[0.549s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver' for CMake config files
+[0.549s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_driver', 'cmake_prefix_path')
+[0.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.ps1'
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.dsv'
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.sh'
+[0.550s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib'
+[0.550s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_driver', 'ld_library_path_lib')
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.ps1'
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.dsv'
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.sh'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/bin'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib/pkgconfig/tello_driver.pc'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib/python3.10/site-packages'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/bin'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/package.ps1'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/package.dsv'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/package.sh'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/package.bash'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/package.zsh'
+[0.553s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/colcon-core/packages/tello_driver)
+[0.553s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_driver)
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver' for CMake module files
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver' for CMake config files
+[0.553s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_driver', 'cmake_prefix_path')
+[0.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.ps1'
+[0.554s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.dsv'
+[0.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.sh'
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib'
+[0.554s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_driver', 'ld_library_path_lib')
+[0.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.ps1'
+[0.554s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.dsv'
+[0.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.sh'
+[0.555s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/bin'
+[0.555s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib/pkgconfig/tello_driver.pc'
+[0.555s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/lib/python3.10/site-packages'
+[0.555s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/bin'
+[0.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/package.ps1'
+[0.556s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/package.dsv'
+[0.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/package.sh'
+[0.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/package.bash'
+[0.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/tello_driver/package.zsh'
+[0.556s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tyler/ros_workspaces/drone_simulation/install/tello_driver/share/colcon-core/packages/tello_driver)
+[0.664s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision' for CMake module files
+[0.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tyler/ros_workspaces/drone_simulation/src/my_drone_vision' returned '0': PYTHONPATH=/home/tyler/ros_workspaces/drone_simulation/build/my_drone_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_drone_vision build --build-base /home/tyler/ros_workspaces/drone_simulation/build/my_drone_vision/build install --record /home/tyler/ros_workspaces/drone_simulation/build/my_drone_vision/install.log --single-version-externally-managed install_data
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision' for CMake config files
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/lib'
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/bin'
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/lib/pkgconfig/my_drone_vision.pc'
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages'
+[0.665s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_drone_vision', 'pythonpath')
+[0.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/pythonpath.ps1'
+[0.666s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/pythonpath.dsv'
+[0.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/pythonpath.sh'
+[0.666s] Level 1:colcon.colcon_core.environment:checking '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/bin'
+[0.666s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_drone_vision)
+[0.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.ps1'
+[0.667s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.dsv'
+[0.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.sh'
+[0.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.bash'
+[0.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.zsh'
+[0.668s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tyler/ros_workspaces/drone_simulation/install/my_drone_vision/share/colcon-core/packages/my_drone_vision)
+[0.668s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.668s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.668s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.668s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.688s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[0.688s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.688s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.688s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.688s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[0.688s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.688s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tyler/ros_workspaces/drone_simulation/install/local_setup.ps1'
+[0.689s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tyler/ros_workspaces/drone_simulation/install/_local_setup_util_ps1.py'
+[0.690s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tyler/ros_workspaces/drone_simulation/install/setup.ps1'
+[0.690s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tyler/ros_workspaces/drone_simulation/install/local_setup.sh'
+[0.690s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tyler/ros_workspaces/drone_simulation/install/_local_setup_util_sh.py'
+[0.691s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tyler/ros_workspaces/drone_simulation/install/setup.sh'
+[0.691s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tyler/ros_workspaces/drone_simulation/install/local_setup.bash'
+[0.692s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tyler/ros_workspaces/drone_simulation/install/setup.bash'
+[0.692s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tyler/ros_workspaces/drone_simulation/install/local_setup.zsh'
+[0.692s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tyler/ros_workspaces/drone_simulation/install/setup.zsh'

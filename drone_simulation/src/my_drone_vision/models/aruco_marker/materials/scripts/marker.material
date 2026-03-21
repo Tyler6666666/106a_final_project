@@ -1,0 +1,14 @@
+material ArucoVisualMarker0/Marker
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        # 这里必须和你 textures 文件夹下的文件名对上
+        texture marker0.png
+      }
+    }
+  }
+}

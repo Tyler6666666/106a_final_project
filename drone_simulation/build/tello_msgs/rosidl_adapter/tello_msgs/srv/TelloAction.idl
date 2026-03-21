@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tello_msgs/srv/TelloAction.srv
+// generated code does not contain a copyright notice
+
+
+module tello_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Arbitrary Tello command:")
+    struct TelloAction_Request {
+      string cmd;
+    };
+    module TelloAction_Response_Constants {
+      @verbatim (language="comment", text=
+        "Command sent")
+      const uint8 OK = 1;
+      @verbatim (language="comment", text=
+        "Can't communicate with drone")
+      const uint8 ERROR_NOT_CONNECTED = 2;
+      @verbatim (language="comment", text=
+        "There's already an active command")
+      const uint8 ERROR_BUSY = 3;
+    };
+    @verbatim (language="comment", text=
+      "Initial response code:")
+    struct TelloAction_Response {
+      uint8 rc;
+    };
+  };
+};
