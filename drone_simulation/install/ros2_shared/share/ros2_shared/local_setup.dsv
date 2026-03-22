@@ -1,2 +1,1 @@
-source;share/ros2_shared/environment/ament_prefix_path.sh
-source;share/ros2_shared/environment/path.sh
+/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared/ament_cmake_environment_hooks/local_setup.dsv

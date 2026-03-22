@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo/libTelloPlugin.so" "TARGETS" "TelloPlugin" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

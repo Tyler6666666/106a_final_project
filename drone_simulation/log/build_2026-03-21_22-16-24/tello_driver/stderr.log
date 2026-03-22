@@ -1,0 +1,91 @@
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/command_socket.cpp:1[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include/tello_driver_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/video_socket.cpp:1[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include/tello_driver_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tello_driver_main.dir/build.make:118：CMakeFiles/tello_driver_main.dir/src/command_socket.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/tello_driver_main.dir/build.make:146：CMakeFiles/tello_driver_main.dir/src/video_socket.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_node.cpp:1[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include/tello_driver_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/state_socket.cpp:1[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include/tello_driver_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_main.cpp:1[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include/tello_driver_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/tello_driver_main.dir/build.make:90：CMakeFiles/tello_driver_main.dir/src/tello_driver_node.cpp.o] 错误 1
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tello_driver_main.dir/build.make:132：CMakeFiles/tello_driver_main.dir/src/state_socket.cpp.o] 错误 1
+gmake[2]: *** [CMakeFiles/tello_driver_main.dir/build.make:76：CMakeFiles/tello_driver_main.dir/src/tello_driver_main.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_socket.cpp:1[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include/tello_driver_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tello_driver_main.dir/build.make:104：CMakeFiles/tello_driver_main.dir/src/tello_socket.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_node.cpp:1[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include/tello_driver_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tello_driver_node.dir/build.make:76：CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/state_socket.cpp:1[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include/tello_driver_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/command_socket.cpp:1[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include/tello_driver_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tello_driver_node.dir/build.make:118：CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o] 错误 1
+gmake[2]: *** [CMakeFiles/tello_driver_node.dir/build.make:104：CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/video_socket.cpp:1[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include/tello_driver_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_socket.cpp:1[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include/tello_driver_node.hpp:1:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    1 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tello_driver_node.dir/build.make:132：CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o] 错误 1
+gmake[2]: *** [CMakeFiles/tello_driver_node.dir/build.make:90：CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o] 错误 1
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_emulator.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kasio.hpp: 没有那个文件或目录
+    5 | #include [01;31m[K<asio.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tello_emulator.dir/build.make:76：CMakeFiles/tello_emulator.dir/src/tello_emulator.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:171：CMakeFiles/tello_emulator.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_joy_node.cpp:49:10:[m[K [01;31m[Kfatal error: [m[Krclcpp_components/register_node_macro.hpp: 没有那个文件或目录
+   49 | #include [01;31m[K"rclcpp_components/register_node_macro.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tello_joy_main.dir/build.make:90：CMakeFiles/tello_joy_main.dir/src/tello_joy_node.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_joy_node.cpp:49:10:[m[K [01;31m[Kfatal error: [m[Krclcpp_components/register_node_macro.hpp: 没有那个文件或目录
+   49 | #include [01;31m[K"rclcpp_components/register_node_macro.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tello_joy_node.dir/build.make:76：CMakeFiles/tello_joy_node.dir/src/tello_joy_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:197：CMakeFiles/tello_joy_node.dir/all] 错误 2
+gmake[1]: *** [CMakeFiles/Makefile2:145：CMakeFiles/tello_driver_node.dir/all] 错误 2
+gmake[1]: *** [CMakeFiles/Makefile2:223：CMakeFiles/tello_driver_main.dir/all] 错误 2
+gmake[1]: *** [CMakeFiles/Makefile2:249：CMakeFiles/tello_joy_main.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

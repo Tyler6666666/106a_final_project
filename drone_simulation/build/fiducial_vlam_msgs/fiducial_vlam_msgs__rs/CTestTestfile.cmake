@@ -1,0 +1,6 @@
+# CMake generated Testfile for 
+# Source directory: /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs/fiducial_vlam_msgs__rs
+# Build directory: /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs/fiducial_vlam_msgs__rs
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

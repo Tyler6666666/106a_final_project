@@ -1,0 +1,152 @@
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/transform_with_covariance.cpp:2[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/transform_with_covariance.cpp:2[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vmap_node.dir/build.make:118：CMakeFiles/vmap_node.dir/src/transform_with_covariance.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/transform_with_covariance.cpp:2[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vloc_main.dir/build.make:132：CMakeFiles/vloc_main.dir/src/transform_with_covariance.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/transform_with_covariance.cpp:2[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vloc_node.dir/build.make:118：CMakeFiles/vloc_node.dir/src/transform_with_covariance.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/vmap_main.dir/build.make:132：CMakeFiles/vmap_main.dir/src/transform_with_covariance.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/fiducial_math.cpp:5[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/map.hpp:7[m[K,
+                 from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/map.cpp:2[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vmap_node.dir/build.make:104：CMakeFiles/vmap_node.dir/src/map.cpp.o] 错误 1
+gmake[2]: *** [CMakeFiles/vmap_node.dir/build.make:90：CMakeFiles/vmap_node.dir/src/fiducial_math.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/fiducial_math.cpp:5[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vloc_main.dir/build.make:104：CMakeFiles/vloc_main.dir/src/fiducial_math.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/convert_util.cpp:5[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/convert_util.cpp:5[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vmap_node.dir/build.make:76：CMakeFiles/vmap_node.dir/src/convert_util.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/fiducial_math.cpp:5[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vmap_main.dir/build.make:90：CMakeFiles/vmap_main.dir/src/convert_util.cpp.o] 错误 1
+gmake[2]: *** [CMakeFiles/vmap_main.dir/build.make:104：CMakeFiles/vmap_main.dir/src/fiducial_math.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/fiducial_math.cpp:5[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vloc_node.dir/build.make:90：CMakeFiles/vloc_node.dir/src/fiducial_math.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/map.hpp:7[m[K,
+                 from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/map.cpp:2[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vloc_node.dir/build.make:104：CMakeFiles/vloc_node.dir/src/map.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/map.hpp:7[m[K,
+                 from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/map.cpp:2[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vmap_main.dir/build.make:118：CMakeFiles/vmap_main.dir/src/map.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/convert_util.cpp:5[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vloc_main.dir/build.make:90：CMakeFiles/vloc_main.dir/src/convert_util.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/convert_util.cpp:5[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vloc_node.dir/build.make:76：CMakeFiles/vloc_node.dir/src/convert_util.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/map.hpp:7[m[K,
+                 from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/map.cpp:2[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vloc_main.dir/build.make:118：CMakeFiles/vloc_main.dir/src/map.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/vmap_context.hpp:5[m[K,
+                 from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/vmap_context.cpp:2[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vmap_main.dir/build.make:146：CMakeFiles/vmap_main.dir/src/vmap_context.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/map.hpp:7[m[K,
+                 from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/vmap_node.cpp:11[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vmap_node.dir/build.make:160：CMakeFiles/vmap_node.dir/src/vmap_node.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/map.hpp:7[m[K,
+                 from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/vloc_node.cpp:7[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vloc_node.dir/build.make:146：CMakeFiles/vloc_node.dir/src/vloc_node.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/vmap_context.hpp:5[m[K,
+                 from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/vmap_context.cpp:2[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vmap_node.dir/build.make:132：CMakeFiles/vmap_node.dir/src/vmap_context.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/map.hpp:7[m[K,
+                 from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/vmap_node.cpp:11[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vmap_main.dir/build.make:160：CMakeFiles/vmap_main.dir/src/vmap_node.cpp.o] 错误 1
+In file included from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/vloc_context.hpp:7[m[K,
+                 from [01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/src/vloc_context.cpp:2[m[K:
+[01m[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam/include/transform_with_covariance.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Transform.h: 没有那个文件或目录
+    6 | #include [01;31m[K"tf2/LinearMath/Transform.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/vloc_node.dir/build.make:132：CMakeFiles/vloc_node.dir/src/vloc_context.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:143：CMakeFiles/vloc_node.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:195：CMakeFiles/vmap_node.dir/all] 错误 2
+gmake[1]: *** [CMakeFiles/Makefile2:221：CMakeFiles/vmap_main.dir/all] 错误 2
+gmake[1]: *** [CMakeFiles/Makefile2:169：CMakeFiles/vloc_main.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

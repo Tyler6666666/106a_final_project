@@ -1,0 +1,1 @@
+/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs/rosidl_typesupport_introspection_c/fiducial_vlam_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

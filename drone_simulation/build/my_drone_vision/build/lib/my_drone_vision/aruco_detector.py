@@ -1,89 +1,68 @@
+#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import Image
+from sensor_msgs.msg import Image, CameraInfo
+from geometry_msgs.msg import Pose 
 from cv_bridge import CvBridge
 import cv2
-from rclpy.qos import qos_profile_sensor_data
-from geometry_msgs.msg import Point   
+import numpy as np
 
 class ArucoDetector(Node):
     def __init__(self):
-        super().__init__('aruco_detector')
-        self.error_pub = self.create_publisher(Point, '/aruco/error', 10)
-        # subscribe to the drone's camera topic
-        self.subscription = self.create_subscription(
-            Image,
-            '/drone1/image_raw',
-            self.image_callback,
-            qos_profile_sensor_data)
+        super().__init__('aruco_detector_node')
         self.bridge = CvBridge()
-        
-        # load ArUco 
-        self.aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
-        self.parameters = cv2.aruco.DetectorParameters()
-        
-        self.get_logger().info('ArucoDetector initialized and ready to detect markers!')
+        self.img_sub = self.create_subscription(Image, '/drone1/image_raw', self.image_cb, 10)
+        self.info_sub = self.create_subscription(CameraInfo, '/drone1/camera_info', self.info_cb, 10)
+        self.pose_pub = self.create_publisher(Pose, '/aruco/pose_3d', 10)
 
-    def image_callback(self, msg):
+        self.aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_4X4_50)
+        self.aruco_params = cv2.aruco.DetectorParameters_create()
+        self.cam_matrix = None
+        self.dist_coeffs = None
+        self.marker_size = 0.15 
+
+    def info_cb(self, msg):
+        self.cam_matrix = np.array(msg.k).reshape((3, 3))
+        self.dist_coeffs = np.array(msg.d)
+
+    def image_cb(self, msg):
+        if self.cam_matrix is None: return
         try:
-            # 1. convert ROS Image message to OpenCV image
-            cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-            cv2.imshow("Debug Window", cv_image)
-            cv2.waitKey(1)
-            # 2. detect ArUco markers in the image
-            gray = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY)
-            corners, ids, rejected = cv2.aruco.detectMarkers(gray, self.aruco_dict, parameters=self.parameters)
+            frame = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+        except: return
+
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        corners, ids, _ = cv2.aruco.detectMarkers(gray, self.aruco_dict, parameters=self.aruco_params)
+
+        if ids is not None:
+            rvecs, tvecs, _ = cv2.aruco.estimatePoseSingleMarkers(corners, self.marker_size, self.cam_matrix, self.dist_coeffs)
             
-            # 3. if markers are detected, draw them on the image and log the IDs
-            if ids is not None:
-                cv2.aruco.drawDetectedMarkers(cv_image, corners, ids)
-                self.get_logger().info(f"target found! ArUco ID: {ids.flatten()}")
-                c = corners[0][0]
-                center_x = (c[0][0] + c[2][0]) / 2
-                center_y = (c[0][1] + c[2][1]) / 2
+            # 【核心修改】直接从旋转向量计算 Yaw
+            # 在相机坐标系中，绕 Y 轴的旋转才是我们要的 Yaw
+            R, _ = cv2.Rodrigues(rvecs[0][0])
+            # 提取绕 Y 轴的弧度
+            marker_yaw = np.arctan2(-R[2, 0], np.sqrt(R[2, 1]**2 + R[2, 2]**2))
+
+            pose_msg = Pose()
+            pose_msg.position.x = float(tvecs[0][0][0])
+            pose_msg.position.y = float(tvecs[0][0][1])
+            pose_msg.position.z = float(tvecs[0][0][2])
             
-            # 粗略计算面积（用宽*高）
-                width = c[1][0] - c[0][0]
-                height = c[3][1] - c[0][1]
-                area = width * height
-            
-            # 画面中心
-                img_center_x = cv_image.shape[1] / 2
-                img_center_y = cv_image.shape[0] / 2
-            
-            # 计算误差
-                error_msg = Point()
-                error_msg.x = float(center_x - img_center_x)
-                error_msg.y = float(center_y - img_center_y)
-                error_msg.z = float(area) # 用 z 轴传递面积信息
-            
-                self.error_pub.publish(error_msg)
-            else:
-                # Publish a zero error message when target is not found
-                error_msg = Point()
-                error_msg.x = 0.0
-                error_msg.y = 0.0
-                error_msg.z = -1.0
-                self.error_pub.publish(error_msg)
-                self.get_logger().info("searching for target... ")
-            # 4. display the image with detected markers
-            cv2.imshow("Tello Vision", cv_image)
-            cv2.waitKey(1)
-            
-        except Exception as e:
-            self.get_logger().error(f"Error processing image: {e}")
+            # 临时借用 orientation.z 来传递算好的 yaw，绕开四元数转换的坑
+            pose_msg.orientation.z = float(marker_yaw)
+            self.pose_pub.publish(pose_msg)
+
+            cv2.aruco.drawDetectedMarkers(frame, corners, ids)
+            cv2.drawFrameAxes(frame, self.cam_matrix, self.dist_coeffs, rvecs[0][0], tvecs[0][0], 0.1)
+        
+        cv2.imshow("Drone Vision", frame)
+        cv2.waitKey(1)
 
 def main(args=None):
     rclpy.init(args=args)
-    node = ArucoDetector()
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        node.destroy_node()
-        rclpy.shutdown()
-        cv2.destroyAllWindows()
+    rclpy.spin(ArucoDetector())
+    cv2.destroyAllWindows()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

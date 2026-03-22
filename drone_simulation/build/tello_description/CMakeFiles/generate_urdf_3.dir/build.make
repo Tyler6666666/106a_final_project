@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_description
+CMAKE_SOURCE_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tyler/ros_workspaces/drone_simulation/build/tello_description
+CMAKE_BINARY_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description
 
 # Utility rule file for generate_urdf_3.
 
@@ -68,9 +68,9 @@ include CMakeFiles/generate_urdf_3.dir/progress.make
 
 CMakeFiles/generate_urdf_3: urdf/tello_3.urdf
 
-urdf/tello_3.urdf: /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_description/urdf/tello.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tyler/ros_workspaces/drone_simulation/build/tello_description/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generate /home/tyler/ros_workspaces/drone_simulation/build/tello_description/urdf/tello_3.urdf"
-	/home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_description/src/replace.py /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_description/urdf/tello.xml suffix=_3 topic_ns=drone3 > /home/tyler/ros_workspaces/drone_simulation/build/tello_description/urdf/tello_3.urdf
+urdf/tello_3.urdf: /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description/urdf/tello.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generate /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description/urdf/tello_3.urdf"
+	/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description/src/replace.py /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description/urdf/tello.xml suffix=_3 topic_ns=drone3 > /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description/urdf/tello_3.urdf
 
 generate_urdf_3: CMakeFiles/generate_urdf_3
 generate_urdf_3: urdf/tello_3.urdf
@@ -86,6 +86,6 @@ CMakeFiles/generate_urdf_3.dir/clean:
 .PHONY : CMakeFiles/generate_urdf_3.dir/clean
 
 CMakeFiles/generate_urdf_3.dir/depend:
-	cd /home/tyler/ros_workspaces/drone_simulation/build/tello_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_description /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_description /home/tyler/ros_workspaces/drone_simulation/build/tello_description /home/tyler/ros_workspaces/drone_simulation/build/tello_description /home/tyler/ros_workspaces/drone_simulation/build/tello_description/CMakeFiles/generate_urdf_3.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description/CMakeFiles/generate_urdf_3.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/generate_urdf_3.dir/depend
 

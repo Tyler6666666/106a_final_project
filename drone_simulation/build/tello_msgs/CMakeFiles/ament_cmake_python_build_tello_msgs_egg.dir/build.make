@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_msgs
+CMAKE_SOURCE_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs
+CMAKE_BINARY_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs
 
 # Utility rule file for ament_cmake_python_build_tello_msgs_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_tello_msgs_egg.dir/compiler_depend.m
 include CMakeFiles/ament_cmake_python_build_tello_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_tello_msgs_egg:
-	cd /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs/ament_cmake_python/tello_msgs && /usr/bin/python3 setup.py egg_info
+	cd /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/ament_cmake_python/tello_msgs && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_tello_msgs_egg: CMakeFiles/ament_cmake_python_build_tello_msgs_egg
 ament_cmake_python_build_tello_msgs_egg: CMakeFiles/ament_cmake_python_build_tello_msgs_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_tello_msgs_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_tello_msgs_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_tello_msgs_egg.dir/depend:
-	cd /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_msgs /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_msgs /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs/CMakeFiles/ament_cmake_python_build_tello_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_msgs /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_msgs /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/CMakeFiles/ament_cmake_python_build_tello_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_tello_msgs_egg.dir/depend
 

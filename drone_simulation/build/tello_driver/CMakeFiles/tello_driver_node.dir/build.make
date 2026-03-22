@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver
+CMAKE_SOURCE_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tyler/ros_workspaces/drone_simulation/build/tello_driver
+CMAKE_BINARY_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tello_driver_node.dir/depend.make
@@ -70,88 +70,88 @@ include CMakeFiles/tello_driver_node.dir/progress.make
 include CMakeFiles/tello_driver_node.dir/flags.make
 
 CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o: CMakeFiles/tello_driver_node.dir/flags.make
-CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o: /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_node.cpp
+CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o: /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_node.cpp
 CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o: CMakeFiles/tello_driver_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros_workspaces/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o -MF CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o.d -o CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o -c /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o -MF CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o.d -o CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o -c /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_node.cpp
 
 CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_node.cpp > CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_node.cpp > CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.i
 
 CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_node.cpp -o CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_node.cpp -o CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.s
 
 CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o: CMakeFiles/tello_driver_node.dir/flags.make
-CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o: /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/tello_socket.cpp
+CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o: /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_socket.cpp
 CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o: CMakeFiles/tello_driver_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros_workspaces/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o -MF CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o.d -o CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o -c /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/tello_socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o -MF CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o.d -o CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o -c /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_socket.cpp
 
 CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/tello_socket.cpp > CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_socket.cpp > CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.i
 
 CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/tello_socket.cpp -o CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_socket.cpp -o CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.s
 
 CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o: CMakeFiles/tello_driver_node.dir/flags.make
-CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o: /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/command_socket.cpp
+CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o: /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/command_socket.cpp
 CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o: CMakeFiles/tello_driver_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros_workspaces/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o -MF CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o.d -o CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o -c /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/command_socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o -MF CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o.d -o CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o -c /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/command_socket.cpp
 
 CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/command_socket.cpp > CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/command_socket.cpp > CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.i
 
 CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/command_socket.cpp -o CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/command_socket.cpp -o CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.s
 
 CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o: CMakeFiles/tello_driver_node.dir/flags.make
-CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o: /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/state_socket.cpp
+CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o: /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/state_socket.cpp
 CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o: CMakeFiles/tello_driver_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros_workspaces/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o -MF CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o.d -o CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o -c /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/state_socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o -MF CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o.d -o CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o -c /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/state_socket.cpp
 
 CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/state_socket.cpp > CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/state_socket.cpp > CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.i
 
 CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/state_socket.cpp -o CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/state_socket.cpp -o CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.s
 
 CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o: CMakeFiles/tello_driver_node.dir/flags.make
-CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o: /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/video_socket.cpp
+CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o: /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/video_socket.cpp
 CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o: CMakeFiles/tello_driver_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros_workspaces/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o -MF CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o.d -o CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o -c /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/video_socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o -MF CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o.d -o CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o -c /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/video_socket.cpp
 
 CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/video_socket.cpp > CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/video_socket.cpp > CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.i
 
 CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/src/video_socket.cpp -o CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/video_socket.cpp -o CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.s
 
 CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o: CMakeFiles/tello_driver_node.dir/flags.make
-CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o: /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/h264decoder/h264decoder.cpp
+CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o: /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/h264decoder/h264decoder.cpp
 CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o: CMakeFiles/tello_driver_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros_workspaces/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o -MF CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o.d -o CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o -c /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/h264decoder/h264decoder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o -MF CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o.d -o CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o -c /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/h264decoder/h264decoder.cpp
 
 CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/h264decoder/h264decoder.cpp > CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/h264decoder/h264decoder.cpp > CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.i
 
 CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver/h264decoder/h264decoder.cpp -o CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/h264decoder/h264decoder.cpp -o CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.s
 
 # Object files for target tello_driver_node
 tello_driver_node_OBJECTS = \
@@ -172,7 +172,6 @@ libtello_driver_node.so: CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o
 libtello_driver_node.so: CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o
 libtello_driver_node.so: CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o
 libtello_driver_node.so: CMakeFiles/tello_driver_node.dir/build.make
-libtello_driver_node.so: /opt/ros/humble/lib/libcomponent_manager.so
 libtello_driver_node.so: /opt/ros/humble/lib/libcamera_calibration_parsers.so
 libtello_driver_node.so: /opt/ros/humble/lib/libclass_loader.so
 libtello_driver_node.so: /opt/ros/humble/lib/libcv_bridge.so
@@ -181,12 +180,12 @@ libtello_driver_node.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_
 libtello_driver_node.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 libtello_driver_node.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 libtello_driver_node.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
-libtello_driver_node.so: /home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_fastrtps_c.so
-libtello_driver_node.so: /home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_introspection_c.so
-libtello_driver_node.so: /home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_fastrtps_cpp.so
-libtello_driver_node.so: /home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_introspection_cpp.so
-libtello_driver_node.so: /home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_cpp.so
-libtello_driver_node.so: /home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_generator_py.so
+libtello_driver_node.so: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_fastrtps_c.so
+libtello_driver_node.so: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_introspection_c.so
+libtello_driver_node.so: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_fastrtps_cpp.so
+libtello_driver_node.so: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_introspection_cpp.so
+libtello_driver_node.so: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_cpp.so
+libtello_driver_node.so: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_generator_py.so
 libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
 libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
@@ -222,16 +221,8 @@ libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d
 libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d
 libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d
 libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d
-libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
-libtello_driver_node.so: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_c.so
-libtello_driver_node.so: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_introspection_c.so
-libtello_driver_node.so: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so
-libtello_driver_node.so: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_introspection_cpp.so
-libtello_driver_node.so: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_cpp.so
-libtello_driver_node.so: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_generator_py.so
-libtello_driver_node.so: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_c.so
-libtello_driver_node.so: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_generator_c.so
 libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0
+libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
 libtello_driver_node.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 libtello_driver_node.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 libtello_driver_node.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
@@ -295,9 +286,9 @@ libtello_driver_node.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp
 libtello_driver_node.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 libtello_driver_node.so: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
 libtello_driver_node.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-libtello_driver_node.so: /home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_c.so
+libtello_driver_node.so: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_c.so
 libtello_driver_node.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-libtello_driver_node.so: /home/tyler/ros_workspaces/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_generator_c.so
+libtello_driver_node.so: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_generator_c.so
 libtello_driver_node.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 libtello_driver_node.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 libtello_driver_node.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -327,7 +318,7 @@ libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
 libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 libtello_driver_node.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 libtello_driver_node.so: CMakeFiles/tello_driver_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tyler/ros_workspaces/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libtello_driver_node.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libtello_driver_node.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tello_driver_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -339,6 +330,6 @@ CMakeFiles/tello_driver_node.dir/clean:
 .PHONY : CMakeFiles/tello_driver_node.dir/clean
 
 CMakeFiles/tello_driver_node.dir/depend:
-	cd /home/tyler/ros_workspaces/drone_simulation/build/tello_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver /home/tyler/ros_workspaces/drone_simulation/src/tello_ros/tello_driver /home/tyler/ros_workspaces/drone_simulation/build/tello_driver /home/tyler/ros_workspaces/drone_simulation/build/tello_driver /home/tyler/ros_workspaces/drone_simulation/build/tello_driver/CMakeFiles/tello_driver_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver/CMakeFiles/tello_driver_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tello_driver_node.dir/depend
 

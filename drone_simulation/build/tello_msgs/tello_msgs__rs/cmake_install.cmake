@@ -1,8 +1,8 @@
-# Install script for directory: /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs/tello_msgs__rs
+# Install script for directory: /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/tello_msgs__rs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tyler/ros_workspaces/drone_simulation/install/tello_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

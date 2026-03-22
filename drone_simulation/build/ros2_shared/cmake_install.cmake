@@ -1,8 +1,8 @@
-# Install script for directory: /home/tyler/ros_workspaces/drone_simulation/src/ros2_shared
+# Install script for directory: /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/ros2_shared
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tyler/ros_workspaces/drone_simulation/install/ros2_shared")
+  set(CMAKE_INSTALL_PREFIX "/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,62 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tyler/ros_workspaces/drone_simulation/src/ros2_shared/include/")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros2_shared")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros2_shared")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared/environment" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_environment_hooks/ament_prefix_path.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared/environment" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_environment_hooks/path.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_environment_hooks/local_setup.bash")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_environment_hooks/local_setup.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_environment_hooks/local_setup.zsh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_environment_hooks/local_setup.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_environment_hooks/package.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_index/share/ament_index/resource_index/packages/ros2_shared")
+  include("/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake"
-         "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/CMakeFiles/Export/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake")
+         "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared/CMakeFiles/Export/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/ros2_shared/cmake/ros2_shared_targetsExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -107,26 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared/cmake" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/CMakeFiles/Export/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared/cmake" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared/cmake" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared/cmake" TYPE FILE FILES
-    "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_core/ros2_sharedConfig.cmake"
-    "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/ament_cmake_core/ros2_sharedConfig-version.cmake"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared" TYPE FILE FILES "/home/tyler/ros_workspaces/drone_simulation/src/ros2_shared/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_shared/cmake" TYPE FILE FILES "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared/CMakeFiles/Export/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -137,5 +70,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tyler/ros_workspaces/drone_simulation/build/ros2_shared/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

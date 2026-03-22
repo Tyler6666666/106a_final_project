@@ -1,0 +1,5 @@
+  File "/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/aruco_controller.py", line 88
+    ddef control_loop(self):
+         ^^^^^^^^^^^^
+SyntaxError: invalid syntax
+

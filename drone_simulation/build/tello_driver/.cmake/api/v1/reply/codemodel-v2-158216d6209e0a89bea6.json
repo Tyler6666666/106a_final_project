@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4c241a78a4f77614b7be.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tello_driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "tello_driver_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tello_driver_main-ddce70c0c30d6d4c7a67.json",
+					"name" : "tello_driver_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tello_driver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tello_driver_node-f60210d3f22e23d806ac.json",
+					"name" : "tello_driver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tello_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tello_driver_uninstall-b9b82677624f1bc27ec4.json",
+					"name" : "tello_driver_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tello_emulator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tello_emulator-c99c7715ab8e6c72e397.json",
+					"name" : "tello_emulator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tello_joy_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tello_joy_main-f73714200df2d703e7b3.json",
+					"name" : "tello_joy_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tello_joy_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tello_joy_node-b1034870dcac975a0661.json",
+					"name" : "tello_joy_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9216f530cad2e6681b4d.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver",
+		"source" : "/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

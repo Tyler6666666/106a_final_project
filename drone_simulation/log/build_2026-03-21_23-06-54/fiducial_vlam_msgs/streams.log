@@ -1,0 +1,260 @@
+[0.006s] Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs
+[0.043s] -- The C compiler identification is GNU 11.4.0
+[0.076s] -- The CXX compiler identification is GNU 11.4.0
+[0.080s] -- Detecting C compiler ABI info
+[0.123s] -- Detecting C compiler ABI info - done
+[0.127s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.127s] -- Detecting C compile features
+[0.127s] -- Detecting C compile features - done
+[0.129s] -- Detecting CXX compiler ABI info
+[0.180s] -- Detecting CXX compiler ABI info - done
+[0.185s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.185s] -- Detecting CXX compile features
+[0.185s] -- Detecting CXX compile features - done
+[0.186s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.269s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.303s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.318s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.320s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.323s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.344s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.362s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.382s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.568s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.714s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.909s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.921s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.922s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.936s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.936s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.936s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.936s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.949s] -- Found PythonExtra: .so  
+[1.035s] -- Configuring done
+[1.054s] -- Generating done
+[1.060s] -- Build files have been written to: /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs
+[1.066s] Invoked command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/fiducial_vlam/fiducial_vlam_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs
+[1.066s] Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --build /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs -- -j24 -l24
+[1.091s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.097s] [  4%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[1.099s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.102s] [  6%] Built target ament_cmake_python_symlink_fiducial_vlam_msgs
+[1.211s] running egg_info
+[1.212s] creating fiducial_vlam_msgs.egg-info
+[1.212s] writing fiducial_vlam_msgs.egg-info/PKG-INFO
+[1.212s] writing dependency_links to fiducial_vlam_msgs.egg-info/dependency_links.txt
+[1.212s] writing top-level names to fiducial_vlam_msgs.egg-info/top_level.txt
+[1.212s] writing manifest file 'fiducial_vlam_msgs.egg-info/SOURCES.txt'
+[1.213s] reading manifest file 'fiducial_vlam_msgs.egg-info/SOURCES.txt'
+[1.213s] writing manifest file 'fiducial_vlam_msgs.egg-info/SOURCES.txt'
+[1.227s] [  6%] Built target ament_cmake_python_build_fiducial_vlam_msgs_egg
+[1.264s] [  6%] Built target fiducial_vlam_msgs__rs
+[1.303s] [  6%] Built target fiducial_vlam_msgs__cpp
+[1.304s] [  8%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_generator_c.dir/rosidl_generator_c/fiducial_vlam_msgs/msg/detail/observation__functions.c.o[0m
+[1.305s] [ 10%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_generator_c.dir/rosidl_generator_c/fiducial_vlam_msgs/msg/detail/observations__functions.c.o[0m
+[1.305s] [ 12%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_generator_c.dir/rosidl_generator_c/fiducial_vlam_msgs/msg/detail/map__functions.c.o[0m
+[1.309s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.309s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.309s] [ 18%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.332s] [ 20%] [32m[1mLinking C shared library libfiducial_vlam_msgs__rosidl_generator_c.so[0m
+[1.360s] [ 20%] Built target fiducial_vlam_msgs__rosidl_generator_c
+[1.367s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.367s] [ 27%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.368s] [ 27%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.485s] [ 29%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fiducial_vlam_msgs/msg/observations__type_support.cpp.o[0m
+[1.486s] [ 31%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fiducial_vlam_msgs/msg/map__type_support.cpp.o[0m
+[1.486s] [ 33%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fiducial_vlam_msgs/msg/observation__type_support.cpp.o[0m
+[1.502s] [ 37%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fiducial_vlam_msgs/msg/detail/map__type_support.cpp.o[0m
+[1.502s] [ 37%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fiducial_vlam_msgs/msg/detail/observation__type_support.cpp.o[0m
+[1.503s] [ 39%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fiducial_vlam_msgs/msg/detail/observations__type_support.cpp.o[0m
+[1.519s] [ 45%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fiducial_vlam_msgs/msg/detail/dds_fastrtps/map__type_support.cpp.o[0m
+[1.519s] [ 45%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fiducial_vlam_msgs/msg/detail/dds_fastrtps/observations__type_support.cpp.o[0m
+[1.519s] [ 45%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fiducial_vlam_msgs/msg/detail/dds_fastrtps/observation__type_support.cpp.o[0m
+[1.547s] [ 52%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fiducial_vlam_msgs/msg/map__type_support.cpp.o[0m
+[1.547s] [ 52%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fiducial_vlam_msgs/msg/observations__type_support.cpp.o[0m
+[1.547s] [ 52%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fiducial_vlam_msgs/msg/observation__type_support.cpp.o[0m
+[1.567s] [ 58%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fiducial_vlam_msgs/msg/detail/observation__type_support.c.o[0m
+[1.567s] [ 58%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fiducial_vlam_msgs/msg/detail/observations__type_support.c.o[0m
+[1.567s] [ 58%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fiducial_vlam_msgs/msg/detail/map__type_support.c.o[0m
+[1.571s] [ 64%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fiducial_vlam_msgs/msg/detail/observations__type_support_c.cpp.o[0m
+[1.571s] [ 64%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fiducial_vlam_msgs/msg/detail/map__type_support_c.cpp.o[0m
+[1.571s] [ 64%] [32mBuilding CXX object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fiducial_vlam_msgs/msg/detail/observation__type_support_c.cpp.o[0m
+[1.573s] [ 66%] [32m[1mLinking CXX shared library libfiducial_vlam_msgs__rosidl_typesupport_c.so[0m
+[1.598s] [ 68%] [32m[1mLinking C shared library libfiducial_vlam_msgs__rosidl_typesupport_introspection_c.so[0m
+[1.610s] [ 68%] Built target fiducial_vlam_msgs__rosidl_typesupport_c
+[1.619s] [ 68%] Built target fiducial_vlam_msgs__rosidl_typesupport_introspection_c
+[1.633s] [ 70%] [32m[1mLinking CXX shared library libfiducial_vlam_msgs__rosidl_typesupport_cpp.so[0m
+[1.662s] [ 70%] Built target fiducial_vlam_msgs__rosidl_typesupport_cpp
+[1.748s] [ 72%] [32m[1mLinking CXX shared library libfiducial_vlam_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[1.788s] [ 75%] [32m[1mLinking CXX shared library libfiducial_vlam_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[1.791s] [ 75%] Built target fiducial_vlam_msgs__rosidl_typesupport_fastrtps_c
+[1.830s] [ 75%] Built target fiducial_vlam_msgs__rosidl_typesupport_introspection_cpp
+[1.839s] [ 77%] [32m[1mLinking CXX shared library libfiducial_vlam_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.881s] [ 77%] Built target fiducial_vlam_msgs__rosidl_typesupport_fastrtps_cpp
+[1.894s] [ 77%] Built target fiducial_vlam_msgs
+[1.905s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.190s] [ 79%] Built target fiducial_vlam_msgs__py
+[2.203s] [ 83%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_generator_py.dir/rosidl_generator_py/fiducial_vlam_msgs/msg/_observation_s.c.o[0m
+[2.203s] [ 83%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_generator_py.dir/rosidl_generator_py/fiducial_vlam_msgs/msg/_map_s.c.o[0m
+[2.203s] [ 85%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_generator_py.dir/rosidl_generator_py/fiducial_vlam_msgs/msg/_observations_s.c.o[0m
+[2.263s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/fiducial_vlam_msgs/libfiducial_vlam_msgs__rosidl_generator_py.so[0m
+[2.290s] [ 87%] Built target fiducial_vlam_msgs__rosidl_generator_py
+[2.303s] [ 91%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fiducial_vlam_msgs/_fiducial_vlam_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[2.303s] [ 91%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fiducial_vlam_msgs/_fiducial_vlam_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.304s] [ 93%] [32mBuilding C object CMakeFiles/fiducial_vlam_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fiducial_vlam_msgs/_fiducial_vlam_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.356s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/fiducial_vlam_msgs/fiducial_vlam_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.356s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/fiducial_vlam_msgs/fiducial_vlam_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.358s] [100%] [32m[1mLinking C shared library rosidl_generator_py/fiducial_vlam_msgs/fiducial_vlam_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.387s] [100%] Built target fiducial_vlam_msgs__rosidl_typesupport_c__pyext
+[2.387s] [100%] Built target fiducial_vlam_msgs__rosidl_typesupport_introspection_c__pyext
+[2.387s] [100%] Built target fiducial_vlam_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.395s] Invoked command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --build /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs -- -j24 -l24
+[2.396s] Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --install /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs
+[2.400s] -- Install configuration: ""
+[2.400s] -- Execute custom install script
+[2.400s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/ament_index/resource_index/rosidl_interfaces/fiducial_vlam_msgs
+[2.405s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/map__functions.h
+[2.411s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/map__struct.h
+[2.417s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/map__type_support.h
+[2.422s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observation__functions.h
+[2.426s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observation__struct.h
+[2.430s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observation__type_support.h
+[2.436s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observations__functions.h
+[2.442s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observations__struct.h
+[2.447s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observations__type_support.h
+[2.450s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/map.h
+[2.454s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/observation.h
+[2.459s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/observations.h
+[2.465s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.470s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/environment/library_path.sh
+[2.474s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/environment/library_path.dsv
+[2.478s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/map__rosidl_typesupport_fastrtps_c.h
+[2.484s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observation__rosidl_typesupport_fastrtps_c.h
+[2.489s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observations__rosidl_typesupport_fastrtps_c.h
+[2.494s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.497s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/map__rosidl_typesupport_introspection_c.h
+[2.501s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observation__rosidl_typesupport_introspection_c.h
+[2.505s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observations__rosidl_typesupport_introspection_c.h
+[2.510s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.514s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/map__builder.hpp
+[2.519s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/map__struct.hpp
+[2.523s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/map__traits.hpp
+[2.527s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/map__type_support.hpp
+[2.533s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observation__builder.hpp
+[2.538s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observation__struct.hpp
+[2.543s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observation__traits.hpp
+[2.547s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observation__type_support.hpp
+[2.551s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observations__builder.hpp
+[2.556s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observations__struct.hpp
+[2.561s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observations__traits.hpp
+[2.567s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observations__type_support.hpp
+[2.570s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/map.hpp
+[2.575s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/observation.hpp
+[2.578s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/observations.hpp
+[2.583s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.588s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/map__rosidl_typesupport_fastrtps_cpp.hpp
+[2.593s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observation__rosidl_typesupport_fastrtps_cpp.hpp
+[2.598s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observations__rosidl_typesupport_fastrtps_cpp.hpp
+[2.601s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.607s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/map__rosidl_typesupport_introspection_cpp.hpp
+[2.612s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observation__rosidl_typesupport_introspection_cpp.hpp
+[2.616s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/include/fiducial_vlam_msgs/fiducial_vlam_msgs/msg/detail/observations__rosidl_typesupport_introspection_cpp.hpp
+[2.620s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/environment/pythonpath.sh
+[2.624s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/environment/pythonpath.dsv
+[2.628s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[2.634s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[2.639s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[2.643s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[2.648s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/__init__.py
+[2.651s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/_fiducial_vlam_msgs_s.ep.rosidl_typesupport_c.c
+[2.657s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/_fiducial_vlam_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.662s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/_fiducial_vlam_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.667s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/fiducial_vlam_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.670s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/fiducial_vlam_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.675s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/fiducial_vlam_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.678s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/libfiducial_vlam_msgs__rosidl_generator_py.so
+[2.684s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg/__init__.py
+[2.689s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg/_map.py
+[2.693s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg/_map_s.c
+[2.698s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg/_observation.py
+[2.702s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg/_observation_s.c
+[2.707s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg/_observations.py
+[2.712s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg/_observations_s.c
+[2.717s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/fiducial_vlam_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.717s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/fiducial_vlam_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.717s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/fiducial_vlam_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.717s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/ament_index/resource_index/rust_packages/fiducial_vlam_msgs
+[2.722s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/rust/Cargo.toml
+[2.726s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/rust/build.rs
+[2.732s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/rust/src/lib.rs
+[2.736s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/rust/src/msg.rs
+[2.741s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/rust/src/msg/rmw.rs
+[2.746s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/msg/Map.idl
+[2.750s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/msg/Observation.idl
+[2.755s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/msg/Observations.idl
+[2.760s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/msg/Map.msg
+[2.764s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/msg/Observation.msg
+[2.768s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/msg/Observations.msg
+[2.772s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/ament_index/resource_index/package_run_dependencies/fiducial_vlam_msgs
+[2.777s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/ament_index/resource_index/parent_prefix_path/fiducial_vlam_msgs
+[2.783s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/environment/ament_prefix_path.sh
+[2.786s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/environment/ament_prefix_path.dsv
+[2.791s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/environment/path.sh
+[2.796s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/environment/path.dsv
+[2.799s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/local_setup.bash
+[2.805s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/local_setup.sh
+[2.809s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/local_setup.zsh
+[2.813s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/local_setup.dsv
+[2.818s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/package.dsv
+[2.821s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/ament_index/resource_index/packages/fiducial_vlam_msgs
+[2.826s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/rosidl_cmake-extras.cmake
+[2.831s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.835s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.840s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.845s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.848s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.852s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.856s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/fiducial_vlam_msgsConfig.cmake
+[2.861s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/fiducial_vlam_msgsConfig-version.cmake
+[2.865s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/package.xml
+[2.870s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_generator_c.so
+[2.870s] -- Set runtime path of "/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_generator_c.so" to ""
+[2.870s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_fastrtps_c.so
+[2.870s] -- Set runtime path of "/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[2.870s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_introspection_c.so
+[2.870s] -- Set runtime path of "/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_introspection_c.so" to ""
+[2.870s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_c.so
+[2.870s] -- Set runtime path of "/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_c.so" to ""
+[2.870s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.870s] -- Set runtime path of "/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.870s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_introspection_cpp.so
+[2.870s] -- Set runtime path of "/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[2.870s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_cpp.so
+[2.870s] -- Set runtime path of "/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_typesupport_cpp.so" to ""
+[2.893s] Listing '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs'...
+[2.893s] Compiling '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/__init__.py'...
+[2.893s] Listing '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg'...
+[2.893s] Compiling '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg/__init__.py'...
+[2.893s] Compiling '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg/_map.py'...
+[2.893s] Compiling '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg/_observation.py'...
+[2.893s] Compiling '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/local/lib/python3.10/dist-packages/fiducial_vlam_msgs/msg/_observations.py'...
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_generator_py.so
+[2.896s] -- Set runtime path of "/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/lib/libfiducial_vlam_msgs__rosidl_generator_py.so" to ""
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/export_fiducial_vlam_msgs__rosidl_generator_cExport.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/export_fiducial_vlam_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/export_fiducial_vlam_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/export_fiducial_vlam_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/fiducial_vlam_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/fiducial_vlam_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/fiducial_vlam_msgs__rosidl_typesupport_cExport.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/fiducial_vlam_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/export_fiducial_vlam_msgs__rosidl_generator_cppExport.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/export_fiducial_vlam_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/export_fiducial_vlam_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/fiducial_vlam_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/fiducial_vlam_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/fiducial_vlam_msgs__rosidl_typesupport_cppExport.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/fiducial_vlam_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/export_fiducial_vlam_msgs__rosidl_generator_pyExport.cmake
+[2.896s] -- Installing: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/fiducial_vlam_msgs/share/fiducial_vlam_msgs/cmake/export_fiducial_vlam_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.898s] Invoked command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --install /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs

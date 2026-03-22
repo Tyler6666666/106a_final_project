@@ -1,0 +1,1 @@
+Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs

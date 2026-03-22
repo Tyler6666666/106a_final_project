@@ -1,0 +1,18 @@
+[0.278s] Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision': PYTHONPATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build --no-deps symlink_data
+[0.396s] running develop
+[0.462s] running egg_info
+[0.462s] writing my_drone_vision.egg-info/PKG-INFO
+[0.462s] writing dependency_links to my_drone_vision.egg-info/dependency_links.txt
+[0.462s] writing entry points to my_drone_vision.egg-info/entry_points.txt
+[0.462s] writing requirements to my_drone_vision.egg-info/requires.txt
+[0.462s] writing top-level names to my_drone_vision.egg-info/top_level.txt
+[0.463s] reading manifest file 'my_drone_vision.egg-info/SOURCES.txt'
+[0.463s] writing manifest file 'my_drone_vision.egg-info/SOURCES.txt'
+[0.464s] running build_ext
+[0.464s] Creating /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my-drone-vision.egg-link (link to .)
+[0.464s] Installing aruco_controller script to /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision
+[0.464s] Installing aruco_detector script to /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision
+[0.465s] 
+[0.465s] Installed /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision
+[0.465s] running symlink_data
+[0.478s] Invoked command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision' returned '0': PYTHONPATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build --no-deps symlink_data

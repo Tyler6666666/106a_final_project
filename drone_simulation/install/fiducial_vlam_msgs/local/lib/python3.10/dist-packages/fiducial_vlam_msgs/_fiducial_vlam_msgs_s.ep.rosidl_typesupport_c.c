@@ -1,0 +1,1 @@
+/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs/rosidl_generator_py/fiducial_vlam_msgs/_fiducial_vlam_msgs_s.ep.rosidl_typesupport_c.c

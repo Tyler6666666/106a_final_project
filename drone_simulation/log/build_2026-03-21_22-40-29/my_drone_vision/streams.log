@@ -1,0 +1,42 @@
+[0.287s] Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision': PYTHONPATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build
+[0.405s] running develop
+[0.468s] Removing /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my-drone-vision.egg-link (link to .)
+[0.480s] Invoked command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision' returned '0': PYTHONPATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build
+[0.481s] Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/my_drone_vision': PYTHONPATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_drone_vision build --build-base /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build install --record /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/install.log --single-version-externally-managed install_data --force
+[0.585s] running egg_info
+[0.585s] writing ../../build/my_drone_vision/my_drone_vision.egg-info/PKG-INFO
+[0.586s] writing dependency_links to ../../build/my_drone_vision/my_drone_vision.egg-info/dependency_links.txt
+[0.586s] writing entry points to ../../build/my_drone_vision/my_drone_vision.egg-info/entry_points.txt
+[0.586s] writing requirements to ../../build/my_drone_vision/my_drone_vision.egg-info/requires.txt
+[0.586s] writing top-level names to ../../build/my_drone_vision/my_drone_vision.egg-info/top_level.txt
+[0.587s] reading manifest file '../../build/my_drone_vision/my_drone_vision.egg-info/SOURCES.txt'
+[0.587s] writing manifest file '../../build/my_drone_vision/my_drone_vision.egg-info/SOURCES.txt'
+[0.587s] running build
+[0.587s] running build_py
+[0.587s] creating /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build
+[0.587s] creating /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build/lib
+[0.587s] creating /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision
+[0.587s] copying my_drone_vision/__init__.py -> /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision
+[0.587s] copying my_drone_vision/aruco_detector.py -> /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision
+[0.587s] copying my_drone_vision/aruco_controller.py -> /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision
+[0.587s] running install
+[0.588s] running install_lib
+[0.588s] creating /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision
+[0.588s] copying /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision/__init__.py -> /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision
+[0.588s] copying /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision/aruco_detector.py -> /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision
+[0.588s] copying /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision/aruco_controller.py -> /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision
+[0.588s] byte-compiling /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__init__.py to __init__.cpython-310.pyc
+[0.588s] byte-compiling /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/aruco_detector.py to aruco_detector.cpython-310.pyc
+[0.589s] byte-compiling /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/aruco_controller.py to aruco_controller.cpython-310.pyc
+[0.589s] running install_data
+[0.589s] copying resource/my_drone_vision -> /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/share/ament_index/resource_index/packages
+[0.589s] copying package.xml -> /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision
+[0.589s] copying models/aruco_marker/materials/textures/marker0.png -> /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/models/aruco_marker/materials/textures
+[0.589s] copying launch/vision_control.launch.py -> /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/launch
+[0.589s] running install_egg_info
+[0.590s] Copying ../../build/my_drone_vision/my_drone_vision.egg-info to /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info
+[0.590s] running install_scripts
+[0.600s] Installing aruco_controller script to /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision
+[0.600s] Installing aruco_detector script to /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision
+[0.600s] writing list of installed files to '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/install.log'
+[0.612s] Invoked command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/my_drone_vision' returned '0': PYTHONPATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_drone_vision build --build-base /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/build install --record /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/my_drone_vision/install.log --single-version-externally-managed install_data --force

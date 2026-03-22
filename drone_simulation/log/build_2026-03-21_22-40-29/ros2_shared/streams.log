@@ -1,0 +1,43 @@
+[0.021s] Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/ros2_shared -DCMAKE_INSTALL_PREFIX=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared
+[0.136s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.136s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.136s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.136s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.136s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.136s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.136s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.136s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.142s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.142s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.200s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.262s] -- Configuring done
+[0.264s] -- Generating done
+[0.265s] -- Build files have been written to: /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared
+[0.269s] Invoked command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/ros2_shared -DCMAKE_INSTALL_PREFIX=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared
+[0.269s] Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared -- -j24 -l24
+[0.292s] Invoked command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared -- -j24 -l24
+[0.297s] Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared
+[0.301s] -- Install configuration: ""
+[0.301s] -- Execute custom install script
+[0.301s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/include/ros2_shared/context_macros.hpp
+[0.301s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/include/ros2_shared/param_macros.hpp
+[0.301s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/include/ros2_shared/string_printf.hpp
+[0.301s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ament_index/resource_index/package_run_dependencies/ros2_shared
+[0.301s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ament_index/resource_index/parent_prefix_path/ros2_shared
+[0.301s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.sh
+[0.301s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.dsv
+[0.301s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/path.sh
+[0.301s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/path.dsv
+[0.302s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.bash
+[0.302s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.sh
+[0.302s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.zsh
+[0.302s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.dsv
+[0.302s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/package.dsv
+[0.306s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ament_index/resource_index/packages/ros2_shared
+[0.306s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_targets-extras.cmake
+[0.306s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.306s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig.cmake
+[0.306s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig-version.cmake
+[0.306s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/package.xml
+[0.306s] -- Up-to-date: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake
+[0.308s] Invoked command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared

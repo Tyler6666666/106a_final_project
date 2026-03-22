@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000267] (-) JobUnselected: {'identifier': 'my_drone_vision'}
+[0.000290] (-) JobUnselected: {'identifier': 'ros2_shared'}
+[0.000306] (-) JobUnselected: {'identifier': 'tello_description'}
+[0.000320] (-) JobUnselected: {'identifier': 'tello_driver'}
+[0.000340] (-) JobUnselected: {'identifier': 'tello_gazebo'}
+[0.000356] (-) JobUnselected: {'identifier': 'tello_msgs'}
+[0.000370] (-) EventReactorShutdown: {}

@@ -1,13 +1,1 @@
-material ArucoVisualMarker7/Marker
-{
-	technique
-	{
-		pass
-		{
-			texture_unit
-			{
-				texture aruco_mark_7.png
-			}
-		}
-	}
-}
+/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_gazebo/models/marker_7/materials/scripts/marker_7.material

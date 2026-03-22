@@ -1,0 +1,168 @@
+[0.000000] (-) TimerEvent: {}
+[0.000092] (-) JobUnselected: {'identifier': 'my_drone_vision'}
+[0.000114] (-) JobUnselected: {'identifier': 'ros2_shared'}
+[0.000127] (-) JobUnselected: {'identifier': 'tello_description'}
+[0.000136] (-) JobUnselected: {'identifier': 'tello_gazebo'}
+[0.000144] (-) JobUnselected: {'identifier': 'tello_msgs'}
+[0.000153] (tello_driver) JobQueued: {'identifier': 'tello_driver', 'dependencies': OrderedDict([('ros2_shared', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared'), ('tello_msgs', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs')])}
+[0.000423] (tello_driver) JobStarted: {'identifier': 'tello_driver'}
+[0.006206] (tello_driver) JobProgress: {'identifier': 'tello_driver', 'progress': 'cmake'}
+[0.006547] (tello_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_driver'], 'cwd': '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'tyler'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tyler'), ('OLDPWD', '/home/tyler/ros2_ws/106a_final_project/drone_simulation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '58759'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tyler'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tyler'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tyler-MS-7D98:@/tmp/.ICE-unix/1613,unix/tyler-MS-7D98:/tmp/.ICE-unix/1613'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9a5a74c3_1066_403a_8ba9_71cc10d6608e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.141'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared:/opt/ros/humble')]), 'shell': False}
+[0.047942] (tello_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.081602] (tello_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.085310] (tello_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099980] (-) TimerEvent: {}
+[0.127483] (tello_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.131207] (tello_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.131267] (tello_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.131436] (tello_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.133058] (tello_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.179153] (tello_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.185351] (tello_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.185424] (tello_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.185950] (tello_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.187649] (tello_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.200124] (-) TimerEvent: {}
+[0.274482] (tello_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.300224] (-) TimerEvent: {}
+[0.305505] (tello_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.317055] (tello_driver) StdoutLine: {'line': b'-- Found camera_calibration_parsers: 3.1.12 (/opt/ros/humble/share/camera_calibration_parsers/cmake)\n'}
+[0.337257] (tello_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.339351] (tello_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.343376] (tello_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.348896] (tello_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.356159] (tello_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.375542] (tello_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.376715] (tello_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400280] (-) TimerEvent: {}
+[0.426150] (tello_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.443606] (tello_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.466682] (tello_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.470308] (tello_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.500396] (-) TimerEvent: {}
+[0.517612] (tello_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.517701] (tello_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.558733] (tello_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.559592] (tello_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.600547] (-) TimerEvent: {}
+[0.602691] (tello_driver) StdoutLine: {'line': b'-- Found class_loader: 2.2.0 (/opt/ros/humble/share/class_loader/cmake)\n'}
+[0.606653] (tello_driver) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.613284] (tello_driver) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[0.613966] (tello_driver) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.18 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[0.622333] (tello_driver) StdoutLine: {'line': b'-- Found ros2_shared: 0.1.0 (/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake)\n'}
+[0.623111] (tello_driver) StdoutLine: {'line': b'-- Found tello_msgs: 0.1.0 (/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake)\n'}
+[0.667208] (tello_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.680016] (tello_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[0.684505] (tello_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver\n'}
+[0.690507] (tello_driver) CommandEnded: {'returncode': 0}
+[0.691069] (tello_driver) JobProgress: {'identifier': 'tello_driver', 'progress': 'build'}
+[0.691084] (tello_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver', '--', '-j24', '-l24'], 'cwd': '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'tyler'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tyler'), ('OLDPWD', '/home/tyler/ros2_ws/106a_final_project/drone_simulation'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '58759'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tyler'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tyler'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tyler-MS-7D98:@/tmp/.ICE-unix/1613,unix/tyler-MS-7D98:/tmp/.ICE-unix/1613'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9a5a74c3_1066_403a_8ba9_71cc10d6608e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.141'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared:/opt/ros/humble')]), 'shell': False}
+[0.700644] (-) TimerEvent: {}
+[0.719510] (tello_driver) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/tello_joy_main.dir/src/tello_joy_node.cpp.o\x1b[0m\n'}
+[0.719716] (tello_driver) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/tello_joy_main.dir/src/tello_joy_main.cpp.o\x1b[0m\n'}
+[0.722157] (tello_driver) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/tello_driver_node.cpp.o\x1b[0m\n'}
+[0.722329] (tello_driver) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o\x1b[0m\n'}
+[0.722386] (tello_driver) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/tello_emulator.dir/src/tello_emulator.cpp.o\x1b[0m\n'}
+[0.722421] (tello_driver) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o\x1b[0m\n'}
+[0.722456] (tello_driver) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/tello_socket.cpp.o\x1b[0m\n'}
+[0.722803] (tello_driver) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o\x1b[0m\n'}
+[0.722995] (tello_driver) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o\x1b[0m\n'}
+[0.723080] (tello_driver) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_main.dir/h264decoder/h264decoder.cpp.o\x1b[0m\n'}
+[0.723116] (tello_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o\x1b[0m\n'}
+[0.723793] (tello_driver) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/tello_joy_node.dir/src/tello_joy_node.cpp.o\x1b[0m\n'}
+[0.724153] (tello_driver) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o\x1b[0m\n'}
+[0.724250] (tello_driver) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/tello_driver_main.cpp.o\x1b[0m\n'}
+[0.724311] (tello_driver) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/command_socket.cpp.o\x1b[0m\n'}
+[0.724367] (tello_driver) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/state_socket.cpp.o\x1b[0m\n'}
+[0.725119] (tello_driver) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/video_socket.cpp.o\x1b[0m\n'}
+[0.800741] (-) TimerEvent: {}
+[0.826223] (tello_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_joy_node.cpp:49:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Krclcpp_components/register_node_macro.hpp: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[0.826372] (tello_driver) StderrLine: {'line': b'   49 | #include \x1b[01;31m\x1b[K"rclcpp_components/register_node_macro.hpp"\x1b[m\x1b[K\n'}
+[0.826430] (tello_driver) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.826469] (tello_driver) StderrLine: {'line': b'compilation terminated.\n'}
+[0.828064] (tello_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tello_joy_node.dir/build.make:76\xef\xbc\x9aCMakeFiles/tello_joy_node.dir/src/tello_joy_node.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[0.828225] (tello_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:197\xef\xbc\x9aCMakeFiles/tello_joy_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[0.828284] (tello_driver) StderrLine: {'line': b'gmake[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[0.900840] (-) TimerEvent: {}
+[1.001130] (-) TimerEvent: {}
+[1.053338] (tello_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/src/tello_driver_node.cpp:180:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Krclcpp_components/register_node_macro.hpp: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[1.053567] (tello_driver) StderrLine: {'line': b'  180 | #include \x1b[01;31m\x1b[K"rclcpp_components/register_node_macro.hpp"\x1b[m\x1b[K\n'}
+[1.053639] (tello_driver) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.053708] (tello_driver) StderrLine: {'line': b'compilation terminated.\n'}
+[1.058440] (tello_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tello_driver_node.dir/build.make:76\xef\xbc\x9aCMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[1.058606] (tello_driver) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[1.101226] (-) TimerEvent: {}
+[1.201527] (-) TimerEvent: {}
+[1.301876] (-) TimerEvent: {}
+[1.402178] (-) TimerEvent: {}
+[1.502453] (-) TimerEvent: {}
+[1.602730] (-) TimerEvent: {}
+[1.621219] (tello_driver) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable tello_emulator\x1b[0m\n'}
+[1.679035] (tello_driver) StdoutLine: {'line': b'[ 81%] Built target tello_emulator\n'}
+[1.702878] (-) TimerEvent: {}
+[1.803228] (-) TimerEvent: {}
+[1.903575] (-) TimerEvent: {}
+[2.003890] (-) TimerEvent: {}
+[2.104278] (-) TimerEvent: {}
+[2.204619] (-) TimerEvent: {}
+[2.304919] (-) TimerEvent: {}
+[2.405221] (-) TimerEvent: {}
+[2.505514] (-) TimerEvent: {}
+[2.605845] (-) TimerEvent: {}
+[2.706180] (-) TimerEvent: {}
+[2.806507] (-) TimerEvent: {}
+[2.906825] (-) TimerEvent: {}
+[3.007167] (-) TimerEvent: {}
+[3.107450] (-) TimerEvent: {}
+[3.207733] (-) TimerEvent: {}
+[3.308094] (-) TimerEvent: {}
+[3.408380] (-) TimerEvent: {}
+[3.508626] (-) TimerEvent: {}
+[3.608822] (-) TimerEvent: {}
+[3.709071] (-) TimerEvent: {}
+[3.809416] (-) TimerEvent: {}
+[3.909685] (-) TimerEvent: {}
+[4.010000] (-) TimerEvent: {}
+[4.110320] (-) TimerEvent: {}
+[4.210558] (-) TimerEvent: {}
+[4.310732] (-) TimerEvent: {}
+[4.411016] (-) TimerEvent: {}
+[4.511352] (-) TimerEvent: {}
+[4.611700] (-) TimerEvent: {}
+[4.712043] (-) TimerEvent: {}
+[4.812386] (-) TimerEvent: {}
+[4.912726] (-) TimerEvent: {}
+[5.009138] (tello_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:145\xef\xbc\x9aCMakeFiles/tello_driver_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[5.012834] (-) TimerEvent: {}
+[5.113184] (-) TimerEvent: {}
+[5.213537] (-) TimerEvent: {}
+[5.313877] (-) TimerEvent: {}
+[5.414225] (-) TimerEvent: {}
+[5.514568] (-) TimerEvent: {}
+[5.614906] (-) TimerEvent: {}
+[5.631114] (tello_driver) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX executable tello_joy_main\x1b[0m\n'}
+[5.715104] (-) TimerEvent: {}
+[5.815454] (-) TimerEvent: {}
+[5.855235] (tello_driver) StdoutLine: {'line': b'[ 86%] Built target tello_joy_main\n'}
+[5.915645] (-) TimerEvent: {}
+[6.015980] (-) TimerEvent: {}
+[6.116306] (-) TimerEvent: {}
+[6.216631] (-) TimerEvent: {}
+[6.316857] (-) TimerEvent: {}
+[6.417193] (-) TimerEvent: {}
+[6.517449] (-) TimerEvent: {}
+[6.617792] (-) TimerEvent: {}
+[6.718134] (-) TimerEvent: {}
+[6.818504] (-) TimerEvent: {}
+[6.918853] (-) TimerEvent: {}
+[6.950398] (tello_driver) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable tello_driver_main\x1b[0m\n'}
+[7.019061] (-) TimerEvent: {}
+[7.119412] (-) TimerEvent: {}
+[7.219765] (-) TimerEvent: {}
+[7.320103] (-) TimerEvent: {}
+[7.420446] (-) TimerEvent: {}
+[7.476778] (tello_driver) StdoutLine: {'line': b'[ 90%] Built target tello_driver_main\n'}
+[7.477652] (tello_driver) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[7.479369] (tello_driver) CommandEnded: {'returncode': 2}
+[7.482891] (tello_driver) JobEnded: {'identifier': 'tello_driver', 'rc': 2}
+[7.493256] (-) EventReactorShutdown: {}

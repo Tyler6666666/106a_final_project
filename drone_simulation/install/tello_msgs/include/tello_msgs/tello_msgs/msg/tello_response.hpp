@@ -1,12 +1,1 @@
-// generated from rosidl_generator_cpp/resource/idl.hpp.em
-// generated code does not contain a copyright notice
-
-#ifndef TELLO_MSGS__MSG__TELLO_RESPONSE_HPP_
-#define TELLO_MSGS__MSG__TELLO_RESPONSE_HPP_
-
-#include "tello_msgs/msg/detail/tello_response__struct.hpp"
-#include "tello_msgs/msg/detail/tello_response__builder.hpp"
-#include "tello_msgs/msg/detail/tello_response__traits.hpp"
-#include "tello_msgs/msg/detail/tello_response__type_support.hpp"
-
-#endif  // TELLO_MSGS__MSG__TELLO_RESPONSE_HPP_
+/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_cpp/tello_msgs/msg/tello_response.hpp

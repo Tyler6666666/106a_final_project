@@ -1,5 +1,5 @@
 CMakeFiles/tello_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tello_msgs/msg/detail/tello_response__type_support.cpp.o: \
- /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs/rosidl_typesupport_introspection_cpp/tello_msgs/msg/detail/tello_response__type_support.cpp \
+ /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_typesupport_introspection_cpp/tello_msgs/msg/detail/tello_response__type_support.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/array \
  /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -137,7 +137,7 @@ CMakeFiles/tello_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesuppo
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
- /home/tyler/ros_workspaces/drone_simulation/build/tello_msgs/rosidl_generator_cpp/tello_msgs/msg/detail/tello_response__struct.hpp \
+ /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_cpp/tello_msgs/msg/detail/tello_response__struct.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \

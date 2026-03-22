@@ -1,0 +1,72 @@
+[0.007s] Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo': AMENT_PREFIX_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo -- -j24 -l24
+[0.049s] [100%] Built target TelloPlugin
+[0.059s] Invoked command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo' returned '0': AMENT_PREFIX_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo -- -j24 -l24
+[0.060s] Invoking command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo': AMENT_PREFIX_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo
+[0.065s] -- Install configuration: ""
+[0.065s] -- Execute custom install script
+[0.065s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/lib/libTelloPlugin.so
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_0/materials/scripts/marker_0.material
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_0/materials/textures/aruco_mark_0.png
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_0/materials/textures/aruco_mark_0.svg
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_0/model.config
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_0/model.sdf
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_1/materials/scripts/marker_1.material
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_1/materials/textures/aruco_mark_1.png
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_1/materials/textures/aruco_mark_1.svg
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_1/model.config
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_1/model.sdf
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_2/materials/scripts/marker_2.material
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_2/materials/textures/aruco_mark_2.png
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_2/materials/textures/aruco_mark_2.svg
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_2/model.config
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_2/model.sdf
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_3/materials/scripts/marker_3.material
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_3/materials/textures/aruco_mark_3.png
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_3/materials/textures/aruco_mark_3.svg
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_3/model.config
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_3/model.sdf
+[0.066s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_4/materials/scripts/marker_4.material
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_4/materials/textures/aruco_mark_4.png
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_4/materials/textures/aruco_mark_4.svg
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_4/model.config
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_4/model.sdf
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_5/materials/scripts/marker_5.material
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_5/materials/textures/aruco_mark_5.png
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_5/materials/textures/aruco_mark_5.svg
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_5/model.config
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_5/model.sdf
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_6/materials/scripts/marker_6.material
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_6/materials/textures/aruco_mark_6.png
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_6/materials/textures/aruco_mark_6.svg
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_6/model.config
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_6/model.sdf
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_7/materials/scripts/marker_7.material
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_7/materials/textures/aruco_mark_7.png
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_7/materials/textures/aruco_mark_7.svg
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_7/model.config
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/models/marker_7/model.sdf
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/worlds/build_world.py
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/worlds/f2.world
+[0.067s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/worlds/f2_map.yaml
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/worlds/fiducial.world
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/worlds/fiducial_map.yaml
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/worlds/simple.world
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/launch/simple_launch.py
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/launch/vlam_launch.py
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/lib/tello_gazebo/inject_entity.py
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/ament_index/resource_index/package_run_dependencies/tello_gazebo
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/ament_index/resource_index/parent_prefix_path/tello_gazebo
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/environment/ament_prefix_path.sh
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/environment/ament_prefix_path.dsv
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/environment/path.sh
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/environment/path.dsv
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/local_setup.bash
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/local_setup.sh
+[0.068s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/local_setup.zsh
+[0.069s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/local_setup.dsv
+[0.069s] -- Symlinking: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.dsv
+[0.075s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/ament_index/resource_index/packages/tello_gazebo
+[0.075s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/cmake/tello_gazeboConfig.cmake
+[0.075s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/cmake/tello_gazeboConfig-version.cmake
+[0.075s] -- Up-to-date symlink: /home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_gazebo/share/tello_gazebo/package.xml
+[0.077s] Invoked command in '/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo' returned '0': AMENT_PREFIX_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo
