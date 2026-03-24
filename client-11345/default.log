@@ -1,0 +1,21 @@
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1774316824 569862182) [Msg] Waiting for master.
+(1774316824 569960144) Failed to create connection to remote host[localhost:11345]
+(1774316825 580306117) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1774316825 580336890) [Msg] Publicized address: 192.168.86.68
+(1774316825 580526280) Loaded .ini file from: "/home/tyler/.gazebo/gui.ini"
+(1774316826 125338012) [Wrn] [Event.cc:61] Warning: Deleting a connection right after creation. Make sure to save the ConnectionPtr from a Connect call
+(1774316826 775984280) No spacenav daemon found. Spacenav functionality is disabled
+(1774316881 304197177) [Err] [JointControlWidget.cc:393] Error advertising topic [/aruco_marker/joint_cmd]
+(1774316919 935433337) [Err] [JointControlWidget.cc:393] Error advertising topic [/aruco_marker/joint_cmd]
+(1774316931 729348600) [Err] [JointControlWidget.cc:393] Error advertising topic [/aruco_marker/joint_cmd]
+(1774316944 240879584) [Err] [JointControlWidget.cc:393] Error advertising topic [/aruco_marker/joint_cmd]
+(1774316951 952245572) [Err] [JointControlWidget.cc:393] Error advertising topic [/aruco_marker/joint_cmd]
+(1774316979 491038969) [Err] [JointControlWidget.cc:393] Error advertising topic [/aruco_marker/joint_cmd]
+(1774317005 314663456) [Err] [JointControlWidget.cc:393] Error advertising topic [/aruco_marker/joint_cmd]
+(1774317260 350581215) [Wrn] [Event.cc:61] Warning: Deleting a connection right after creation. Make sure to save the ConnectionPtr from a Connect call
