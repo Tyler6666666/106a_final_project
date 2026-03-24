@@ -13,32 +13,68 @@ class SmartTracker(Node):
         self.pose_sub = self.create_subscription(Pose, '/aruco/pose_3d', self.pose_cb, 10)
         self.takeoff_client = self.create_client(TelloAction, '/drone1/tello_action')
 
-        # PD Control Parameters 
-        self.Kp_side = 0.60
-        self.Kp_yaw = 2.80
-        self.Kp_fwd = 0.40
+        # ==========================================
+        # 1. Ultimate PD Control Parameters (with braking/damping)
+        # ==========================================
+        self.Kp_side = 0.80
+        self.Kd_side = 0.35  
+
+        self.Kp_yaw = 2.50
+        self.Kd_yaw = 0.60  
+
+        self.Kp_fwd = 0.70  
+        self.Kd_fwd = 0.30  
+
         self.target_dist = 0.8 
 
-        # Search Logic Parameters
+        # ==========================================
+        # 2. Feed-forward Anticipation Parameters
+        # ==========================================
+        # The larger this value, the more aggressively the drone anticipates 
+        # and strafes to intercept the target based on the marker's yaw. 
+        # Note: If it strafes in the wrong direction, change this to a negative value!
+        self.K_anticipate = 1.2 
+
+        # Historical data storage (for Derivative calculation)
+        self.last_err_x = 0.0
+        self.last_err_yaw = 0.0
+        self.last_err_fwd = 0.0
+
+        # Low-pass filter parameters (to smooth out camera noise)
+        self.filter_alpha = 0.4
+        self.smooth_dx = 0.0
+        self.smooth_dyaw = 0.0
+        self.smooth_dfwd = 0.0
+
+        # ==========================================
+        # 3. Dropped-frame Coasting Mechanism State
+        # ==========================================
+        self.new_pose_received = False
+        self.last_cmd = Twist()  
+
+        # ==========================================
+        # 4. Search Logic Parameters
+        # ==========================================
         self.last_seen = 0.0
         self.is_searching = False
         self.search_start_time = 0.0
-        self.search_speed = 0.4      # Slow rotation speed (rad/s)
-        self.search_duration = 15.0  # Time for one full rotation (2*pi / 0.4 ≈ 15.7s)
-        self.search_cooldown = False # Prevent immediate re-searching after a full failed rotation
+        self.search_speed = 0.4      
+        self.search_duration = 15.0  
+        self.search_cooldown = False 
 
         self.latest_pose = None
         self.start_time = time.time()
         self.has_sent_takeoff = False
 
-        # 20Hz High-frequency control timer
-        self.create_timer(0.05, self.control_loop)
+        # Control loop frequency: 20Hz (0.05s)
+        self.dt = 0.05
+        self.create_timer(self.dt, self.control_loop)
         self.create_timer(1.0, self.auto_takeoff)
 
     def pose_cb(self, msg):
         self.latest_pose = msg
         self.last_seen = time.time()
-        # Reset search status whenever the marker is seen
+        self.new_pose_received = True  # Flag that a fresh frame was received
         self.is_searching = False
         self.search_cooldown = False
 
@@ -46,19 +82,42 @@ class SmartTracker(Node):
         cmd = Twist()
         now = time.time()
         
-        # Safety protection: Do nothing for the first 5 seconds after launch
+        # 5-second safety startup grace period
         if now - self.start_time < 5.0:
             return
 
-        #  Core Logic: State Determination 
         time_since_last_seen = now - self.last_seen
 
-        #  Tracking Mode: Target is in view (seen within last 0.6s)
+        # ==========================================
+        # Core Tracking Mode
+        # ==========================================
         if self.latest_pose is not None and time_since_last_seen < 0.6:
-            self.run_pd_control(cmd)
+            if self.new_pose_received:
+                # Fresh frame available: calculate high-mobility PD normally
+                self.run_pd_control(cmd)
+                self.last_cmd = cmd  
+                self.new_pose_received = False
+            else:
+                # No new frame (possible processing delay or dropped frame)
+                if time_since_last_seen < 0.15:
+                    # Within normal framerate jitter: perfectly maintain previous command (stable coasting)
+                    cmd.linear.x = self.last_cmd.linear.x
+                    cmd.linear.y = self.last_cmd.linear.y
+                    cmd.linear.z = self.last_cmd.linear.z
+                    cmd.angular.z = self.last_cmd.angular.z
+                else:
+                    # Stutter exceeds 0.15s: coast with a 95% decay factor 
+                    # (prevents the drone from flying blind into a wall at full speed)
+                    cmd.linear.x = self.last_cmd.linear.x * 0.95
+                    cmd.linear.y = self.last_cmd.linear.y * 0.95
+                    cmd.linear.z = self.last_cmd.linear.z * 0.95
+                    cmd.angular.z = self.last_cmd.angular.z * 0.95
+                
             self.is_searching = False
 
-        #  Search Mode: Target lost for > 1.0s and search is not on cooldown
+        # ==========================================
+        # 360-Degree Slow Search Mode
+        # ==========================================
         elif time_since_last_seen > 1.0 and not self.search_cooldown:
             if not self.is_searching:
                 self.get_logger().warn("Target lost! Starting 360-degree slow search...")
@@ -68,16 +127,16 @@ class SmartTracker(Node):
             elapsed_search = now - self.search_start_time
             
             if elapsed_search < self.search_duration:
-                # Execute slow rotation
                 cmd.angular.z = self.search_speed
             else:
-                # Full rotation finished without finding target; stop and enter cooldown
                 self.get_logger().error("Search complete. Target not found. Entering idle state.")
                 cmd.angular.z = 0.0
                 self.is_searching = False
-                self.search_cooldown = True # Must see marker again to reset search logic
+                self.search_cooldown = True 
         
-        # Idle Mode: Target lost and search cycle finished
+        # ==========================================
+        # Idle / Hover Mode
+        # ==========================================
         else:
             cmd.linear.x = 0.0
             cmd.linear.y = 0.0
@@ -86,29 +145,46 @@ class SmartTracker(Node):
         self.vel_pub.publish(cmd)
 
     def run_pd_control(self, cmd):
-        """High-performance PD control logic"""
+        """High-mobility PD Controller with Feed-Forward Kinematic Anticipation"""
         err_x = -self.latest_pose.position.x
         err_yaw = -self.latest_pose.orientation.z 
         err_fwd = self.latest_pose.position.z - self.target_dist
 
-        # Coupled Yaw Logic: Head towards the marker based on both rotation and lateral offset
-        v_yaw = (err_yaw * self.Kp_yaw) + (err_x * 2.0) 
-        
-        # Base Velocities
-        vy = err_x * self.Kp_side
-        vx = err_fwd * self.Kp_fwd
-        vz = -self.latest_pose.position.y * 1.2 # Altitude correction
+        # Core Magic: Predictive Strafing (Anticipatory Positioning)
+        # Combines spatial error with the marker's orientation trend
+        active_err_x = err_x + (self.latest_pose.orientation.z * self.K_anticipate)
 
-        # Deadzone Boost: Ensure the command is strong enough to move the drone
-        def boost(val, min_s=0.25):
-            if abs(val) > 0.03:
-                return val if abs(val) > min_s else (min_s if val > 0 else -min_s)
-            return 0.0
+        # Calculate error rate of change (D-term for braking)
+        raw_dx = (active_err_x - self.last_err_x) / self.dt
+        raw_dyaw = (err_yaw - self.last_err_yaw) / self.dt
+        raw_dfwd = (err_fwd - self.last_err_fwd) / self.dt
 
-        cmd.angular.z = float(np.clip(boost(v_yaw, 0.3), -1.0, 1.0))
-        cmd.linear.x = float(np.clip(boost(vx, 0.2), -0.4, 0.4))
-        cmd.linear.y = float(np.clip(boost(vy, 0.2), -0.4, 0.4))
-        cmd.linear.z = float(np.clip(vz, -0.3, 0.3))
+        self.last_err_x = active_err_x  
+        self.last_err_yaw = err_yaw
+        self.last_err_fwd = err_fwd
+
+        # Velocity smooth filtering (Low-pass filter)
+        self.smooth_dx = self.filter_alpha * raw_dx + (1 - self.filter_alpha) * self.smooth_dx
+        self.smooth_dyaw = self.filter_alpha * raw_dyaw + (1 - self.filter_alpha) * self.smooth_dyaw
+        self.smooth_dfwd = self.filter_alpha * raw_dfwd + (1 - self.filter_alpha) * self.smooth_dfwd
+
+        # Command Synthesis: P(Current gap) + D(Movement trend/braking)
+        v_yaw = (err_yaw * self.Kp_yaw) + (self.smooth_dyaw * self.Kd_yaw) + (err_x * 2.2) 
+        vy = (active_err_x * self.Kp_side) + (self.smooth_dx * self.Kd_side)
+        vx = (err_fwd * self.Kp_fwd) + (self.smooth_dfwd * self.Kd_fwd)
+        vz = -self.latest_pose.position.y * 1.2
+
+        # Smooth Deadzone: Ensures absolute stillness when hovering near the target
+        def smooth_deadzone(val, threshold):
+            if abs(val) < threshold:
+                return 0.0
+            return val
+
+        # Output commands (clipped to safe physical limits)
+        cmd.angular.z = float(np.clip(smooth_deadzone(v_yaw, 0.08), -1.8, 1.8))
+        cmd.linear.x = float(np.clip(smooth_deadzone(vx, 0.05), -0.8, 0.8))
+        cmd.linear.y = float(np.clip(smooth_deadzone(vy, 0.05), -1.0, 1.0)) 
+        cmd.linear.z = float(np.clip(smooth_deadzone(vz, 0.04), -0.4, 0.4))
 
     def auto_takeoff(self):
         if not self.has_sent_takeoff and (time.time() - self.start_time > 4.0):
