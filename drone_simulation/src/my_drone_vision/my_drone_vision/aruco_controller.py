@@ -32,7 +32,6 @@ class SmartTracker(Node):
         # ==========================================
         # The larger this value, the more aggressively the drone anticipates 
         # and strafes to intercept the target based on the marker's yaw. 
-        # Note: If it strafes in the wrong direction, change this to a negative value!
         self.K_anticipate = 1.2 
 
         # Historical data storage (for Derivative calculation)
@@ -100,14 +99,13 @@ class SmartTracker(Node):
             else:
                 # No new frame (possible processing delay or dropped frame)
                 if time_since_last_seen < 0.15:
-                    # Within normal framerate jitter: perfectly maintain previous command (stable coasting)
+                    # Within normal framerate jitter: perfectly maintain previous command
                     cmd.linear.x = self.last_cmd.linear.x
                     cmd.linear.y = self.last_cmd.linear.y
                     cmd.linear.z = self.last_cmd.linear.z
                     cmd.angular.z = self.last_cmd.angular.z
                 else:
                     # Stutter exceeds 0.15s: coast with a 95% decay factor 
-                    # (prevents the drone from flying blind into a wall at full speed)
                     cmd.linear.x = self.last_cmd.linear.x * 0.95
                     cmd.linear.y = self.last_cmd.linear.y * 0.95
                     cmd.linear.z = self.last_cmd.linear.z * 0.95
@@ -145,15 +143,33 @@ class SmartTracker(Node):
         self.vel_pub.publish(cmd)
 
     def run_pd_control(self, cmd):
-        """High-mobility PD Controller with Feed-Forward Kinematic Anticipation"""
+        """High-mobility PD Controller with Dynamic Strafing & Static Front-Lock Orbiting"""
         err_x = -self.latest_pose.position.x
         err_yaw = -self.latest_pose.orientation.z 
         err_fwd = self.latest_pose.position.z - self.target_dist
 
-        # Core Magic: Predictive Strafing (Anticipatory Positioning)
+        # ==========================================
+        # 1. Dynamic Predictive Strafing (Original Magic)
+        # ==========================================
         # Combines spatial error with the marker's orientation trend
         active_err_x = err_x + (self.latest_pose.orientation.z * self.K_anticipate)
 
+        # ==========================================
+        #  2. Static Front-Lock Orbiting Logic
+        # ==========================================
+        # Calculate the absolute geometric offset needed to orbit to the front face
+        front_orbit_offset = self.target_dist * np.sin(self.latest_pose.orientation.z)
+        
+        # Dynamic Weight: The slower the lateral movement, the stronger the urge to orbit!
+        # If smooth_dx > 0.4, weight becomes 0 (no interference with dynamic 8-figure tracking)
+        static_weight = max(0.0, 1.0 - (abs(self.smooth_dx) / 0.4))
+        
+        # Gently apply the front-lock "pull" to the lateral error based on current speed
+        active_err_x += (front_orbit_offset * 0.8 * static_weight)
+
+        # ==========================================
+        # 3. Derivative Rate & Filtering
+        # ==========================================
         # Calculate error rate of change (D-term for braking)
         raw_dx = (active_err_x - self.last_err_x) / self.dt
         raw_dyaw = (err_yaw - self.last_err_yaw) / self.dt
@@ -168,7 +184,10 @@ class SmartTracker(Node):
         self.smooth_dyaw = self.filter_alpha * raw_dyaw + (1 - self.filter_alpha) * self.smooth_dyaw
         self.smooth_dfwd = self.filter_alpha * raw_dfwd + (1 - self.filter_alpha) * self.smooth_dfwd
 
-        # Command Synthesis: P(Current gap) + D(Movement trend/braking)
+        # ==========================================
+        # 4. Command Synthesis
+        # ==========================================
+        # P(Current gap) + D(Movement trend/braking)
         v_yaw = (err_yaw * self.Kp_yaw) + (self.smooth_dyaw * self.Kd_yaw) + (err_x * 2.2) 
         vy = (active_err_x * self.Kp_side) + (self.smooth_dx * self.Kd_side)
         vx = (err_fwd * self.Kp_fwd) + (self.smooth_dfwd * self.Kd_fwd)
