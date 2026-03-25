@@ -1,8 +1,20 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
   <model name="aruco_marker">
-    <static>true</static>
+    <static>false</static>
+    <kinematic>true</kinematic>
+    
     <link name="link">
+      <gravity>false</gravity>
+      
+      <inertial>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.01</ixx><iyy>0.01</iyy><izz>0.01</izz>
+          <ixy>0.0</ixy><ixz>0.0</ixz><iyz>0.0</iyz>
+        </inertia>
+      </inertial>
+
       <visual name="visual">
         <geometry><box><size>0.5 0.5 0.01</size></box></geometry>
         <material>
@@ -17,5 +29,20 @@
         <geometry><box><size>0.5 0.5 0.01</size></box></geometry>
       </collision>
     </link>
+
+    <plugin name="marker_controller" filename="libgazebo_ros_planar_move.so">
+      <ros>
+        <namespace>/target_marker</namespace>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+      </ros>
+      <update_rate>50.0</update_rate>
+      <publish_rate>10.0</publish_rate>
+      <publish_odom>false</publish_odom>
+      <publish_odom_tf>false</publish_odom_tf>
+      <robot_base_frame>link</robot_base_frame>
+      <covariance_x>0.0001</covariance_x>
+      <covariance_y>0.0001</covariance_y>
+      <covariance_yaw>0.01</covariance_yaw>
+    </plugin>
   </model>
 </sdf>
