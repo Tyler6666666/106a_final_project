@@ -23,15 +23,15 @@ class SmartTracker3D(Node):
         self.pose_sub = self.create_subscription(Pose, "/aruco/pose_3d", self.pose_cb, 10)
         self.takeoff_client = self.create_client(TelloAction, "/drone1/tello_action")
 
-        self.Kp_side = 0.85
-        self.Kd_side = 0.35
-        self.Kp_yaw = 2.40
-        self.Kd_yaw = 0.60
+        self.Kp_side = 0.70
+        self.Kd_side = 0.18
+        self.Kp_yaw = 1.2
+        self.Kd_yaw = 0.25
         self.Kp_fwd = 0.75
         self.Kd_fwd = 0.30
-        self.Kp_z = 1.20
-        self.Kd_z = 0.35
-        self.K_anticipate = 1.0
+        self.Kp_z = 0.75
+        self.Kd_z = 0.20
+        self.K_anticipate = 0.2
         self.target_dist = 0.8
         self.target_y = 0.0
 
@@ -144,7 +144,7 @@ class SmartTracker3D(Node):
         self.smooth_dfwd = self.filter_alpha * raw_dfwd + (1 - self.filter_alpha) * self.smooth_dfwd
         self.smooth_dz = self.filter_alpha * raw_dz + (1 - self.filter_alpha) * self.smooth_dz
 
-        v_yaw = (err_yaw * self.Kp_yaw) + (self.smooth_dyaw * self.Kd_yaw) + (err_x * 2.0)
+        v_yaw = (err_yaw * self.Kp_yaw) + (self.smooth_dyaw * self.Kd_yaw) + (err_x * 0.3)
         vy = (active_err_x * self.Kp_side) + (self.smooth_dx * self.Kd_side)
         vx = (err_fwd * self.Kp_fwd) + (self.smooth_dfwd * self.Kd_fwd)
         vz = (err_z * self.Kp_z) + (self.smooth_dz * self.Kd_z)
@@ -152,10 +152,10 @@ class SmartTracker3D(Node):
         def smooth_deadzone(val, threshold):
             return 0.0 if abs(val) < threshold else val
 
-        cmd.angular.z = float(np.clip(smooth_deadzone(v_yaw, 0.08), -1.8, 1.8))
+        cmd.angular.z = float(np.clip(smooth_deadzone(v_yaw, 0.12), -0.8, 0.8))
         cmd.linear.x = float(np.clip(smooth_deadzone(vx, 0.05), -0.8, 0.8))
-        cmd.linear.y = float(np.clip(smooth_deadzone(vy, 0.05), -1.0, 1.0))
-        cmd.linear.z = float(np.clip(smooth_deadzone(vz, 0.04), -0.6, 0.6))
+        cmd.linear.y = float(np.clip(smooth_deadzone(vy, 0.05), -0.8, 0.8))
+        cmd.linear.z = float(np.clip(smooth_deadzone(vz, 0.04), -0.35, 0.35))
 
     def auto_takeoff(self):
         if not self.has_sent_takeoff and (time.time() - self.start_time > 4.0):
