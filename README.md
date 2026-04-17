@@ -8,15 +8,17 @@ docker pull happygaj/my_drone_env:v1
 B. Mount git cloned local folder with the docker environ. (Use below command) 
 terminal 1
 ```bash
+xhost +local:docker
 docker run -it --rm --name ros_humble_container \
-  --gpus all \
-  -e NVIDIA_DRIVER_CAPABILITIES=all \
-  -e DISPLAY=$DISPLAY \
-  -e GAZEBO_MODEL_PATH=/root/.gazebo/models:/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_gazebo/models \
-  -v /tmp/.X11-unix:/tmp/.X11-unix \
-  -v ~/ros2_humble/src/106a_final_project:/ros2_ws/106a_final_project \
-  -v ~/.gazebo/models:/root/.gazebo/models \
-  my_drone_env:v1
+   --gpus all \
+   --network=host \
+   -e DISPLAY=$DISPLAY \
+   -e NVIDIA_DRIVER_CAPABILITIES=all \
+   -v /tmp/.X11-unix:/tmp/.X11-unix \
+   -v ~/.Xauthority:/root/.Xauthority:rw \
+   -v ~/ros2_humble/src/106a_final_project:/ros2_ws/106a_final_project \
+   -v ~/.gazebo/models:/root/.gazebo/models \
+   my_drone_env:v1
 ```
 ```bash
 cd /ros2_ws/106a_final_project/drone_simulation
