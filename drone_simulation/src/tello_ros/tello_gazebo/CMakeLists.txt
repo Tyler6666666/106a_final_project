@@ -51,6 +51,11 @@ add_library(
   src/tello_plugin.cpp
 )
 
+add_library(
+  gazebo_ros_3d_move SHARED
+  src/gazebo_ros_3d_move.cpp
+)
+
 ament_target_dependencies(
   TelloPlugin
   gazebo_dev
@@ -61,13 +66,21 @@ ament_target_dependencies(
   tello_msgs
 )
 
+ament_target_dependencies(
+  gazebo_ros_3d_move
+  gazebo_dev
+  gazebo_ros
+  geometry_msgs
+  rclcpp
+)
+
 #=============
 # Install
 #=============
 
 # Install targets
 install(
-  TARGETS TelloPlugin
+  TARGETS TelloPlugin gazebo_ros_3d_move
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
