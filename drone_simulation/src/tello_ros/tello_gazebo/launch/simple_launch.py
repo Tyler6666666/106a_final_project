@@ -10,8 +10,13 @@ from launch.actions import ExecuteProcess
 
 def generate_launch_description():
     ns = 'drone1'
-    world_path = os.path.join(get_package_share_directory('tello_gazebo'), 'worlds', 'simple.world')
+    tello_gazebo_share = get_package_share_directory('tello_gazebo')
+    world_path = os.path.join(tello_gazebo_share, 'worlds', 'simple.world')
     urdf_path = os.path.join(get_package_share_directory('tello_description'), 'urdf', 'tello_1.urdf')
+    gazebo_model_path = os.pathsep.join(filter(None, [
+        os.path.join(tello_gazebo_share, 'models'),
+        os.environ.get('GAZEBO_MODEL_PATH', ''),
+    ]))
 
     return LaunchDescription([
         # Launch Gazebo, loading tello.world
@@ -21,7 +26,10 @@ def generate_launch_description():
             '-s', 'libgazebo_ros_init.so',  # Publish /clock
             '-s', 'libgazebo_ros_factory.so',  # Provide gazebo_ros::Node
             world_path
-        ], output='screen'),
+        ], output='screen', additional_env={
+            'GAZEBO_MODEL_DATABASE_URI': '',
+            'GAZEBO_MODEL_PATH': gazebo_model_path,
+        }),
 
         # Spawn tello.urdf
         Node(package='tello_gazebo', executable='inject_entity.py', output='screen',
