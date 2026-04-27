@@ -1,1 +1,0 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_typesupport_fastrtps_c/tello_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

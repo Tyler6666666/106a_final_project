@@ -1,1 +1,0 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_c/tello_msgs/msg/detail/tello_response__functions.h

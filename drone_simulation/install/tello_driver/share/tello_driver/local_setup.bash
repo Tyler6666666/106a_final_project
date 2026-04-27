@@ -1,1 +1,0 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver/ament_cmake_environment_hooks/local_setup.bash

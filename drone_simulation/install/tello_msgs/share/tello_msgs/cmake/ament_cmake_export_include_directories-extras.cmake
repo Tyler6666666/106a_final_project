@@ -1,1 +1,0 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake

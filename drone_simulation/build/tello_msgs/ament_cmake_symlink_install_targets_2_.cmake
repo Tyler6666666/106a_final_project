@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_py/tello_msgs/tello_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "tello_msgs__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/tello_msgs")

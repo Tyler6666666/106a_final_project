@@ -1,1 +1,0 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_gazebo/src/inject_entity.py

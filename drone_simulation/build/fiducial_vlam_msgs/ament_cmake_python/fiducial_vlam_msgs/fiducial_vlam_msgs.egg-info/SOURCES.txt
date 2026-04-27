@@ -1,6 +1,0 @@
-setup.py
-fiducial_vlam_msgs/__init__.py
-fiducial_vlam_msgs.egg-info/PKG-INFO
-fiducial_vlam_msgs.egg-info/SOURCES.txt
-fiducial_vlam_msgs.egg-info/dependency_links.txt
-fiducial_vlam_msgs.egg-info/top_level.txt

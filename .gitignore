@@ -1,0 +1,8 @@
+# 드론 시뮬레이션 빌드 결과물 제외
+drone_simulation/build/
+drone_simulation/install/
+drone_simulation/log/
+
+# 기타 로그 및 설정 파일
+*.log
+gui.ini

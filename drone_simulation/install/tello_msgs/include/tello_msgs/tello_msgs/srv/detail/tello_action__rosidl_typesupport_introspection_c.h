@@ -1,1 +1,0 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_typesupport_introspection_c/tello_msgs/srv/detail/tello_action__rosidl_typesupport_introspection_c.h
