@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tello ArUco Live View</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      max-width: 100vw;
+      max-height: 100vh;
+      object-fit: contain;
+      image-rendering: auto;
+    }
+    .label {
+      position: fixed;
+      left: 12px;
+      bottom: 10px;
+      padding: 5px 8px;
+      background: rgba(0, 0, 0, 0.65);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <img id="view" src="live/tello_aruco_live.jpg" alt="Waiting for Tello camera frame">
+  <div class="label">Tello camera | ArUco DICT_6X6_50 ID 0 | 15cm</div>
+  <script>
+    const img = document.getElementById("view");
+    setInterval(() => {
+      img.src = "live/tello_aruco_live.jpg?t=" + Date.now();
+    }, 250);
+  </script>
+</body>
+</html>
