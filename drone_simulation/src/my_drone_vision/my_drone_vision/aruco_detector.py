@@ -8,6 +8,7 @@ relative to the camera. It publishes the target pose for the controller.
 
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import qos_profile_sensor_data
 from sensor_msgs.msg import Image, CameraInfo
 from geometry_msgs.msg import Pose 
 from cv_bridge import CvBridge
@@ -24,7 +25,9 @@ class ArucoDetector(Node):
         
         # Subscriptions for raw image and camera intrinsics
         self.img_sub = self.create_subscription(Image, '/drone1/image_raw', self.image_cb, 10)
-        self.info_sub = self.create_subscription(CameraInfo, '/drone1/camera_info', self.info_cb, 10)
+        # Match tello_driver camera_info publisher (SensorDataQoS / BEST_EFFORT).
+        self.info_sub = self.create_subscription(
+            CameraInfo, '/drone1/camera_info', self.info_cb, qos_profile_sensor_data)
         
         # Publisher for the calculated 3D pose
         self.pose_pub = self.create_publisher(Pose, '/aruco/pose_3d', 10)

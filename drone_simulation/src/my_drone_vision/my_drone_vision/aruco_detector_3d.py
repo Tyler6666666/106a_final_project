@@ -10,6 +10,7 @@ import rclpy
 from cv_bridge import CvBridge
 from geometry_msgs.msg import Pose
 from rclpy.node import Node
+from rclpy.qos import qos_profile_sensor_data
 from sensor_msgs.msg import CameraInfo, Image
 
 
@@ -35,7 +36,8 @@ class ArucoDetector3D(Node):
         self.bridge = CvBridge()
 
         self.img_sub = self.create_subscription(Image, "/drone1/image_raw", self.image_cb, 10)
-        self.info_sub = self.create_subscription(CameraInfo, "/drone1/camera_info", self.info_cb, 10)
+        self.info_sub = self.create_subscription(
+            CameraInfo, "/drone1/camera_info", self.info_cb, qos_profile_sensor_data)
         self.pose_pub = self.create_publisher(Pose, "/aruco/pose_3d", 10)
 
         self.aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_4X4_50)
