@@ -27,10 +27,10 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'aruco_detector = my_drone_vision.aruco_detector:main',
             'aruco_controller = my_drone_vision.aruco_controller:main',
             'aruco_detector_3d = my_drone_vision.aruco_detector_3d:main',
             'aruco_controller_3d = my_drone_vision.aruco_controller_3d:main',
+            'tello_direct_io = my_drone_vision.tello_direct_io:main',
         ],
     },
 )

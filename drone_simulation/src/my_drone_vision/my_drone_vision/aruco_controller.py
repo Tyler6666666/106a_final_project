@@ -5,7 +5,6 @@ import numpy as np
 import rclpy
 from geometry_msgs.msg import Pose, Twist
 from rclpy.node import Node
-from tello_msgs.msg import FlightData
 from tello_msgs.srv import TelloAction
 
 
@@ -16,37 +15,55 @@ class SmartTracker(Node):
         self.declare_parameter("cmd_vel_topic", "/cmd_vel")
         self.declare_parameter("tello_action_service", "/tello_action")
         self.declare_parameter("auto_takeoff", False)
-        self.declare_parameter("takeoff_height", 0.5)
         self.declare_parameter("follow_after_takeoff_sec", 1.0)
         self.declare_parameter("target_dist", 0.45)
         self.declare_parameter("land_on_tag_loss", True)
         self.declare_parameter("tag_loss_land_sec", 1.0)
         self.declare_parameter("enable_search", False)
         self.declare_parameter("require_tag_before_takeoff", True)
+        self.declare_parameter("tag_confirm_sec", 5.0)
+        self.declare_parameter("max_forward_speed", 0.18)
+        self.declare_parameter("max_side_speed", 0.12)
+        self.declare_parameter("max_vertical_speed", 0.12)
+        self.declare_parameter("max_yaw_speed", 0.25)
+        self.declare_parameter("kp_side", 0.25)
+        self.declare_parameter("kd_side", 0.03)
+        self.declare_parameter("kp_yaw", 0.80)
+        self.declare_parameter("kd_yaw", 0.05)
+        self.declare_parameter("kp_fwd", 0.45)
+        self.declare_parameter("kd_fwd", 0.08)
+        self.declare_parameter("kp_z", 0.55)
+        self.declare_parameter("yaw_from_x_gain", 0.75)
+        self.declare_parameter("anticipate_gain", 0.0)
 
         cmd_vel_topic = self.get_parameter("cmd_vel_topic").value
         tello_action_service = self.get_parameter("tello_action_service").value
         self.auto_takeoff_enabled = self.get_parameter("auto_takeoff").value
-        self.takeoff_height = float(self.get_parameter("takeoff_height").value)
         self.follow_after_takeoff_sec = float(self.get_parameter("follow_after_takeoff_sec").value)
         self.target_dist = float(self.get_parameter("target_dist").value)
         self.land_on_tag_loss = self.get_parameter("land_on_tag_loss").value
         self.tag_loss_land_sec = float(self.get_parameter("tag_loss_land_sec").value)
         self.enable_search = self.get_parameter("enable_search").value
         self.require_tag_before_takeoff = self.get_parameter("require_tag_before_takeoff").value
+        self.tag_confirm_sec = float(self.get_parameter("tag_confirm_sec").value)
+        self.max_forward_speed = float(self.get_parameter("max_forward_speed").value)
+        self.max_side_speed = float(self.get_parameter("max_side_speed").value)
+        self.max_vertical_speed = float(self.get_parameter("max_vertical_speed").value)
+        self.max_yaw_speed = float(self.get_parameter("max_yaw_speed").value)
 
         self.vel_pub = self.create_publisher(Twist, cmd_vel_topic, 10)
         self.pose_sub = self.create_subscription(Pose, "/aruco/pose_3d", self.pose_cb, 10)
-        self.flight_sub = self.create_subscription(FlightData, "/flight_data", self.flight_cb, 10)
         self.takeoff_client = self.create_client(TelloAction, tello_action_service)
 
-        self.Kp_side = 0.80
-        self.Kd_side = 0.35
-        self.Kp_yaw = 2.50
-        self.Kd_yaw = 0.60
-        self.Kp_fwd = 0.70
-        self.Kd_fwd = 0.30
-        self.K_anticipate = 1.2
+        self.Kp_side = float(self.get_parameter("kp_side").value)
+        self.Kd_side = float(self.get_parameter("kd_side").value)
+        self.Kp_yaw = float(self.get_parameter("kp_yaw").value)
+        self.Kd_yaw = float(self.get_parameter("kd_yaw").value)
+        self.Kp_fwd = float(self.get_parameter("kp_fwd").value)
+        self.Kd_fwd = float(self.get_parameter("kd_fwd").value)
+        self.Kp_z = float(self.get_parameter("kp_z").value)
+        self.K_anticipate = float(self.get_parameter("anticipate_gain").value)
+        self.yaw_from_x_gain = float(self.get_parameter("yaw_from_x_gain").value)
 
         self.last_err_x = 0.0
         self.last_err_yaw = 0.0
@@ -55,17 +72,19 @@ class SmartTracker(Node):
         self.smooth_dx = 0.0
         self.smooth_dyaw = 0.0
         self.smooth_dfwd = 0.0
+        self.control_initialized = False
 
         self.new_pose_received = False
         self.last_cmd = Twist()
         self.latest_pose = None
-        self.latest_flight = None
         self.last_seen = 0.0
+        self.first_seen = None
         self.is_searching = False
         self.search_start_time = 0.0
         self.search_speed = 0.25
         self.search_duration = 8.0
         self.search_cooldown = False
+        self.waiting_for_tag = False
 
         self.start_time = time.time()
         self.has_sent_takeoff = False
@@ -80,23 +99,21 @@ class SmartTracker(Node):
 
     def pose_cb(self, msg):
         self.latest_pose = msg
+        if self.first_seen is None:
+            self.first_seen = time.time()
         self.last_seen = time.time()
         self.new_pose_received = True
         self.is_searching = False
         self.search_cooldown = False
-
-    def flight_cb(self, msg):
-        self.latest_flight = msg
-
-    def current_height_m(self):
-        if self.latest_flight is None:
-            return None
-        height_cm = max(int(self.latest_flight.h), int(self.latest_flight.tof))
-        return height_cm / 100.0
+        self.waiting_for_tag = False
 
     def control_loop(self):
         cmd = Twist()
         now = time.time()
+
+        if self.has_sent_land:
+            self.vel_pub.publish(cmd)
+            return
 
         if self.auto_takeoff_enabled and not self.has_sent_takeoff:
             return
@@ -112,6 +129,7 @@ class SmartTracker(Node):
                 )
                 self.follow_mode_logged = True
                 self.follow_mode_started = True
+                self.reset_controller_state()
 
         if not self.auto_takeoff_enabled and now - self.start_time < 1.0:
             self.vel_pub.publish(cmd)
@@ -150,6 +168,9 @@ class SmartTracker(Node):
                 self.is_searching = False
                 self.search_cooldown = True
         else:
+            if not self.waiting_for_tag and self.follow_mode_started:
+                self.get_logger().warn("ArUco tag lost; hovering until tag returns.")
+                self.waiting_for_tag = True
             cmd.linear.x = 0.0
             cmd.linear.y = 0.0
             cmd.linear.z = 0.0
@@ -180,15 +201,28 @@ class SmartTracker(Node):
         req.cmd = "land"
         self.takeoff_client.call_async(req)
 
+    def reset_controller_state(self):
+        self.last_err_x = 0.0
+        self.last_err_yaw = 0.0
+        self.last_err_fwd = 0.0
+        self.smooth_dx = 0.0
+        self.smooth_dyaw = 0.0
+        self.smooth_dfwd = 0.0
+        self.last_cmd = Twist()
+        self.control_initialized = False
+
     def run_pd_control(self, cmd):
         err_x = -self.latest_pose.position.x
         err_yaw = -self.latest_pose.orientation.z
         err_fwd = self.latest_pose.position.z - self.target_dist
 
         active_err_x = err_x + (self.latest_pose.orientation.z * self.K_anticipate)
-        front_orbit_offset = self.target_dist * np.sin(self.latest_pose.orientation.z)
-        static_weight = max(0.0, 1.0 - (abs(self.smooth_dx) / 0.4))
-        active_err_x += front_orbit_offset * 0.8 * static_weight
+
+        if not self.control_initialized:
+            self.last_err_x = active_err_x
+            self.last_err_yaw = err_yaw
+            self.last_err_fwd = err_fwd
+            self.control_initialized = True
 
         raw_dx = (active_err_x - self.last_err_x) / self.dt
         raw_dyaw = (err_yaw - self.last_err_yaw) / self.dt
@@ -202,26 +236,31 @@ class SmartTracker(Node):
         self.smooth_dyaw = self.filter_alpha * raw_dyaw + (1 - self.filter_alpha) * self.smooth_dyaw
         self.smooth_dfwd = self.filter_alpha * raw_dfwd + (1 - self.filter_alpha) * self.smooth_dfwd
 
-        v_yaw = (err_yaw * self.Kp_yaw) + (self.smooth_dyaw * self.Kd_yaw) + (err_x * 2.2)
+        v_yaw = (err_yaw * self.Kp_yaw) + (self.smooth_dyaw * self.Kd_yaw) + (err_x * self.yaw_from_x_gain)
         vy = (active_err_x * self.Kp_side) + (self.smooth_dx * self.Kd_side)
         vx = (err_fwd * self.Kp_fwd) + (self.smooth_dfwd * self.Kd_fwd)
-        vz = -self.latest_pose.position.y * 1.2
+        vz = -self.latest_pose.position.y * self.Kp_z
 
         def smooth_deadzone(val, threshold):
             return 0.0 if abs(val) < threshold else val
 
-        cmd.angular.z = float(np.clip(smooth_deadzone(v_yaw, 0.08), -0.8, 0.8))
-        cmd.linear.x = float(np.clip(smooth_deadzone(vx, 0.05), -0.45, 0.45))
-        cmd.linear.y = float(np.clip(smooth_deadzone(vy, 0.05), -0.45, 0.45))
-        cmd.linear.z = float(np.clip(smooth_deadzone(vz, 0.04), -0.25, 0.25))
+        cmd.angular.z = float(np.clip(smooth_deadzone(v_yaw, 0.06), -self.max_yaw_speed, self.max_yaw_speed))
+        cmd.linear.x = float(np.clip(smooth_deadzone(vx, 0.04), -self.max_forward_speed, self.max_forward_speed))
+        cmd.linear.y = float(np.clip(smooth_deadzone(vy, 0.04), -self.max_side_speed, self.max_side_speed))
+        cmd.linear.z = float(np.clip(smooth_deadzone(vz, 0.04), -self.max_vertical_speed, self.max_vertical_speed))
 
     def auto_takeoff(self):
         if not self.auto_takeoff_enabled or self.has_sent_takeoff:
             return
-        if time.time() - self.start_time <= 4.0:
+        now = time.time()
+        if now - self.start_time <= 4.0:
             return
-        if self.require_tag_before_takeoff and time.time() - self.last_seen > 0.75:
-            return
+        if self.require_tag_before_takeoff:
+            if now - self.last_seen > 0.75:
+                self.first_seen = None
+                return
+            if self.first_seen is None or now - self.first_seen < self.tag_confirm_sec:
+                return
         if not self.takeoff_client.wait_for_service(timeout_sec=1.0):
             return
 
@@ -234,6 +273,9 @@ class SmartTracker(Node):
             f"Takeoff requested; entering follow mode after {self.follow_after_takeoff_sec:.1f}s."
         )
 
+    def stop_motion(self):
+        self.vel_pub.publish(Twist())
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -243,6 +285,7 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     finally:
+        node.stop_motion()
         node.destroy_node()
         rclpy.shutdown()
 

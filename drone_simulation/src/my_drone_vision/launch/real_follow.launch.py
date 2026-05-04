@@ -1,6 +1,7 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
+
 def generate_launch_description():
     return LaunchDescription([
         Node(
@@ -23,19 +24,21 @@ def generate_launch_description():
                 'max_ud_rc': 12,
                 'max_yaw_rc': 25,
                 'rc_send_period_sec': 0.10,
-            }]
+            }],
         ),
         Node(
             package='my_drone_vision',
-            executable='aruco_controller', # 确保你在 setup.py 里注册了这个名字
+            executable='aruco_controller',
             name='aruco_controller_node',
             output='screen',
             parameters=[{
+                'cmd_vel_topic': '/cmd_vel',
+                'tello_action_service': '/tello_action',
                 'auto_takeoff': True,
                 'follow_after_takeoff_sec': 2.0,
                 'target_dist': 0.60,
-                'land_on_tag_loss': False,
-                'tag_loss_land_sec': 8.0,
+                'land_on_tag_loss': True,
+                'tag_loss_land_sec': 5.0,
                 'enable_search': False,
                 'require_tag_before_takeoff': True,
                 'tag_confirm_sec': 5.0,
@@ -52,6 +55,6 @@ def generate_launch_description():
                 'kp_z': 0.55,
                 'yaw_from_x_gain': 0.75,
                 'anticipate_gain': 0.0,
-            }]
-        )
+            }],
+        ),
     ])
