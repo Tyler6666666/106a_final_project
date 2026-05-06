@@ -11,6 +11,8 @@ This branch is for testing ArUco tag following on a real DJI/Ryze Tello drone. I
 - Follows the tag at about 0.60 m.
 - Automatically lands if the tag is lost for more than 5 seconds during follow mode.
 - Supports manual landing and emergency motor stop.
+- Adds real-drone face tracking using OpenCV Haar cascade detection.
+- Face tracking waits for a stable face, takes off automatically, keeps the face near image center, follows at about 1 m, and lands after target loss.
 
 ## Setup
 
@@ -73,6 +75,25 @@ Expected flow:
 6. Follow mode starts.
 7. If the tag is lost for more than 5 seconds, the system sends `land`.
 
+## Start Face Tracking Mode
+
+Connect to the Tello Wi-Fi network, stand in front of the camera, then run:
+
+```bash
+source install/setup.bash
+ros2 launch my_drone_vision face_tracking.launch.py
+```
+
+Expected flow:
+
+1. `face_detector` connects to the Tello, reads video, detects the largest face, publishes `/face/pose`, accepts `/cmd_vel`, and exposes `/tello_action`.
+2. `face_controller` waits until a face is stable for about 2 seconds.
+3. The system sends `takeoff`.
+4. The drone waits 2 seconds after takeoff.
+5. Face follow mode starts.
+6. The controller tries to keep the face centered in the image and maintain about 1 m distance using face area as the distance estimate.
+7. If the face is lost for more than 5 seconds, the system sends `land`.
+
 ## Manual Landing
 
 To land immediately, open another terminal:
@@ -104,6 +125,13 @@ source install/setup.bash
 ros2 topic echo /aruco/pose_3d --once
 ```
 
+Check whether face poses are being published:
+
+```bash
+source install/setup.bash
+ros2 topic echo /face/pose --once
+```
+
 Check whether the controller is publishing velocity commands:
 
 ```bash
@@ -126,6 +154,12 @@ pgrep -af "real_follow.launch.py|tello_direct_io|aruco_controller"
   - Connects directly to the Tello, reads video, detects ArUco, and sends RC control commands.
 - `src/my_drone_vision/my_drone_vision/aruco_controller.py`
   - Computes follow velocity from the ArUco pose and handles automatic takeoff and tag-loss landing.
+- `src/my_drone_vision/launch/face_tracking.launch.py`
+  - Launch file for real Tello face tracking.
+- `src/my_drone_vision/my_drone_vision/face_detector.py`
+  - Connects directly to the Tello, reads video, detects the largest face, publishes `/face/pose`, and translates `/cmd_vel` into Tello RC commands.
+- `src/my_drone_vision/my_drone_vision/face_controller.py`
+  - Handles stable-face takeoff, face-centered tracking, approximate 1 m distance control, and face-loss landing.
 
 ## Key Parameters
 
@@ -154,6 +188,22 @@ RC output limits are configured in the `tello_direct_io` launch parameters:
 ```
 
 These values are conservative and are intended for initial real-drone testing.
+
+Face tracking parameters can be adjusted in `face_tracking.launch.py`:
+
+```python
+'target_face_area_ratio': 0.032,
+'forward_area_threshold': 0.030,
+'min_forward_speed': 0.14,
+'max_forward_speed': 0.35,
+'max_vertical_speed': 0.18,
+'max_yaw_speed': 0.55,
+'kp_forward': 1.35,
+'kp_vertical': 0.70,
+'kp_yaw': 1.25,
+```
+
+`target_face_area_ratio` is the main distance tuning value. Smaller values keep the drone farther away, and larger values bring it closer. The current value is tuned to approximate 1 m with a normal frontal face in the Tello camera.
 
 ## Safety Notes
 

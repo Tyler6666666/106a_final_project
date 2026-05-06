@@ -1,0 +1,65 @@
+from launch import LaunchDescription
+from launch.actions import SetEnvironmentVariable
+from launch_ros.actions import Node
+
+
+def generate_launch_description():
+    return LaunchDescription([
+        SetEnvironmentVariable('ROS_LOCALHOST_ONLY', '1'),
+        SetEnvironmentVariable('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'),
+        Node(
+            package='my_drone_vision',
+            executable='face_detector',
+            name='face_detector_node',
+            output='screen',
+            parameters=[{
+                'video_source': 'tello',
+                'face_pose_topic': '/face/pose',
+                'cmd_vel_topic': '/cmd_vel',
+                'tello_action_service': '/tello_action',
+                'frame_width': 640,
+                'frame_height': 480,
+                'show_window': True,
+                'publish_cmd_vel': False,
+                'direct_tello_control': False,
+                'auto_takeoff': False,
+                'provide_tello_io': True,
+                'max_lr_rc': 15,
+                'max_fb_rc': 35,
+                'max_ud_rc': 12,
+                'max_yaw_rc': 45,
+                'rc_send_period_sec': 0.10,
+            }],
+        ),
+        Node(
+            package='my_drone_vision',
+            executable='face_controller',
+            name='face_controller_node',
+            output='screen',
+            parameters=[{
+                'face_pose_topic': '/face/pose',
+                'cmd_vel_topic': '/cmd_vel',
+                'tello_action_service': '/tello_action',
+                'auto_takeoff': True,
+                'require_face_before_takeoff': True,
+                'face_confirm_sec': 2.0,
+                'follow_after_takeoff_sec': 2.0,
+                'land_on_face_loss': True,
+                'face_loss_land_sec': 5.0,
+                'target_face_area_ratio': 0.032,
+                'forward_area_threshold': 0.030,
+                'min_forward_speed': 0.14,
+                'deadband_x': 0.035,
+                'deadband_y': 0.035,
+                'deadband_area': 0.025,
+                'max_forward_speed': 0.35,
+                'max_vertical_speed': 0.18,
+                'max_yaw_speed': 0.55,
+                'kp_forward': 1.35,
+                'kp_vertical': 0.70,
+                'kp_yaw': 1.25,
+                'lost_timeout_sec': 0.6,
+                'search_when_lost': False,
+            }],
+        ),
+    ])
