@@ -66,7 +66,7 @@ source install/setup.bash
 ros2 launch my_drone_vision real_follow.launch.py
 ```
 
-Expected flow:
+Expected flow (defaults match `real_follow.launch.py`):
 
 1. The program connects to the Tello.
 2. The video stream starts.
@@ -91,14 +91,15 @@ ros2 launch my_drone_vision trajectory_following.launch.py
 
 This launches the **same** `tello_direct_io` node stack as `real_follow.launch.py`, but swaps `aruco_controller` for **`trajectory_follow_controller`**, which implements the mission state machine below.
 
-Typical sequence:
+Expected flow:
 
-1. Connect to the Tello; video stream starts; tag stays visible for `tag_confirm_sec`.
-2. `takeoff`; wait `follow_after_takeoff_sec` at zero velocity.
-3. Follow the tag for `memory_sec` while saving each `cmd_vel` sample every `dt`.
-4. Hover for `wait_before_replay_sec` at zero velocity.
-5. Replay the saved commands at the same `dt` (no vision required).
-6. `land`; node stops commanding motion (`DONE`).
+1. Wait until the ArUco tag is stable (`tag_confirm_sec`), then `takeoff`.
+2. Zero velocity for `follow_after_takeoff_sec` (same settling idea as `real_follow`).
+3. Follow using the same ArUco PD idea as real follow (`target_dist`, gains, speed limits).
+4. For `memory_sec` (e.g. 30 s), append each published `cmd_vel` sample on a fixed timer (`dt` in code, 0.05 s).
+5. Hover for `wait_before_replay_sec` (e.g. 3 s) at zero command.
+6. Replay the saved list in order at the same `dt` (open-loop; no tag needed).
+7. Call `land` once via `TelloAction`, then stop.
 
 ### State machine vs `real_follow`
 
