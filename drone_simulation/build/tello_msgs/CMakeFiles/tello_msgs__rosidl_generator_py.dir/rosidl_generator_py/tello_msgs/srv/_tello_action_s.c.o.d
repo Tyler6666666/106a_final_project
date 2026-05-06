@@ -1,5 +1,5 @@
 CMakeFiles/tello_msgs__rosidl_generator_py.dir/rosidl_generator_py/tello_msgs/srv/_tello_action_s.c.o: \
- /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_py/tello_msgs/srv/_tello_action_s.c \
+ /mnt/g/My\ Drive/Primary/skl-Course/SP26/EECS\ 206A\ -\ Introduction\ to\ Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_py/tello_msgs/srv/_tello_action_s.c \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -207,9 +207,9 @@ CMakeFiles/tello_msgs__rosidl_generator_py.dir/rosidl_generator_py/tello_msgs/sr
  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_c/tello_msgs/srv/detail/tello_action__struct.h \
+ /mnt/g/My\ Drive/Primary/skl-Course/SP26/EECS\ 206A\ -\ Introduction\ to\ Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_c/tello_msgs/srv/detail/tello_action__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_c/tello_msgs/srv/detail/tello_action__functions.h \
- /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_c/tello_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /mnt/g/My\ Drive/Primary/skl-Course/SP26/EECS\ 206A\ -\ Introduction\ to\ Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_c/tello_msgs/srv/detail/tello_action__functions.h \
+ /mnt/g/My\ Drive/Primary/skl-Course/SP26/EECS\ 206A\ -\ Introduction\ to\ Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_c/tello_msgs/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h

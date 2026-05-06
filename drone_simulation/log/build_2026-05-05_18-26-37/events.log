@@ -1,0 +1,357 @@
+[0.000000] (-) TimerEvent: {}
+[0.004096] (-) JobUnselected: {'identifier': 'ros2_shared'}
+[0.004725] (-) JobUnselected: {'identifier': 'tello_description'}
+[0.005176] (-) JobUnselected: {'identifier': 'tello_driver'}
+[0.005869] (-) JobUnselected: {'identifier': 'tello_gazebo'}
+[0.006281] (-) JobUnselected: {'identifier': 'tello_msgs'}
+[0.006754] (my_drone_vision) JobQueued: {'identifier': 'my_drone_vision', 'dependencies': OrderedDict([('tello_msgs', '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs')])}
+[0.007110] (my_drone_vision) JobStarted: {'identifier': 'my_drone_vision'}
+[0.084968] (-) TimerEvent: {}
+[0.186404] (-) TimerEvent: {}
+[0.287286] (-) TimerEvent: {}
+[0.388123] (-) TimerEvent: {}
+[0.489206] (-) TimerEvent: {}
+[0.590405] (-) TimerEvent: {}
+[0.691669] (-) TimerEvent: {}
+[0.792771] (-) TimerEvent: {}
+[0.893681] (-) TimerEvent: {}
+[0.994653] (-) TimerEvent: {}
+[1.095921] (-) TimerEvent: {}
+[1.196903] (-) TimerEvent: {}
+[1.297820] (-) TimerEvent: {}
+[1.398824] (-) TimerEvent: {}
+[1.499902] (-) TimerEvent: {}
+[1.601005] (-) TimerEvent: {}
+[1.702267] (-) TimerEvent: {}
+[1.803549] (-) TimerEvent: {}
+[1.904510] (-) TimerEvent: {}
+[2.005625] (-) TimerEvent: {}
+[2.106504] (-) TimerEvent: {}
+[2.207310] (-) TimerEvent: {}
+[2.308416] (-) TimerEvent: {}
+[2.409371] (-) TimerEvent: {}
+[2.510273] (-) TimerEvent: {}
+[2.611139] (-) TimerEvent: {}
+[2.712085] (-) TimerEvent: {}
+[2.812996] (-) TimerEvent: {}
+[2.913985] (-) TimerEvent: {}
+[3.014905] (-) TimerEvent: {}
+[3.115802] (-) TimerEvent: {}
+[3.216676] (-) TimerEvent: {}
+[3.317512] (-) TimerEvent: {}
+[3.418623] (-) TimerEvent: {}
+[3.519649] (-) TimerEvent: {}
+[3.620637] (-) TimerEvent: {}
+[3.721758] (-) TimerEvent: {}
+[3.822858] (-) TimerEvent: {}
+[3.923764] (-) TimerEvent: {}
+[4.029637] (-) TimerEvent: {}
+[4.130526] (-) TimerEvent: {}
+[4.231525] (-) TimerEvent: {}
+[4.332867] (-) TimerEvent: {}
+[4.433892] (-) TimerEvent: {}
+[4.534701] (-) TimerEvent: {}
+[4.635569] (-) TimerEvent: {}
+[4.736495] (-) TimerEvent: {}
+[4.837550] (-) TimerEvent: {}
+[4.938654] (-) TimerEvent: {}
+[5.039622] (-) TimerEvent: {}
+[5.141003] (-) TimerEvent: {}
+[5.241850] (-) TimerEvent: {}
+[5.343219] (-) TimerEvent: {}
+[5.444444] (-) TimerEvent: {}
+[5.545614] (-) TimerEvent: {}
+[5.646487] (-) TimerEvent: {}
+[5.747576] (-) TimerEvent: {}
+[5.848546] (-) TimerEvent: {}
+[5.949627] (-) TimerEvent: {}
+[6.050467] (-) TimerEvent: {}
+[6.151307] (-) TimerEvent: {}
+[6.252208] (-) TimerEvent: {}
+[6.353905] (-) TimerEvent: {}
+[6.454798] (-) TimerEvent: {}
+[6.555768] (-) TimerEvent: {}
+[6.656743] (-) TimerEvent: {}
+[6.757872] (-) TimerEvent: {}
+[6.858932] (-) TimerEvent: {}
+[6.960070] (-) TimerEvent: {}
+[7.060936] (-) TimerEvent: {}
+[7.161919] (-) TimerEvent: {}
+[7.263146] (-) TimerEvent: {}
+[7.364386] (-) TimerEvent: {}
+[7.465591] (-) TimerEvent: {}
+[7.566708] (-) TimerEvent: {}
+[7.667565] (-) TimerEvent: {}
+[7.768641] (-) TimerEvent: {}
+[7.869503] (-) TimerEvent: {}
+[7.970533] (-) TimerEvent: {}
+[8.071672] (-) TimerEvent: {}
+[8.172455] (-) TimerEvent: {}
+[8.273317] (-) TimerEvent: {}
+[8.374451] (-) TimerEvent: {}
+[8.475497] (-) TimerEvent: {}
+[8.576476] (-) TimerEvent: {}
+[8.677275] (-) TimerEvent: {}
+[8.778354] (-) TimerEvent: {}
+[8.879625] (-) TimerEvent: {}
+[8.980613] (-) TimerEvent: {}
+[9.081603] (-) TimerEvent: {}
+[9.182900] (-) TimerEvent: {}
+[9.287813] (-) TimerEvent: {}
+[9.389696] (-) TimerEvent: {}
+[9.490896] (-) TimerEvent: {}
+[9.591903] (-) TimerEvent: {}
+[9.692946] (-) TimerEvent: {}
+[9.796156] (-) TimerEvent: {}
+[9.897250] (-) TimerEvent: {}
+[9.998094] (-) TimerEvent: {}
+[10.098987] (-) TimerEvent: {}
+[10.200436] (-) TimerEvent: {}
+[10.301803] (-) TimerEvent: {}
+[10.403064] (-) TimerEvent: {}
+[10.504086] (-) TimerEvent: {}
+[10.605146] (-) TimerEvent: {}
+[10.706261] (-) TimerEvent: {}
+[10.807108] (-) TimerEvent: {}
+[10.908020] (-) TimerEvent: {}
+[11.009035] (-) TimerEvent: {}
+[11.110149] (-) TimerEvent: {}
+[11.211036] (-) TimerEvent: {}
+[11.311957] (-) TimerEvent: {}
+[11.413080] (-) TimerEvent: {}
+[11.514048] (-) TimerEvent: {}
+[11.614890] (-) TimerEvent: {}
+[11.716175] (-) TimerEvent: {}
+[11.817503] (-) TimerEvent: {}
+[11.918487] (-) TimerEvent: {}
+[12.019589] (-) TimerEvent: {}
+[12.120672] (-) TimerEvent: {}
+[12.222694] (-) TimerEvent: {}
+[12.323542] (-) TimerEvent: {}
+[12.424335] (-) TimerEvent: {}
+[12.525565] (-) TimerEvent: {}
+[12.626462] (-) TimerEvent: {}
+[12.727255] (-) TimerEvent: {}
+[12.828182] (-) TimerEvent: {}
+[12.929282] (-) TimerEvent: {}
+[13.030157] (-) TimerEvent: {}
+[13.131426] (-) TimerEvent: {}
+[13.232406] (-) TimerEvent: {}
+[13.333454] (-) TimerEvent: {}
+[13.434403] (-) TimerEvent: {}
+[13.535530] (-) TimerEvent: {}
+[13.636465] (-) TimerEvent: {}
+[13.737403] (-) TimerEvent: {}
+[13.838291] (-) TimerEvent: {}
+[13.939195] (-) TimerEvent: {}
+[14.040011] (-) TimerEvent: {}
+[14.140972] (-) TimerEvent: {}
+[14.242112] (-) TimerEvent: {}
+[14.343196] (-) TimerEvent: {}
+[14.444278] (-) TimerEvent: {}
+[14.545502] (-) TimerEvent: {}
+[14.646475] (-) TimerEvent: {}
+[14.748100] (-) TimerEvent: {}
+[14.849496] (-) TimerEvent: {}
+[14.950737] (-) TimerEvent: {}
+[15.051537] (-) TimerEvent: {}
+[15.152481] (-) TimerEvent: {}
+[15.253672] (-) TimerEvent: {}
+[15.354721] (-) TimerEvent: {}
+[15.455532] (-) TimerEvent: {}
+[15.556286] (-) TimerEvent: {}
+[15.657334] (-) TimerEvent: {}
+[15.758277] (-) TimerEvent: {}
+[15.859551] (-) TimerEvent: {}
+[15.960409] (-) TimerEvent: {}
+[16.061241] (-) TimerEvent: {}
+[16.162378] (-) TimerEvent: {}
+[16.263226] (-) TimerEvent: {}
+[16.364084] (-) TimerEvent: {}
+[16.464941] (-) TimerEvent: {}
+[16.566027] (-) TimerEvent: {}
+[16.666919] (-) TimerEvent: {}
+[16.767830] (-) TimerEvent: {}
+[16.868756] (-) TimerEvent: {}
+[16.970070] (-) TimerEvent: {}
+[17.071193] (-) TimerEvent: {}
+[17.172079] (-) TimerEvent: {}
+[17.272911] (-) TimerEvent: {}
+[17.373956] (-) TimerEvent: {}
+[17.474835] (-) TimerEvent: {}
+[17.576003] (-) TimerEvent: {}
+[17.677010] (-) TimerEvent: {}
+[17.778083] (-) TimerEvent: {}
+[17.878963] (-) TimerEvent: {}
+[17.979914] (-) TimerEvent: {}
+[18.080961] (-) TimerEvent: {}
+[18.181974] (-) TimerEvent: {}
+[18.283135] (-) TimerEvent: {}
+[18.384160] (-) TimerEvent: {}
+[18.485384] (-) TimerEvent: {}
+[18.586220] (-) TimerEvent: {}
+[18.683639] (my_drone_vision) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_drone_vision', 'build', '--build-base', '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build', 'install', '--record', '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/my_drone_vision', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', '_X11_NO_MITSHM': '1', 'USER': 'happygaj', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/happygaj/my_project/drone_simulation/install/tello_gazebo/lib:/home/happygaj/my_project/drone_simulation/install/tello_driver/lib:/home/happygaj/my_project/drone_simulation/install/tello_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'WT_PROFILE_ID': '{bce5ad17-2bdc-5d74-b2f9-07b5c1c5975c}', 'HOME': '/home/happygaj', 'OLDPWD': '/home/happygaj/my_project/drone_simulation', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/happygaj/my_project/drone_simulation/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'happygaj', 'NAME': 'skl', 'WSL_INTEROP': '/run/WSL/21553_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025a/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Program Files/Tailscale/:/Docker/host/bin:/mnt/c/Users/happy/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/happy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/happy/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/happy/.local/bin:/snap/bin', 'WT_SESSION': '490fbee8-1dcb-4fa2-a3f8-23b1e43e102c', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': '10.255.255.254:0.0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:/home/happygaj/my_project/drone_simulation/install/tello_gazebo:/home/happygaj/my_project/drone_simulation/install/tello_driver:/home/happygaj/my_project/drone_simulation/install/my_drone_vision:/home/happygaj/my_project/drone_simulation/install/tello_msgs:/home/happygaj/my_project/drone_simulation/install/tello_description:/home/happygaj/my_project/drone_simulation/install/ros2_shared:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:/home/happygaj/my_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:/home/happygaj/my_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:/home/happygaj/my_project/drone_simulation/install/tello_gazebo:/home/happygaj/my_project/drone_simulation/install/tello_driver:/home/happygaj/my_project/drone_simulation/install/tello_msgs:/home/happygaj/my_project/drone_simulation/install/tello_description:/home/happygaj/my_project/drone_simulation/install/ros2_shared', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}, 'shell': False}
+[18.773464] (-) TimerEvent: {}
+[18.874291] (-) TimerEvent: {}
+[18.975277] (-) TimerEvent: {}
+[19.076438] (-) TimerEvent: {}
+[19.177688] (-) TimerEvent: {}
+[19.278622] (-) TimerEvent: {}
+[19.379558] (-) TimerEvent: {}
+[19.480456] (-) TimerEvent: {}
+[19.581662] (-) TimerEvent: {}
+[19.682882] (-) TimerEvent: {}
+[19.784002] (-) TimerEvent: {}
+[19.884873] (-) TimerEvent: {}
+[19.985856] (-) TimerEvent: {}
+[20.086976] (-) TimerEvent: {}
+[20.188104] (-) TimerEvent: {}
+[20.289137] (-) TimerEvent: {}
+[20.389943] (-) TimerEvent: {}
+[20.490875] (-) TimerEvent: {}
+[20.591834] (-) TimerEvent: {}
+[20.692858] (-) TimerEvent: {}
+[20.794135] (-) TimerEvent: {}
+[20.895314] (-) TimerEvent: {}
+[20.996168] (-) TimerEvent: {}
+[21.097123] (-) TimerEvent: {}
+[21.198560] (-) TimerEvent: {}
+[21.299645] (-) TimerEvent: {}
+[21.400845] (-) TimerEvent: {}
+[21.502268] (-) TimerEvent: {}
+[21.603088] (-) TimerEvent: {}
+[21.703911] (-) TimerEvent: {}
+[21.804709] (-) TimerEvent: {}
+[21.905748] (-) TimerEvent: {}
+[22.006668] (-) TimerEvent: {}
+[22.107816] (-) TimerEvent: {}
+[22.208607] (-) TimerEvent: {}
+[22.309443] (-) TimerEvent: {}
+[22.411280] (-) TimerEvent: {}
+[22.512717] (-) TimerEvent: {}
+[22.613681] (-) TimerEvent: {}
+[22.714617] (-) TimerEvent: {}
+[22.816073] (-) TimerEvent: {}
+[22.917192] (-) TimerEvent: {}
+[23.018162] (-) TimerEvent: {}
+[23.119277] (-) TimerEvent: {}
+[23.220176] (-) TimerEvent: {}
+[23.321210] (-) TimerEvent: {}
+[23.422045] (-) TimerEvent: {}
+[23.522898] (-) TimerEvent: {}
+[23.623946] (-) TimerEvent: {}
+[23.724700] (-) TimerEvent: {}
+[23.825495] (-) TimerEvent: {}
+[23.926354] (-) TimerEvent: {}
+[24.027206] (-) TimerEvent: {}
+[24.128236] (-) TimerEvent: {}
+[24.229281] (-) TimerEvent: {}
+[24.330128] (-) TimerEvent: {}
+[24.430951] (-) TimerEvent: {}
+[24.531986] (-) TimerEvent: {}
+[24.633168] (-) TimerEvent: {}
+[24.734351] (-) TimerEvent: {}
+[24.835574] (-) TimerEvent: {}
+[24.936510] (-) TimerEvent: {}
+[25.037675] (-) TimerEvent: {}
+[25.138511] (-) TimerEvent: {}
+[25.239260] (-) TimerEvent: {}
+[25.340172] (-) TimerEvent: {}
+[25.441013] (-) TimerEvent: {}
+[25.542062] (-) TimerEvent: {}
+[25.643017] (-) TimerEvent: {}
+[25.743955] (-) TimerEvent: {}
+[25.821001] (my_drone_vision) StdoutLine: {'line': b'running egg_info\n'}
+[25.844138] (-) TimerEvent: {}
+[25.845927] (my_drone_vision) StdoutLine: {'line': b'writing ../../build/my_drone_vision/my_drone_vision.egg-info/PKG-INFO\n'}
+[25.882741] (my_drone_vision) StdoutLine: {'line': b'writing dependency_links to ../../build/my_drone_vision/my_drone_vision.egg-info/dependency_links.txt\n'}
+[25.917985] (my_drone_vision) StdoutLine: {'line': b'writing entry points to ../../build/my_drone_vision/my_drone_vision.egg-info/entry_points.txt\n'}
+[25.944401] (-) TimerEvent: {}
+[25.950110] (my_drone_vision) StdoutLine: {'line': b'writing requirements to ../../build/my_drone_vision/my_drone_vision.egg-info/requires.txt\n'}
+[25.974202] (my_drone_vision) StdoutLine: {'line': b'writing top-level names to ../../build/my_drone_vision/my_drone_vision.egg-info/top_level.txt\n'}
+[26.044680] (-) TimerEvent: {}
+[26.146123] (-) TimerEvent: {}
+[26.182494] (my_drone_vision) StdoutLine: {'line': b"reading manifest file '../../build/my_drone_vision/my_drone_vision.egg-info/SOURCES.txt'\n"}
+[26.246309] (-) TimerEvent: {}
+[26.347206] (-) TimerEvent: {}
+[26.448019] (-) TimerEvent: {}
+[26.528177] (my_drone_vision) StdoutLine: {'line': b"writing manifest file '../../build/my_drone_vision/my_drone_vision.egg-info/SOURCES.txt'\n"}
+[26.548310] (-) TimerEvent: {}
+[26.559692] (my_drone_vision) StdoutLine: {'line': b'running build\n'}
+[26.562007] (my_drone_vision) StdoutLine: {'line': b'running build_py\n'}
+[26.648557] (-) TimerEvent: {}
+[26.749677] (-) TimerEvent: {}
+[26.839266] (my_drone_vision) StdoutLine: {'line': b'copying my_drone_vision/tello_direct_io.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision\n'}
+[26.849882] (-) TimerEvent: {}
+[26.944771] (my_drone_vision) StdoutLine: {'line': b'running install\n'}
+[26.946551] (my_drone_vision) StdoutLine: {'line': b'running install_lib\n'}
+[26.949982] (-) TimerEvent: {}
+[27.050671] (-) TimerEvent: {}
+[27.151622] (-) TimerEvent: {}
+[27.252490] (-) TimerEvent: {}
+[27.353648] (-) TimerEvent: {}
+[27.426706] (my_drone_vision) StdoutLine: {'line': b'copying /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision/tello_direct_io.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision\n'}
+[27.453855] (-) TimerEvent: {}
+[27.554942] (-) TimerEvent: {}
+[27.655811] (-) TimerEvent: {}
+[27.756600] (-) TimerEvent: {}
+[27.857417] (-) TimerEvent: {}
+[27.879713] (my_drone_vision) StdoutLine: {'line': b'byte-compiling /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/tello_direct_io.py to tello_direct_io.cpython-310.pyc\n'}
+[27.957712] (-) TimerEvent: {}
+[28.058797] (-) TimerEvent: {}
+[28.086706] (my_drone_vision) StdoutLine: {'line': b'running install_data\n'}
+[28.158986] (-) TimerEvent: {}
+[28.259893] (-) TimerEvent: {}
+[28.361193] (-) TimerEvent: {}
+[28.444627] (my_drone_vision) StdoutLine: {'line': b'running install_egg_info\n'}
+[28.461398] (-) TimerEvent: {}
+[28.516956] (my_drone_vision) StdoutLine: {'line': b"removing '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[28.561600] (-) TimerEvent: {}
+[28.662397] (-) TimerEvent: {}
+[28.763553] (-) TimerEvent: {}
+[28.791569] (my_drone_vision) StdoutLine: {'line': b'Copying ../../build/my_drone_vision/my_drone_vision.egg-info to /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info\n'}
+[28.863733] (-) TimerEvent: {}
+[28.964673] (-) TimerEvent: {}
+[29.065479] (-) TimerEvent: {}
+[29.166611] (-) TimerEvent: {}
+[29.268301] (-) TimerEvent: {}
+[29.369292] (-) TimerEvent: {}
+[29.470261] (-) TimerEvent: {}
+[29.571420] (-) TimerEvent: {}
+[29.672278] (-) TimerEvent: {}
+[29.773208] (-) TimerEvent: {}
+[29.874695] (-) TimerEvent: {}
+[29.946064] (my_drone_vision) StdoutLine: {'line': b'running install_scripts\n'}
+[29.974866] (-) TimerEvent: {}
+[30.076179] (-) TimerEvent: {}
+[30.177010] (-) TimerEvent: {}
+[30.277807] (-) TimerEvent: {}
+[30.378643] (-) TimerEvent: {}
+[30.479891] (-) TimerEvent: {}
+[30.580895] (-) TimerEvent: {}
+[30.632095] (my_drone_vision) StdoutLine: {'line': b'Installing aruco_controller script to /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision\n'}
+[30.681048] (-) TimerEvent: {}
+[30.693124] (my_drone_vision) StdoutLine: {'line': b'Installing aruco_controller_3d script to /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision\n'}
+[30.750521] (my_drone_vision) StdoutLine: {'line': b'Installing aruco_detector_3d script to /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision\n'}
+[30.781254] (-) TimerEvent: {}
+[30.806524] (my_drone_vision) StdoutLine: {'line': b'Installing tello_direct_io script to /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision\n'}
+[30.875411] (my_drone_vision) StdoutLine: {'line': b"writing list of installed files to '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/install.log'\n"}
+[30.881386] (-) TimerEvent: {}
+[30.926760] (my_drone_vision) CommandEnded: {'returncode': 0}
+[30.981560] (-) TimerEvent: {}
+[31.082419] (-) TimerEvent: {}
+[31.183587] (-) TimerEvent: {}
+[31.284541] (-) TimerEvent: {}
+[31.385654] (-) TimerEvent: {}
+[31.486761] (-) TimerEvent: {}
+[31.588042] (-) TimerEvent: {}
+[31.689258] (-) TimerEvent: {}
+[31.790369] (-) TimerEvent: {}
+[31.891634] (-) TimerEvent: {}
+[31.993108] (-) TimerEvent: {}
+[32.094124] (-) TimerEvent: {}
+[32.195037] (-) TimerEvent: {}
+[32.296351] (-) TimerEvent: {}
+[32.397302] (-) TimerEvent: {}
+[32.402176] (my_drone_vision) JobEnded: {'identifier': 'my_drone_vision', 'rc': 0}
+[32.445274] (-) EventReactorShutdown: {}

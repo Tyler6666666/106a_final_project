@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/ros2_shared
+CMAKE_SOURCE_DIR = "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/ros2_shared"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared
+CMAKE_BINARY_DIR = "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared"
 
 # Utility rule file for ros2_shared_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ros2_shared_uninstall.dir/compiler_depend.make
 include CMakeFiles/ros2_shared_uninstall.dir/progress.make
 
 CMakeFiles/ros2_shared_uninstall:
-	/usr/bin/cmake -P /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /mnt/g/My\ Drive/Primary/skl-Course/SP26/EECS\ 206A\ -\ Introduction\ to\ Robotics/106a_final_project/drone_simulation/build/ros2_shared/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ros2_shared_uninstall: CMakeFiles/ros2_shared_uninstall
 ros2_shared_uninstall: CMakeFiles/ros2_shared_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ros2_shared_uninstall.dir/clean:
 .PHONY : CMakeFiles/ros2_shared_uninstall.dir/clean
 
 CMakeFiles/ros2_shared_uninstall.dir/depend:
-	cd /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/ros2_shared /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/ros2_shared /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/ros2_shared/CMakeFiles/ros2_shared_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/ros2_shared" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/ros2_shared" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared/CMakeFiles/ros2_shared_uninstall.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/ros2_shared_uninstall.dir/depend
 

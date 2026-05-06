@@ -1,0 +1,36 @@
+[3.313s] Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_driver': AMENT_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared:/opt/ros/humble LD_LIBRARY_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_driver -DCMAKE_INSTALL_PREFIX=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver
+[6.060s] -- The C compiler identification is GNU 11.4.0
+[8.319s] -- The CXX compiler identification is GNU 11.4.0
+[9.272s] -- Detecting C compiler ABI info
+[14.471s] -- Detecting C compiler ABI info - done
+[14.703s] -- Check for working C compiler: /usr/bin/cc - skipped
+[14.707s] -- Detecting C compile features
+[14.711s] -- Detecting C compile features - done
+[15.195s] -- Detecting CXX compiler ABI info
+[20.756s] -- Detecting CXX compiler ABI info - done
+[20.950s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[20.953s] -- Detecting CXX compile features
+[20.957s] -- Detecting CXX compile features - done
+[21.608s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[25.339s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[33.264s] [31mCMake Error at CMakeLists.txt:33 (find_package):
+[33.266s]   By not providing "Findcamera_calibration_parsers.cmake" in
+[33.268s]   CMAKE_MODULE_PATH this project has asked CMake to find a package
+[33.270s]   configuration file provided by "camera_calibration_parsers", but CMake did
+[33.271s]   not find one.
+[33.312s] 
+[33.315s]   Could not find a package configuration file provided by
+[33.317s]   "camera_calibration_parsers" with any of the following names:
+[33.319s] 
+[33.323s]     camera_calibration_parsersConfig.cmake
+[33.325s]     camera_calibration_parsers-config.cmake
+[33.329s] 
+[33.333s]   Add the installation prefix of "camera_calibration_parsers" to
+[33.336s]   CMAKE_PREFIX_PATH or set "camera_calibration_parsers_DIR" to a directory
+[33.339s]   containing one of the above files.  If "camera_calibration_parsers"
+[33.341s]   provides a separate development package or SDK, be sure it has been
+[33.343s]   installed.
+[33.345s] 
+[33.347s] [0m
+[33.357s] -- Configuring incomplete, errors occurred!
+[33.359s] See also "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_driver/CMakeFiles/CMakeOutput.log".

@@ -1,0 +1,59 @@
+[35m[1mConsolidate compiler generated dependencies of target tello_joy_node[0m
+[35m[1mConsolidate compiler generated dependencies of target tello_joy_main[0m
+[35m[1mConsolidate compiler generated dependencies of target tello_driver_main[0m
+[35m[1mConsolidate compiler generated dependencies of target tello_driver_node[0m
+[  4%] [32mBuilding CXX object CMakeFiles/tello_emulator.dir/src/tello_emulator.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/tello_driver_main.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/tello_driver_node.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/tello_socket.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/command_socket.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/state_socket.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/video_socket.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o[0m
+[ 63%] Built target tello_joy_node
+[ 77%] Built target tello_joy_main
+[ 81%] [32m[1mLinking CXX executable tello_emulator[0m
+[ 81%] Built target tello_emulator
+[ 90%] [32m[1mLinking CXX executable tello_driver_main[0m
+[ 90%] [32m[1mLinking CXX shared library libtello_driver_node.so[0m
+[ 95%] Built target tello_driver_node
+[100%] Built target tello_driver_main
+-- Install configuration: ""
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/environment/library_path.sh
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/environment/library_path.dsv
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/lib/libtello_driver_node.so
+-- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/lib/libtello_driver_node.so" to ""
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/lib/libtello_joy_node.so
+-- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/lib/libtello_joy_node.so" to ""
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/lib/tello_driver/tello_driver_main
+-- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/lib/tello_driver/tello_driver_main" to ""
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/lib/tello_driver/tello_joy_main
+-- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/lib/tello_driver/tello_joy_main" to ""
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/lib/tello_driver/tello_emulator
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/cfg
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/cfg/camera_info.yaml
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/launch
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/launch/emulator_launch.py
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/launch/emulators_launch.py
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/launch/teleop_launch.py
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/launch/teleop_wsl_launch.py
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/ament_index/resource_index/package_run_dependencies/tello_driver
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/ament_index/resource_index/parent_prefix_path/tello_driver
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/environment/ament_prefix_path.sh
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/environment/ament_prefix_path.dsv
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/environment/path.sh
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/environment/path.dsv
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/local_setup.bash
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/local_setup.sh
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/local_setup.zsh
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/local_setup.dsv
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/package.dsv
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/ament_index/resource_index/packages/tello_driver
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/ament_index/resource_index/rclcpp_components/tello_driver
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/cmake/tello_driverConfig.cmake
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/cmake/tello_driverConfig-version.cmake
+-- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_driver/share/tello_driver/package.xml

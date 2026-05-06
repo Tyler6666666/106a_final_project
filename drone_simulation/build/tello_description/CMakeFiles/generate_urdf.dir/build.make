@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description
+CMAKE_SOURCE_DIR = "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_description"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description
+CMAKE_BINARY_DIR = "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_description"
 
 # Utility rule file for generate_urdf.
 
@@ -68,9 +68,9 @@ include CMakeFiles/generate_urdf.dir/progress.make
 
 CMakeFiles/generate_urdf: urdf/tello.urdf
 
-urdf/tello.urdf: /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description/urdf/tello.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generate /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description/urdf/tello.urdf"
-	/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description/src/replace.py /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description/urdf/tello.xml suffix= topic_ns=solo > /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description/urdf/tello.urdf
+urdf/tello.urdf: /mnt/g/My\ Drive/Primary/skl-Course/SP26/EECS\ 206A\ -\ Introduction\ to\ Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_description/urdf/tello.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_description/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generate /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_description/urdf/tello.urdf"
+	"/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_description/src/replace.py" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_description/urdf/tello.xml" suffix= topic_ns=solo > "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_description/urdf/tello.urdf"
 
 generate_urdf: CMakeFiles/generate_urdf
 generate_urdf: urdf/tello.urdf
@@ -86,6 +86,6 @@ CMakeFiles/generate_urdf.dir/clean:
 .PHONY : CMakeFiles/generate_urdf.dir/clean
 
 CMakeFiles/generate_urdf.dir/depend:
-	cd /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_description /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_description/CMakeFiles/generate_urdf.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_description" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_description" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_description" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_description" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_description" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_description/CMakeFiles/generate_urdf.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/generate_urdf.dir/depend
 

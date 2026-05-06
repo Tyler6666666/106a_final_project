@@ -1,1 +1,21 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/include/ros2_shared/context_macros.hpp
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/include/ros2_shared/param_macros.hpp
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/include/ros2_shared/string_printf.hpp
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ament_index/resource_index/package_run_dependencies/ros2_shared
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ament_index/resource_index/parent_prefix_path/ros2_shared
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.sh
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.dsv
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/path.sh
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/path.dsv
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.bash
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.sh
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.zsh
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.dsv
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/package.dsv
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ament_index/resource_index/packages/ros2_shared
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_targets-extras.cmake
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_dependencies-extras.cmake
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig.cmake
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig-version.cmake
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/package.xml

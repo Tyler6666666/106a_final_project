@@ -1,11 +1,11 @@
 {
   "package_name": "tello_msgs",
-  "output_dir": "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_c/tello_msgs",
+  "output_dir": "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_c/tello_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs:msg/FlightData.idl",
-    "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs:msg/TelloResponse.idl",
-    "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs:srv/TelloAction.idl"
+    "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs:msg/FlightData.idl",
+    "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs:msg/TelloResponse.idl",
+    "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs:srv/TelloAction.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -55,9 +55,9 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs/msg/FlightData.idl",
-    "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs/msg/TelloResponse.idl",
-    "/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs/srv/TelloAction.idl",
+    "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs/msg/FlightData.idl",
+    "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs/msg/TelloResponse.idl",
+    "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_adapter/tello_msgs/srv/TelloAction.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_GENERATOR_C_BUILDING_DLL_tello_msgs -DROS_PACKAGE_NAME=\"tello_msgs\"
 
-CXX_INCLUDES = -I/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_c -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_c
+CXX_INCLUDES = -I"/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_c" -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_c
 
 CXX_FLAGS = -fPIC -Wall -std=gnu++14
 

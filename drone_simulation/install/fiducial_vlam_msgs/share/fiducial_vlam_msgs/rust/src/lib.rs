@@ -1,1 +1,0 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs/rosidl_generator_rs/fiducial_vlam_msgs/rust/src/lib.rs

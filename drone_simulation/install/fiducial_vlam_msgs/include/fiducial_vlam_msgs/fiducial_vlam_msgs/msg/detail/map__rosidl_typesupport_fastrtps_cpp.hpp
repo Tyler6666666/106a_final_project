@@ -1,1 +1,0 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/fiducial_vlam_msgs/rosidl_typesupport_fastrtps_cpp/fiducial_vlam_msgs/msg/detail/map__rosidl_typesupport_fastrtps_cpp.hpp

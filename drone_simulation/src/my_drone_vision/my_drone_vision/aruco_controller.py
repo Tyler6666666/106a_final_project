@@ -274,7 +274,12 @@ class SmartTracker(Node):
         )
 
     def stop_motion(self):
-        self.vel_pub.publish(Twist())
+        # During shutdown the ROS context can already be invalid; best-effort stop only.
+        try:
+            if rclpy.ok():
+                self.vel_pub.publish(Twist())
+        except Exception:
+            pass
 
 
 def main(args=None):

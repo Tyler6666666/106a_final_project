@@ -1,1 +1,2 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/tello_driver
+tello_driver::TelloDriverNode;lib/libtello_driver_node.so
+tello_joy::TelloJoyNode;lib/libtello_joy_node.so

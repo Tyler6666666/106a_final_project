@@ -1,1 +1,1 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_driver/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/tello_driver
+camera_calibration_parsers;class_loader;cv_bridge;rclcpp;geometry_msgs;ros2_shared;sensor_msgs;std_msgs;tello_msgs

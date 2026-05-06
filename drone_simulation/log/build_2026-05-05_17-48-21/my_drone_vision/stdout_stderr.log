@@ -1,0 +1,56 @@
+running egg_info
+creating ../../build/my_drone_vision/my_drone_vision.egg-info
+writing ../../build/my_drone_vision/my_drone_vision.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_drone_vision/my_drone_vision.egg-info/dependency_links.txt
+writing entry points to ../../build/my_drone_vision/my_drone_vision.egg-info/entry_points.txt
+writing requirements to ../../build/my_drone_vision/my_drone_vision.egg-info/requires.txt
+writing top-level names to ../../build/my_drone_vision/my_drone_vision.egg-info/top_level.txt
+writing manifest file '../../build/my_drone_vision/my_drone_vision.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_drone_vision/my_drone_vision.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_drone_vision/my_drone_vision.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision
+copying my_drone_vision/__init__.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision
+copying my_drone_vision/aruco_controller.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision
+copying my_drone_vision/aruco_controller_3d.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision
+copying my_drone_vision/aruco_detector_3d.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision
+copying my_drone_vision/tello_direct_io.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision
+running install
+running install_lib
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision
+copying /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision/__init__.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision
+copying /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision/aruco_controller.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision
+copying /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision/aruco_controller_3d.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision
+copying /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision/aruco_detector_3d.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision
+copying /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build/lib/my_drone_vision/tello_direct_io.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision
+byte-compiling /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__init__.py to __init__.cpython-310.pyc
+byte-compiling /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/aruco_controller.py to aruco_controller.cpython-310.pyc
+byte-compiling /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/aruco_controller_3d.py to aruco_controller_3d.cpython-310.pyc
+byte-compiling /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/aruco_detector_3d.py to aruco_detector_3d.cpython-310.pyc
+byte-compiling /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/tello_direct_io.py to tello_direct_io.cpython-310.pyc
+running install_data
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/ament_index
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/ament_index/resource_index
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/ament_index/resource_index/packages
+copying resource/my_drone_vision -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/ament_index/resource_index/packages
+copying package.xml -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/models
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/models/aruco_marker
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/models/aruco_marker/materials
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/models/aruco_marker/materials/textures
+copying models/aruco_marker/materials/textures/marker0.png -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/models/aruco_marker/materials/textures
+creating /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/launch
+copying launch/vision_control.launch.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/launch
+copying launch/real_follow.launch.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/launch
+copying launch/vision_control_3d.launch.py -> /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/launch
+running install_egg_info
+Copying ../../build/my_drone_vision/my_drone_vision.egg-info to /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info
+running install_scripts
+Installing aruco_controller script to /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision
+Installing aruco_controller_3d script to /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision
+Installing aruco_detector_3d script to /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision
+Installing tello_direct_io script to /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision
+writing list of installed files to '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/install.log'

@@ -1,0 +1,8 @@
+[1.494s] Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/happygaj/my_project/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --build /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs -- -j16 -l16
+[7.421s] gmake[2]: *** [CMakeFiles/tello_msgs__rosidl_generator_c.dir/build.make:251: CMakeFiles/tello_msgs__rosidl_generator_c.dir/depend] Interrupt
+[7.424s] gmake[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/tello_msgs__rosidl_generator_c.dir/all] Interrupt
+[7.429s] gmake[1]: *** [CMakeFiles/Makefile2:635: tello_msgs__rs/CMakeFiles/tello_msgs__rs.dir/all] Interrupt
+[7.446s] gmake[1]: *** [CMakeFiles/Makefile2:440: CMakeFiles/ament_cmake_python_copy_tello_msgs.dir/all] Interrupt
+[7.452s] gmake[2]: *** [CMakeFiles/tello_msgs__cpp.dir/build.make:209: CMakeFiles/tello_msgs__cpp.dir/depend] Interrupt
+[7.454s] gmake[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/tello_msgs__cpp.dir/all] Interrupt
+[7.456s] gmake: *** [Makefile:146: all] Interrupt

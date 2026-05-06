@@ -1,0 +1,198 @@
+[1.524s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'my_drone_vision']
+[1.526s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['my_drone_vision'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7077b292bb20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7077b292b580>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7077b292b580>>)
+[2.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.650s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.651s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.651s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.651s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.652s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.652s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation'
+[2.656s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.657s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.658s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.659s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.660s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.661s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.661s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.661s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.662s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.712s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.712s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.723s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.723s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.727s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.735s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.736s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.740s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.745s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.745s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.748s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.758s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.761s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.765s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.766s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.768s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.768s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.771s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.771s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.781s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.782s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.784s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extensions ['ignore', 'ignore_ament_install']
+[2.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extension 'ignore'
+[2.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extension 'ignore_ament_install'
+[2.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extensions ['colcon_pkg']
+[2.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extension 'colcon_pkg'
+[2.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extensions ['colcon_meta']
+[2.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extension 'colcon_meta'
+[2.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extensions ['ros']
+[2.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_drone_vision) by extension 'ros'
+[2.877s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_drone_vision' with type 'ros.ament_python' and name 'my_drone_vision'
+[2.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['ignore', 'ignore_ament_install']
+[2.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ignore'
+[2.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ignore_ament_install'
+[2.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['colcon_pkg']
+[2.905s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'colcon_pkg'
+[2.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['colcon_meta']
+[2.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'colcon_meta'
+[2.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['ros']
+[2.916s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ros'
+[2.964s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_shared' with type 'ros.ament_cmake' and name 'ros2_shared'
+[2.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['ignore', 'ignore_ament_install']
+[2.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'ignore'
+[2.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'ignore_ament_install'
+[2.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['colcon_pkg']
+[2.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'colcon_pkg'
+[3.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['colcon_meta']
+[3.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'colcon_meta'
+[3.011s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['ros']
+[3.012s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'ros'
+[3.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['cmake', 'python']
+[3.033s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'cmake'
+[3.038s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'python'
+[3.043s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['python_setup_py']
+[3.043s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'python_setup_py'
+[3.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['ignore', 'ignore_ament_install']
+[3.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'ignore'
+[3.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'ignore_ament_install'
+[3.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['colcon_pkg']
+[3.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'colcon_pkg'
+[3.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['colcon_meta']
+[3.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'colcon_meta'
+[3.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['ros']
+[3.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'ros'
+[3.191s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_description' with type 'ros.ament_cmake' and name 'tello_description'
+[3.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['ignore', 'ignore_ament_install']
+[3.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'ignore'
+[3.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'ignore_ament_install'
+[3.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['colcon_pkg']
+[3.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'colcon_pkg'
+[3.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['colcon_meta']
+[3.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'colcon_meta'
+[3.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['ros']
+[3.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'ros'
+[3.322s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_driver' with type 'ros.ament_cmake' and name 'tello_driver'
+[3.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[3.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'ignore'
+[3.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'ignore_ament_install'
+[3.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['colcon_pkg']
+[3.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'colcon_pkg'
+[3.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['colcon_meta']
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'colcon_meta'
+[3.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['ros']
+[3.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'ros'
+[3.441s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_gazebo' with type 'ros.ament_cmake' and name 'tello_gazebo'
+[3.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['ignore', 'ignore_ament_install']
+[3.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'ignore'
+[3.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'ignore_ament_install'
+[3.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['colcon_pkg']
+[3.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'colcon_pkg'
+[3.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['colcon_meta']
+[3.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'colcon_meta'
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['ros']
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'ros'
+[3.568s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_msgs' with type 'ros.ament_cmake' and name 'tello_msgs'
+[3.569s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.569s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.570s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.570s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.570s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.012s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros2_shared' in 'src/ros2_shared'
+[4.012s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tello_description' in 'src/tello_ros/tello_description'
+[4.013s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tello_msgs' in 'src/tello_ros/tello_msgs'
+[4.013s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tello_driver' in 'src/tello_ros/tello_driver'
+[4.013s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tello_gazebo' in 'src/tello_ros/tello_gazebo'
+[4.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.015s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.457s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/happygaj/my_project/drone_simulation/install
+[4.459s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 280 installed packages in /opt/ros/humble
+[4.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.751s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_args' from command line to 'None'
+[4.752s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_target' from command line to 'None'
+[4.753s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.753s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[4.754s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_clean_first' from command line to 'False'
+[4.754s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'cmake_force_configure' from command line to 'False'
+[4.754s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'ament_cmake_args' from command line to 'None'
+[4.755s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[4.755s] Level 5:colcon.colcon_core.verb:set package 'my_drone_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.756s] DEBUG:colcon.colcon_core.verb:Building package 'my_drone_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision', 'merge_install': False, 'path': '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/my_drone_vision', 'symlink_install': False, 'test_result_base': None}
+[4.757s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.759s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.760s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/my_drone_vision' with build type 'ament_python'
+[4.760s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_drone_vision', 'ament_prefix_path')
+[4.811s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/ament_prefix_path.ps1'
+[4.876s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/ament_prefix_path.dsv'
+[4.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/ament_prefix_path.sh'
+[4.994s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.995s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.153s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/my_drone_vision'
+[12.154s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.154s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[23.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/my_drone_vision': AMENT_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_drone_vision build --build-base /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build install --record /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/install.log --single-version-externally-managed install_data
+[35.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/my_drone_vision' returned '0': AMENT_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages:/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_drone_vision build --build-base /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/build install --record /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/my_drone_vision/install.log --single-version-externally-managed install_data
+[35.767s] Level 1:colcon.colcon_core.environment:checking '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision' for CMake module files
+[36.050s] Level 1:colcon.colcon_core.environment:checking '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision' for CMake config files
+[36.550s] Level 1:colcon.colcon_core.environment:checking '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib'
+[36.565s] Level 1:colcon.colcon_core.environment:checking '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/bin'
+[36.570s] Level 1:colcon.colcon_core.environment:checking '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/pkgconfig/my_drone_vision.pc'
+[36.577s] Level 1:colcon.colcon_core.environment:checking '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages'
+[36.588s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_drone_vision', 'pythonpath')
+[36.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/pythonpath.ps1'
+[36.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/pythonpath.dsv'
+[36.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/hook/pythonpath.sh'
+[36.834s] Level 1:colcon.colcon_core.environment:checking '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/bin'
+[36.840s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_drone_vision)
+[36.841s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.ps1'
+[36.898s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.dsv'
+[36.954s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.sh'
+[37.013s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.bash'
+[37.070s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.zsh'
+[37.125s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/colcon-core/packages/my_drone_vision)
+[37.175s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[37.176s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[37.178s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[37.179s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[37.467s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[37.468s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[37.468s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[37.469s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[37.470s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[37.470s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[37.471s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/local_setup.ps1'
+[37.496s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/_local_setup_util_ps1.py'
+[37.540s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/setup.ps1'
+[37.831s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/local_setup.sh'
+[37.858s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/_local_setup_util_sh.py'
+[37.901s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/setup.sh'
+[38.119s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/local_setup.bash'
+[38.147s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/setup.bash'
+[38.356s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/local_setup.zsh'
+[38.384s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/setup.zsh'

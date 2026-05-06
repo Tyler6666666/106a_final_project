@@ -1,19 +1,27 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__init__.py
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/aruco_detector.py
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/aruco_controller.py
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__pycache__/__init__.cpython-310.pyc
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__pycache__/aruco_detector.cpython-310.pyc
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__pycache__/aruco_controller.cpython-310.pyc
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/share/ament_index/resource_index/packages/my_drone_vision
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.xml
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/models/aruco_marker/materials/textures/marker0.png
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/launch/vision_control.launch.py
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/entry_points.txt
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/SOURCES.txt
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/top_level.txt
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/requires.txt
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/PKG-INFO
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/zip-safe
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/dependency_links.txt
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision/aruco_controller
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision/aruco_detector
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__init__.py
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/aruco_controller.py
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/aruco_controller_3d.py
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/aruco_detector_3d.py
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/tello_direct_io.py
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__pycache__/__init__.cpython-310.pyc
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__pycache__/aruco_controller.cpython-310.pyc
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__pycache__/aruco_controller_3d.cpython-310.pyc
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__pycache__/aruco_detector_3d.cpython-310.pyc
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision/__pycache__/tello_direct_io.cpython-310.pyc
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/ament_index/resource_index/packages/my_drone_vision
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/package.xml
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/models/aruco_marker/materials/textures/marker0.png
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/launch/vision_control.launch.py
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/launch/real_follow.launch.py
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/share/my_drone_vision/launch/vision_control_3d.launch.py
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/PKG-INFO
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/zip-safe
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/dependency_links.txt
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/entry_points.txt
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/requires.txt
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/top_level.txt
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/python3.10/site-packages/my_drone_vision-0.0.0-py3.10.egg-info/SOURCES.txt
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision/aruco_controller
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision/aruco_controller_3d
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision/aruco_detector_3d
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/my_drone_vision/lib/my_drone_vision/tello_direct_io

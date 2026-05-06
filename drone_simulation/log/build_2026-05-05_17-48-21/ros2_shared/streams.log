@@ -1,0 +1,63 @@
+[0.700s] Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/ros2_shared -DCMAKE_INSTALL_PREFIX=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared
+[2.163s] -- The C compiler identification is GNU 11.4.0
+[3.774s] -- The CXX compiler identification is GNU 11.4.0
+[4.435s] -- Detecting C compiler ABI info
+[8.592s] -- Detecting C compiler ABI info - done
+[8.830s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.833s] -- Detecting C compile features
+[8.836s] -- Detecting C compile features - done
+[9.234s] -- Detecting CXX compiler ABI info
+[13.306s] -- Detecting CXX compiler ABI info - done
+[13.484s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[13.489s] -- Detecting CXX compile features
+[13.494s] -- Detecting CXX compile features - done
+[13.939s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[14.215s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[15.039s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[15.227s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[15.232s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[15.245s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[15.264s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[15.286s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[15.343s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[15.350s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[16.959s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[18.697s] -- Found FastRTPS: /opt/ros/humble/include  
+[21.813s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[22.193s] -- Looking for pthread.h
+[26.146s] -- Looking for pthread.h - found
+[26.229s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[29.852s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[29.897s] -- Found Threads: TRUE  
+[34.289s] -- Configuring done
+[36.621s] -- Generating done
+[37.805s] -- Build files have been written to: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared
+[37.816s] Invoked command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/ros2_shared -DCMAKE_INSTALL_PREFIX=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared
+[37.863s] Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared -- -j16 -l16
+[39.063s] Invoked command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared -- -j16 -l16
+[39.346s] Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared
+[39.421s] -- Install configuration: ""
+[39.482s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/include
+[39.753s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/include/ros2_shared
+[40.152s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/include/ros2_shared/context_macros.hpp
+[40.688s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/include/ros2_shared/param_macros.hpp
+[41.182s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/include/ros2_shared/string_printf.hpp
+[41.799s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ament_index/resource_index/package_run_dependencies/ros2_shared
+[42.549s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ament_index/resource_index/parent_prefix_path/ros2_shared
+[43.150s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.sh
+[43.560s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/ament_prefix_path.dsv
+[43.950s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/path.sh
+[44.570s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/environment/path.dsv
+[44.908s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.bash
+[45.314s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.sh
+[45.789s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.zsh
+[46.171s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/local_setup.dsv
+[46.549s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/package.dsv
+[47.076s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ament_index/resource_index/packages/ros2_shared
+[47.760s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ros2_shared_targetsExport.cmake
+[48.263s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_targets-extras.cmake
+[48.694s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ament_cmake_export_dependencies-extras.cmake
+[49.131s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig.cmake
+[49.716s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/cmake/ros2_sharedConfig-version.cmake
+[50.148s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/ros2_shared/share/ros2_shared/package.xml
+[50.481s] Invoked command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/ros2_shared

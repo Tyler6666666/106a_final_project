@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DASIO_HAS_STD_CHRONO -DASIO_STANDALONE
 
-CXX_INCLUDES = -I/opt/ros/humble/include/rclcpp_components -I/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include -I/home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_driver/h264decoder
+CXX_INCLUDES = -I/opt/ros/humble/include/rclcpp_components -I"/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_driver/include" -I"/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_driver/h264decoder"
 
 CXX_FLAGS =  -pthread -Wno-deprecated-declarations -std=gnu++14
 

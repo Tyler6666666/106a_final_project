@@ -1,10 +1,10 @@
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/uninstall.dir
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/tello_gazebo_uninstall.dir
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/TelloPlugin.dir
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/test.dir
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/edit_cache.dir
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/rebuild_cache.dir
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/list_install_components.dir
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/install.dir
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/install/local.dir
-/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/install/strip.dir
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/uninstall.dir
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/tello_gazebo_uninstall.dir
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/TelloPlugin.dir
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/test.dir
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/edit_cache.dir
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/rebuild_cache.dir
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/list_install_components.dir
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/install.dir
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/install/local.dir
+/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo/CMakeFiles/install/strip.dir

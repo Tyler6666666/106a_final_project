@@ -8,11 +8,15 @@ setup.py
 ../../build/my_drone_vision/my_drone_vision.egg-info/requires.txt
 ../../build/my_drone_vision/my_drone_vision.egg-info/top_level.txt
 ../../build/my_drone_vision/my_drone_vision.egg-info/zip-safe
+launch/real_follow.launch.py
 launch/vision_control.launch.py
+launch/vision_control_3d.launch.py
 models/aruco_marker/materials/textures/marker0.png
 my_drone_vision/__init__.py
 my_drone_vision/aruco_controller.py
-my_drone_vision/aruco_detector.py
+my_drone_vision/aruco_controller_3d.py
+my_drone_vision/aruco_detector_3d.py
+my_drone_vision/tello_direct_io.py
 resource/my_drone_vision
 test/test_copyright.py
 test/test_flake8.py

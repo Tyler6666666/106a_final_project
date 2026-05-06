@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_msgs
+CMAKE_SOURCE_DIR = "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_msgs"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs
+CMAKE_BINARY_DIR = "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs"
 
 # Utility rule file for tello_msgs__rs.
 
@@ -124,8 +124,8 @@ rosidl_generator_rs/tello_msgs/rust/src/lib.rs: /opt/ros/humble/share/std_msgs/m
 rosidl_generator_rs/tello_msgs/rust/src/lib.rs: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_rs/tello_msgs/rust/src/lib.rs: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_rs/tello_msgs/rust/src/lib.rs: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Rust code for ROS interfaces"
-	cd /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/tello_msgs__rs && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_rs__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating Rust code for ROS interfaces"
+	cd "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/tello_msgs__rs" && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/rosidl_generator_rs__arguments.json" --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_rs/tello_msgs/rust/build.rs: rosidl_generator_rs/tello_msgs/rust/src/lib.rs
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/tello_msgs/rust/build.rs
@@ -161,10 +161,10 @@ tello_msgs__rs/CMakeFiles/tello_msgs__rs.dir/build: tello_msgs__rs
 .PHONY : tello_msgs__rs/CMakeFiles/tello_msgs__rs.dir/build
 
 tello_msgs__rs/CMakeFiles/tello_msgs__rs.dir/clean:
-	cd /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/tello_msgs__rs && $(CMAKE_COMMAND) -P CMakeFiles/tello_msgs__rs.dir/cmake_clean.cmake
+	cd "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/tello_msgs__rs" && $(CMAKE_COMMAND) -P CMakeFiles/tello_msgs__rs.dir/cmake_clean.cmake
 .PHONY : tello_msgs__rs/CMakeFiles/tello_msgs__rs.dir/clean
 
 tello_msgs__rs/CMakeFiles/tello_msgs__rs.dir/depend:
-	cd /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tyler/ros2_ws/106a_final_project/drone_simulation/src/tello_ros/tello_msgs /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/tello_msgs__rs /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/tello_msgs__rs /home/tyler/ros2_ws/106a_final_project/drone_simulation/build/tello_msgs/tello_msgs__rs/CMakeFiles/tello_msgs__rs.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_msgs" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/tello_msgs__rs" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/tello_msgs__rs" "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs/tello_msgs__rs/CMakeFiles/tello_msgs__rs.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : tello_msgs__rs/CMakeFiles/tello_msgs__rs.dir/depend
 

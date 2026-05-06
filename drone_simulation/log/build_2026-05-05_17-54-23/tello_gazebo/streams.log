@@ -1,0 +1,187 @@
+[2.650s] Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo': AMENT_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_gazebo -DCMAKE_INSTALL_PREFIX=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_gazebo
+[3.140s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.525s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[5.536s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[5.538s]   does not match the name of the calling package (gazebo).  This can lead to
+[5.543s]   problems in calling code that expects `find_package` result variables
+[5.546s]   (e.g., `_FOUND`) to follow a certain pattern.
+[5.549s] Call Stack (most recent call first):
+[5.551s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[5.554s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[5.557s]   CMakeLists.txt:27 (find_package)
+[5.559s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[5.562s] [0m
+[5.565s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[5.567s] -- Checking for module 'bullet>=2.82'
+[5.911s] --   Found bullet, version 3.05
+[9.011s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[10.531s] -- Found assimp: /usr/include (found version "5.2.0") 
+[11.213s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[21.335s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[21.998s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[22.346s] -- Looking for ignition-math6 -- found version 6.15.1
+[22.541s] -- Searching for dependencies of ignition-math6
+[22.542s] -- Looking for OGRE...
+[22.544s] -- OGRE_PREFIX_WATCH changed.
+[22.681s] -- Checking for module 'OGRE'
+[23.380s] --   Found OGRE, version 1.9.0
+[24.990s] -- Found Ogre Ghadamon (1.9.0)
+[25.724s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[25.732s] -- Looking for OGRE_Paging...
+[26.570s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[26.572s] -- Looking for OGRE_Terrain...
+[27.419s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[27.421s] -- Looking for OGRE_Property...
+[28.090s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[28.092s] -- Looking for OGRE_RTShaderSystem...
+[28.683s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[28.684s] -- Looking for OGRE_Volume...
+[29.252s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[29.254s] -- Looking for OGRE_Overlay...
+[30.091s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[64.115s] -- Looking for ignition-math6 -- found version 6.15.1
+[64.264s] -- Looking for ignition-transport8 -- found version 8.2.1
+[64.266s] -- Searching for dependencies of ignition-transport8
+[66.256s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[67.933s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[68.074s] -- Checking for module 'libzmq >= 4'
+[68.744s] --   Found libzmq , version 4.3.4
+[70.379s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[70.540s] -- Checking for module 'uuid'
+[71.168s] --   Found uuid, version 2.37.2
+[72.724s] -- Found UUID: TRUE  
+[72.870s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[72.873s] -- Searching for dependencies of ignition-msgs5
+[74.799s] -- Looking for ignition-math6 -- found version 6.15.1
+[74.964s] -- Checking for module 'tinyxml2'
+[75.812s] --   Found tinyxml2, version 9.0.0
+[77.900s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[78.103s] -- Looking for ignition-common3 -- found version 3.14.0
+[78.105s] -- Searching for dependencies of ignition-common3
+[78.165s] -- Looking for dlfcn.h - found
+[78.228s] -- Looking for libdl - found
+[78.229s] -- Found DL: TRUE  
+[78.740s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[78.742s] -- Searching for <ignition-common3> component [graphics]
+[78.942s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[78.944s] -- Searching for dependencies of ignition-common3-graphics
+[78.946s] -- Looking for ignition-math6 -- found version 6.15.1
+[79.175s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[79.177s] -- Searching for dependencies of ignition-fuel_tools4
+[85.152s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[85.502s] -- Checking for module 'jsoncpp'
+[86.340s] --   Found jsoncpp, version 1.9.5
+[88.405s] -- Found JSONCPP: TRUE  
+[88.769s] -- Checking for module 'libzip'
+[89.606s] --   Found libzip, version 1.7.3
+[91.760s] -- Found ZIP: TRUE  
+[91.762s] -- Looking for ignition-common3 -- found version 3.14.0
+[91.766s] -- Looking for ignition-math6 -- found version 6.15.1
+[91.768s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[92.227s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[92.229s] -- Gazebo version: 11.10
+[92.231s] -- Checking for module 'tbb'
+[93.372s] --   Found tbb, version 2021.5.0
+[97.080s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[101.326s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[102.053s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[102.790s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[103.549s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[104.560s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[107.502s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[107.817s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[112.679s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[114.693s] -- Found FastRTPS: /opt/ros/humble/include  
+[118.267s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[118.570s] -- Found Threads: TRUE  
+[119.112s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[119.222s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[119.512s] -- Found tello_msgs: 0.1.0 (/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake)
+[125.785s] -- Configuring done
+[128.585s] -- Generating done
+[129.924s] -- Build files have been written to: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo
+[129.945s] Invoked command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo' returned '0': AMENT_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_gazebo -DCMAKE_INSTALL_PREFIX=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_gazebo
+[130.023s] Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo': AMENT_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs:/opt/ros/humble LD_LIBRARY_PATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo -- -j16 -l16
+[131.562s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[134.378s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[134.380s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[134.381s]   does not match the name of the calling package (gazebo).  This can lead to
+[134.384s]   problems in calling code that expects `find_package` result variables
+[134.387s]   (e.g., `_FOUND`) to follow a certain pattern.
+[134.390s] Call Stack (most recent call first):
+[134.392s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[134.396s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[134.398s]   CMakeLists.txt:27 (find_package)
+[134.401s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[134.405s] [0m
+[134.447s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[134.525s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[134.527s] -- Looking for ignition-math6 -- found version 6.15.1
+[134.532s] -- Searching for dependencies of ignition-math6
+[134.535s] -- Looking for OGRE...
+[134.561s] -- Found Ogre Ghadamon (1.9.0)
+[134.563s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[134.571s] -- Looking for OGRE_Paging...
+[134.574s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[134.577s] -- Looking for OGRE_Terrain...
+[134.580s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[134.584s] -- Looking for OGRE_Property...
+[134.587s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[134.591s] -- Looking for OGRE_RTShaderSystem...
+[134.594s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[134.597s] -- Looking for OGRE_Volume...
+[134.600s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[134.603s] -- Looking for OGRE_Overlay...
+[134.605s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[165.837s] -- Looking for ignition-math6 -- found version 6.15.1
+[165.839s] -- Looking for ignition-transport8 -- found version 8.2.1
+[165.840s] -- Searching for dependencies of ignition-transport8
+[167.440s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[168.901s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[169.052s] -- Checking for module 'libzmq >= 4'
+[169.908s] --   Found libzmq , version 4.3.4
+[172.260s] -- Checking for module 'uuid'
+[172.990s] --   Found uuid, version 2.37.2
+[174.940s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[174.942s] -- Searching for dependencies of ignition-msgs5
+[176.647s] -- Looking for ignition-math6 -- found version 6.15.1
+[176.798s] -- Checking for module 'tinyxml2'
+[177.618s] --   Found tinyxml2, version 9.0.0
+[179.576s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[179.578s] -- Looking for ignition-common3 -- found version 3.14.0
+[179.579s] -- Searching for dependencies of ignition-common3
+[179.582s] -- Looking for dlfcn.h - found
+[179.583s] -- Looking for libdl - found
+[179.862s] -- Searching for <ignition-common3> component [graphics]
+[179.864s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[179.865s] -- Searching for dependencies of ignition-common3-graphics
+[179.867s] -- Looking for ignition-math6 -- found version 6.15.1
+[179.869s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[179.871s] -- Searching for dependencies of ignition-fuel_tools4
+[182.464s] -- Checking for module 'jsoncpp'
+[183.249s] --   Found jsoncpp, version 1.9.5
+[185.351s] -- Checking for module 'libzip'
+[186.084s] --   Found libzip, version 1.7.3
+[187.971s] -- Looking for ignition-common3 -- found version 3.14.0
+[187.972s] -- Looking for ignition-math6 -- found version 6.15.1
+[187.973s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[187.975s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[187.977s] -- Gazebo version: 11.10
+[187.978s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[188.044s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[188.045s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[188.050s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[188.087s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[188.119s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[188.186s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[188.206s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[194.946s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[195.029s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[195.048s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[195.203s] -- Found tello_msgs: 0.1.0 (/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake)
+[199.838s] -- Configuring done
+[203.059s] -- Generating done
+[204.050s] -- Build files have been written to: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_gazebo
+[205.998s] [ 50%] [32mBuilding CXX object CMakeFiles/TelloPlugin.dir/src/tello_plugin.cpp.o[0m
+[345.230s] [100%] [32m[1mLinking CXX shared library libTelloPlugin.so[0m
+[376.478s] [100%] Built target TelloPlugin

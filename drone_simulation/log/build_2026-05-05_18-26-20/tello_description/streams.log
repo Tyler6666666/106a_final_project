@@ -1,0 +1,16 @@
+[1.305s] Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/happygaj/my_project/drone_simulation/install/my_drone_vision:/opt/ros/humble /usr/bin/cmake --build /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_description -- -j16 -l16
+[6.551s] gmake[2]: *** [CMakeFiles/generate_urdf_1.dir/build.make:89: CMakeFiles/generate_urdf_1.dir/depend] Interrupt
+[6.554s] gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/generate_urdf_1.dir/all] Interrupt
+[6.609s] gmake[1]: *** [CMakeFiles/Makefile2:257: CMakeFiles/generate_urdf_4.dir/all] Interrupt
+[6.612s] gmake[1]: *** [CMakeFiles/Makefile2:361: CMakeFiles/generate_urdf_8.dir/all] Interrupt
+[6.614s] gmake[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/generate_urdf_3.dir/all] Interrupt
+[6.617s] gmake[2]: *** [CMakeFiles/generate_urdf_2.dir/build.make:89: CMakeFiles/generate_urdf_2.dir/depend] Interrupt
+[6.619s] gmake[1]: *** [CMakeFiles/Makefile2:204: CMakeFiles/generate_urdf_2.dir/all] Interrupt
+[6.623s] gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/generate_urdf.dir/all] Interrupt
+[6.625s] gmake[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/generate_urdf_5.dir/all] Interrupt
+[6.633s] gmake[2]: *** [CMakeFiles/generate_urdf_6.dir/build.make:89: CMakeFiles/generate_urdf_6.dir/depend] Interrupt
+[6.636s] gmake[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/generate_urdf_6.dir/all] Interrupt
+[6.638s] gmake[1]: *** wait: No child processes.  Stop.
+[6.639s] gmake[1]: *** Waiting for unfinished jobs....
+[6.642s] gmake[1]: *** wait: No child processes.  Stop.
+[6.695s] gmake: *** [Makefile:146: all] Error 2

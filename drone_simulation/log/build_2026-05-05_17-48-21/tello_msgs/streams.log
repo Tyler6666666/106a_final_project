@@ -1,0 +1,316 @@
+[0.479s] Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_msgs -DCMAKE_INSTALL_PREFIX=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs
+[2.188s] -- The C compiler identification is GNU 11.4.0
+[3.815s] -- The CXX compiler identification is GNU 11.4.0
+[4.389s] -- Detecting C compiler ABI info
+[8.503s] -- Detecting C compiler ABI info - done
+[8.718s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.723s] -- Detecting C compile features
+[8.725s] -- Detecting C compile features - done
+[9.179s] -- Detecting CXX compiler ABI info
+[13.340s] -- Detecting CXX compiler ABI info - done
+[13.536s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[13.539s] -- Detecting CXX compile features
+[13.542s] -- Detecting CXX compile features - done
+[13.972s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[14.251s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[15.083s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[15.101s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[15.108s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[15.303s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[15.344s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[23.268s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[35.312s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[52.853s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[53.009s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[53.011s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[53.470s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[53.471s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[53.474s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[53.476s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[53.505s] -- Found PythonExtra: .so  
+[64.971s] -- Configuring done
+[76.205s] -- Generating done
+[80.020s] -- Build files have been written to: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs
+[80.036s] Invoked command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/src/tello_ros/tello_msgs -DCMAKE_INSTALL_PREFIX=/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs
+[80.077s] Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs -- -j16 -l16
+[81.319s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[81.505s] [  4%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[81.569s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[81.571s] [  6%] Built target ament_cmake_python_copy_tello_msgs
+[82.690s] running egg_info
+[82.695s] creating tello_msgs.egg-info
+[82.738s] writing tello_msgs.egg-info/PKG-INFO
+[82.785s] writing dependency_links to tello_msgs.egg-info/dependency_links.txt
+[82.866s] writing top-level names to tello_msgs.egg-info/top_level.txt
+[82.893s] writing manifest file 'tello_msgs.egg-info/SOURCES.txt'
+[83.050s] reading manifest file 'tello_msgs.egg-info/SOURCES.txt'
+[83.212s] writing manifest file 'tello_msgs.egg-info/SOURCES.txt'
+[83.371s] [  6%] Built target ament_cmake_python_build_tello_msgs_egg
+[83.650s] [  6%] Built target tello_msgs__rs
+[84.448s] [  6%] Built target tello_msgs__cpp
+[84.668s] [  8%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_generator_c.dir/rosidl_generator_c/tello_msgs/msg/detail/flight_data__functions.c.o[0m
+[84.699s] [ 10%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_generator_c.dir/rosidl_generator_c/tello_msgs/msg/detail/tello_response__functions.c.o[0m
+[84.755s] [ 12%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_generator_c.dir/rosidl_generator_c/tello_msgs/srv/detail/tello_action__functions.c.o[0m
+[84.820s] [ 18%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[84.826s] [ 18%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[84.837s] [ 18%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[85.590s] [ 20%] [32m[1mLinking C shared library libtello_msgs__rosidl_generator_c.so[0m
+[86.746s] [ 22%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tello_msgs/msg/flight_data__type_support.cpp.o[0m
+[86.798s] [ 25%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tello_msgs/msg/tello_response__type_support.cpp.o[0m
+[86.830s] [ 27%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tello_msgs/srv/tello_action__type_support.cpp.o[0m
+[87.131s] [ 27%] Built target tello_msgs__rosidl_generator_c
+[87.468s] [ 29%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tello_msgs/msg/detail/flight_data__type_support.cpp.o[0m
+[87.572s] [ 37%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[87.582s] [ 37%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tello_msgs/msg/detail/dds_fastrtps/flight_data__type_support.cpp.o[0m
+[87.599s] [ 37%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[87.696s] [ 45%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tello_msgs/msg/detail/tello_response__type_support.cpp.o[0m
+[87.703s] [ 45%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tello_msgs/srv/detail/dds_fastrtps/tello_action__type_support.cpp.o[0m
+[87.712s] [ 45%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tello_msgs/srv/detail/tello_action__type_support.cpp.o[0m
+[87.716s] [ 45%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tello_msgs/msg/detail/dds_fastrtps/tello_response__type_support.cpp.o[0m
+[87.722s] [ 45%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[89.303s] [ 47%] [32m[1mLinking CXX shared library libtello_msgs__rosidl_typesupport_cpp.so[0m
+[90.277s] [ 50%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tello_msgs/msg/flight_data__type_support.cpp.o[0m
+[90.333s] [ 52%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tello_msgs/msg/tello_response__type_support.cpp.o[0m
+[90.389s] [ 54%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tello_msgs/srv/tello_action__type_support.cpp.o[0m
+[91.446s] [ 56%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tello_msgs/msg/detail/flight_data__type_support.c.o[0m
+[91.548s] [ 58%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tello_msgs/msg/detail/tello_response__type_support.c.o[0m
+[91.631s] [ 60%] Built target tello_msgs__rosidl_typesupport_cpp
+[91.643s] [ 60%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tello_msgs/srv/detail/tello_action__type_support.c.o[0m
+[91.737s] [ 62%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tello_msgs/msg/detail/flight_data__type_support_c.cpp.o[0m
+[91.823s] [ 64%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tello_msgs/msg/detail/tello_response__type_support_c.cpp.o[0m
+[91.923s] [ 66%] [32mBuilding CXX object CMakeFiles/tello_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tello_msgs/srv/detail/tello_action__type_support_c.cpp.o[0m
+[92.023s] [ 68%] [32m[1mLinking CXX shared library libtello_msgs__rosidl_typesupport_c.so[0m
+[92.117s] [ 70%] [32m[1mLinking CXX shared library libtello_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[93.187s] [ 72%] [32m[1mLinking CXX shared library libtello_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[93.506s] [ 75%] [32m[1mLinking C shared library libtello_msgs__rosidl_typesupport_introspection_c.so[0m
+[93.792s] [ 75%] Built target tello_msgs__rosidl_typesupport_c
+[94.184s] [ 75%] Built target tello_msgs__rosidl_typesupport_introspection_cpp
+[95.010s] [ 75%] Built target tello_msgs__rosidl_typesupport_introspection_c
+[95.036s] [ 75%] Built target tello_msgs__rosidl_typesupport_fastrtps_cpp
+[95.706s] [ 77%] [32m[1mLinking CXX shared library libtello_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[96.785s] [ 77%] Built target tello_msgs__rosidl_typesupport_fastrtps_c
+[97.036s] [ 77%] Built target tello_msgs
+[97.396s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[99.174s] [ 79%] Built target tello_msgs__py
+[99.649s] [ 81%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_generator_py.dir/rosidl_generator_py/tello_msgs/msg/_flight_data_s.c.o[0m
+[99.673s] [ 83%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_generator_py.dir/rosidl_generator_py/tello_msgs/msg/_tello_response_s.c.o[0m
+[99.723s] [ 85%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_generator_py.dir/rosidl_generator_py/tello_msgs/srv/_tello_action_s.c.o[0m
+[101.072s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/tello_msgs/libtello_msgs__rosidl_generator_py.so[0m
+[101.984s] [ 87%] Built target tello_msgs__rosidl_generator_py
+[102.437s] [ 93%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tello_msgs/_tello_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[102.439s] [ 93%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tello_msgs/_tello_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[102.448s] [ 93%] [32mBuilding C object CMakeFiles/tello_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tello_msgs/_tello_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[103.937s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/tello_msgs/tello_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[104.211s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/tello_msgs/tello_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[104.274s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tello_msgs/tello_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[104.991s] [100%] Built target tello_msgs__rosidl_typesupport_c__pyext
+[105.063s] [100%] Built target tello_msgs__rosidl_typesupport_fastrtps_c__pyext
+[105.097s] [100%] Built target tello_msgs__rosidl_typesupport_introspection_c__pyext
+[106.053s] Invoked command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs -- -j16 -l16
+[106.186s] Invoking command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs
+[106.228s] -- Install configuration: ""
+[106.423s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/ament_index/resource_index/rosidl_interfaces/tello_msgs
+[106.812s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs
+[106.934s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg
+[107.085s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/rosidl_generator_c__visibility_control.h
+[107.486s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/flight_data.h
+[107.860s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail
+[108.043s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__functions.c
+[108.475s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__functions.h
+[108.891s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__struct.h
+[109.302s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__type_support.h
+[109.745s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__functions.c
+[110.207s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__functions.h
+[110.683s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__struct.h
+[111.173s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__type_support.h
+[111.601s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/tello_response.h
+[111.969s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv
+[112.132s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/tello_action.h
+[112.504s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail
+[112.703s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__functions.c
+[113.187s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__functions.h
+[113.651s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__struct.h
+[114.128s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__type_support.h
+[114.629s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/environment/library_path.sh
+[114.922s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/environment/library_path.dsv
+[115.261s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_generator_c.so
+[115.653s] -- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_generator_c.so" to ""
+[115.704s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs
+[115.801s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg
+[115.925s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[116.308s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail
+[116.460s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__rosidl_typesupport_fastrtps_c.h
+[116.929s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__rosidl_typesupport_fastrtps_c.h
+[117.357s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv
+[117.475s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail
+[117.629s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__rosidl_typesupport_fastrtps_c.h
+[118.047s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_fastrtps_c.so
+[118.413s] -- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[118.464s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs
+[118.557s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg
+[118.687s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[119.074s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail
+[119.224s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__rosidl_typesupport_introspection_c.h
+[119.882s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__type_support.c
+[120.347s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__rosidl_typesupport_introspection_c.h
+[120.875s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__type_support.c
+[121.244s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv
+[121.355s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail
+[121.496s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__rosidl_typesupport_introspection_c.h
+[121.908s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__type_support.c
+[122.300s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_introspection_c.so
+[122.631s] -- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_introspection_c.so" to ""
+[122.686s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_c.so
+[123.014s] -- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_c.so" to ""
+[123.059s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs
+[123.138s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg
+[123.247s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[123.636s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/flight_data.hpp
+[124.004s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail
+[124.130s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__builder.hpp
+[124.542s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__struct.hpp
+[124.988s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__traits.hpp
+[125.390s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__type_support.hpp
+[125.851s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__builder.hpp
+[126.264s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__struct.hpp
+[126.725s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__traits.hpp
+[127.153s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__type_support.hpp
+[127.584s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/tello_response.hpp
+[127.912s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv
+[128.021s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/tello_action.hpp
+[128.358s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail
+[128.496s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__builder.hpp
+[128.918s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__struct.hpp
+[129.353s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__traits.hpp
+[129.830s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__type_support.hpp
+[130.212s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs
+[130.306s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg
+[130.429s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[130.807s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail
+[130.951s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__rosidl_typesupport_fastrtps_cpp.hpp
+[131.373s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/dds_fastrtps
+[131.631s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__rosidl_typesupport_fastrtps_cpp.hpp
+[132.108s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv
+[132.210s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail
+[132.346s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__rosidl_typesupport_fastrtps_cpp.hpp
+[132.758s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/dds_fastrtps
+[132.941s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_fastrtps_cpp.so
+[133.261s] -- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[133.309s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs
+[133.399s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg
+[133.501s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail
+[133.643s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__rosidl_typesupport_introspection_cpp.hpp
+[134.079s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/flight_data__type_support.cpp
+[134.509s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__rosidl_typesupport_introspection_cpp.hpp
+[134.927s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/msg/detail/tello_response__type_support.cpp
+[135.294s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv
+[135.399s] -- Up-to-date: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail
+[135.536s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__rosidl_typesupport_introspection_cpp.hpp
+[135.983s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/include/tello_msgs/tello_msgs/srv/detail/tello_action__type_support.cpp
+[136.411s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_introspection_cpp.so
+[136.788s] -- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[136.848s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_cpp.so
+[137.206s] -- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_cpp.so" to ""
+[137.280s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/environment/pythonpath.sh
+[137.599s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/environment/pythonpath.dsv
+[137.872s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs-0.1.0-py3.10.egg-info
+[138.084s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[138.473s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[138.875s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[139.276s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[139.714s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs
+[139.884s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/__init__.py
+[140.235s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/msg
+[140.424s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/msg/_flight_data.py
+[140.907s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/msg/_flight_data_s.c
+[141.369s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/msg/_tello_response.py
+[141.865s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/msg/_tello_response_s.c
+[142.285s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/msg/__init__.py
+[142.708s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/srv
+[142.892s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/srv/_tello_action.py
+[143.322s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/srv/_tello_action_s.c
+[143.751s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/srv/__init__.py
+[144.155s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/_tello_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[144.566s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/_tello_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[144.976s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/_tello_msgs_s.ep.rosidl_typesupport_c.c
+[145.354s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/libtello_msgs__rosidl_generator_py.so
+[145.747s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[146.132s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[146.505s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[148.974s] Listing '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs'...
+[148.976s] Compiling '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/__init__.py'...
+[148.978s] Listing '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/msg'...
+[148.980s] Compiling '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/msg/__init__.py'...
+[148.981s] Compiling '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/msg/_flight_data.py'...
+[148.983s] Compiling '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/msg/_tello_response.py'...
+[148.985s] Listing '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/srv'...
+[148.987s] Compiling '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/srv/__init__.py'...
+[148.989s] Compiling '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/srv/_tello_action.py'...
+[149.226s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[149.838s] -- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[150.090s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[150.623s] -- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[150.884s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[151.446s] -- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/local/lib/python3.10/dist-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[151.527s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_generator_py.so
+[151.951s] -- Set runtime path of "/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/lib/libtello_msgs__rosidl_generator_py.so" to ""
+[152.118s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/ament_index/resource_index/rust_packages/tello_msgs
+[152.445s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/rust
+[152.567s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/rust/src
+[152.721s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/rust/src/msg.rs
+[153.070s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/rust/src/msg
+[153.276s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/rust/src/msg/rmw.rs
+[153.728s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/rust/src/srv.rs
+[154.097s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/rust/src/srv
+[154.288s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/rust/src/srv/rmw.rs
+[154.703s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/rust/src/lib.rs
+[155.071s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/rust/Cargo.toml
+[155.412s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/rust/build.rs
+[155.787s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/msg/FlightData.idl
+[156.123s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/msg/TelloResponse.idl
+[156.501s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/srv/TelloAction.idl
+[156.918s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/msg/FlightData.msg
+[157.325s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/msg/TelloResponse.msg
+[157.691s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/srv/TelloAction.srv
+[158.053s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/srv/TelloAction_Request.msg
+[158.439s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/srv/TelloAction_Response.msg
+[158.839s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/ament_index/resource_index/package_run_dependencies/tello_msgs
+[159.336s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/ament_index/resource_index/parent_prefix_path/tello_msgs
+[159.732s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/environment/ament_prefix_path.sh
+[160.021s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/environment/ament_prefix_path.dsv
+[160.317s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/environment/path.sh
+[160.594s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/environment/path.dsv
+[160.913s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/local_setup.bash
+[161.166s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/local_setup.sh
+[161.448s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/local_setup.zsh
+[161.728s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/local_setup.dsv
+[162.028s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/package.dsv
+[162.396s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/ament_index/resource_index/packages/tello_msgs
+[162.853s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/export_tello_msgs__rosidl_generator_cExport.cmake
+[163.272s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/export_tello_msgs__rosidl_generator_cExport-noconfig.cmake
+[163.679s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/export_tello_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[164.067s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/export_tello_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[164.470s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_introspection_cExport.cmake
+[164.887s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[165.285s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_cExport.cmake
+[165.677s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[166.089s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/export_tello_msgs__rosidl_generator_cppExport.cmake
+[166.532s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/export_tello_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[166.975s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/export_tello_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[167.402s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[167.803s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[168.182s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_cppExport.cmake
+[168.572s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[168.970s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/export_tello_msgs__rosidl_generator_pyExport.cmake
+[169.367s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/export_tello_msgs__rosidl_generator_pyExport-noconfig.cmake
+[169.797s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/rosidl_cmake-extras.cmake
+[170.105s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[170.408s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[170.720s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[171.038s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[171.329s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[171.632s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[171.956s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/tello_msgsConfig.cmake
+[172.237s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/cmake/tello_msgsConfig-version.cmake
+[172.547s] -- Installing: /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/install/tello_msgs/share/tello_msgs/package.xml
+[172.882s] Invoked command in '/mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/g/My Drive/Primary/skl-Course/SP26/EECS 206A - Introduction to Robotics/106a_final_project/drone_simulation/build/tello_msgs
