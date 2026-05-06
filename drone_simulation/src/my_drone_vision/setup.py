@@ -33,6 +33,7 @@ setup(
             'tello_direct_io = my_drone_vision.tello_direct_io:main',
             'face_detector = my_drone_vision.face_detector:main',
             'face_controller = my_drone_vision.face_controller:main',
+            'trajectory_follow_controller = my_drone_vision.trajectory_follow_controller:main',
         ],
     },
 )

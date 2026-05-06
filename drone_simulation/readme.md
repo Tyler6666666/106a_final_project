@@ -10,6 +10,7 @@ This branch is for testing ArUco tag following on a real DJI/Ryze Tello drone. I
 - Waits 2 seconds after takeoff before entering follow mode.
 - Follows the tag at about 0.60 m.
 - Automatically lands if the tag is lost for more than 5 seconds during follow mode.
+- **Trajectory following mode** (`trajectory_following.launch.py`): after a stabilized tag sighting, auto takeoff, record `cmd_vel` while following for a configurable interval, hover, replay the recorded command sequence in open loop, then land.
 - Supports manual landing and emergency motor stop.
 - Adds real-drone face tracking using OpenCV Haar cascade detection.
 - Face tracking waits for a stable face, takes off automatically, keeps the face near image center, follows at about 1 m, and lands after target loss.
@@ -74,6 +75,64 @@ Expected flow:
 5. The drone waits 2 seconds after takeoff.
 6. Follow mode starts.
 7. If the tag is lost for more than 5 seconds, the system sends `land`.
+
+## Trajectory Following Mode (record + replay)
+
+Leader drone carries ArUco ID `0` (same as real follow); follower records commanded velocities during follow and later replays them without vision.
+
+### Launch
+
+Place the tag in front of the Tello so the camera can see it clearly, build and source the workspace, then run:
+
+```bash
+source install/setup.bash
+ros2 launch my_drone_vision trajectory_following.launch.py
+```
+
+This launches the **same** `tello_direct_io` node stack as `real_follow.launch.py`, but swaps `aruco_controller` for **`trajectory_follow_controller`**, which implements the mission state machine below.
+
+Typical sequence:
+
+1. Connect to the Tello; video stream starts; tag stays visible for `tag_confirm_sec`.
+2. `takeoff`; wait `follow_after_takeoff_sec` at zero velocity.
+3. Follow the tag for `memory_sec` while saving each `cmd_vel` sample every `dt`.
+4. Hover for `wait_before_replay_sec` at zero velocity.
+5. Replay the saved commands at the same `dt` (no vision required).
+6. `land`; node stops commanding motion (`DONE`).
+
+### State machine vs `real_follow`
+
+The controller mirrors `aruco_controller` / `real_follow.launch.py` through takeoff and the initial post-takeoff dwell, then adds timed record, wait, replay, and land.
+
+| Phase | Behavior |
+| --- | --- |
+| **SEARCH (logical state 0)** | Same as `aruco_controller`: require the tag to be visible and stable for `tag_confirm_sec`, then send `takeoff`; then publish **zero velocity** for `follow_after_takeoff_sec` (takeoff stabilization). |
+| **FOLLOW (state 1)** | Same ArUco PD follower as real follow (`target_dist`, `kp_*`, `max_*_speed`). At each control step (fixed `dt` in code, currently 0.05 s), append the published `cmd_vel` sample `(linear.x, linear.y, linear.z, angular.z)` to a list. Recording lasts **`memory_sec`** (default 30 s). |
+| **WAIT (state 2)** | Publish zeros for **`wait_before_replay_sec`** (default 3 s). |
+| **REPLAY (state 3)** | Replay the stored sequence **in order** at the **same dt** as during recording. No tag or vision is used (open-loop playback). |
+| **Land (your state 4)** | Call `tello_msgs/srv/TelloAction` with `land` once, then enter an internal **DONE** state and keep publishing zero `cmd_vel`. |
+
+**Tag loss during follow:** `real_follow` lands after prolonged tag loss (`land_on_tag_loss: True`). For trajectory mode, **`follow_land_on_tag_loss` defaults to `False`** so brief occlusions do not abort the experiment. Set it to `True` in the launch file if you want real-follow-style safety.
+
+**Ground RC and “search spin before takeoff”:** In `tello_direct_io`, non-zero RC is blocked until the drone is airborne (`airborne == True` after `takeoff`). So commanding yaw or translation **before takeoff** does not actually move the Tello; the intended flow is **tag visible → takeoff**, like `real_follow`. Optional slow yaw **search** (`enable_search: True`) applies **after takeoff**, if the tag is lost during follow/search behavior (same spirit as optional search in `aruco_controller`).
+
+### How trajectory replay works
+
+`tello_direct_io` maps `geometry_msgs/Twist` into Tello RC in the **body frame**: `linear.x` forward/back, `linear.y` left/right, `linear.z` up/down, `angular.z` yaw rate.
+
+During **FOLLOW**, the controller stores the **exact commands it publishes**, with a fixed time step between samples. During **REPLAY**, it republishes that sequence with the **same spacing**. That reproduces roughly the **motion pattern and timing** relative to body axes, not a globally registered path.
+
+Because there is **no GPS/SLAM**, changing start pose or disturbances (wind, battery, friction) means the **spatial path will not exactly match** the original in world coordinates; yaw-heavy segments diverge more in space because body-forward keeps rotating. Higher fidelity would require storing vision-relative errors, odometry, or an external pose source. **Pixel-distance keeping** would mean changing the follower to regulate image-plane error instead of 3D pose + `target_dist` (not what this trajectory node adds).
+
+### Trajectory parameters (`trajectory_following.launch.py`)
+
+Tune these on the **`trajectory_follow_controller`** entry in that launch file:
+
+- **`memory_sec`**: Duration (seconds) to follow the leader **while recording** commands.
+- **`wait_before_replay_sec`**: Hover time (seconds) after recording before replay starts.
+- **`target_dist`**, **`max_*_speed`**, **`kp_*`**, etc.: Same meaning as in `real_follow` / `aruco_controller` for the follow phase.
+
+The control period **`dt`** used for both recording and replay is defined in `trajectory_follow_controller.py` (`self.dt = 0.05`). Change it there if you want a different rate (keep recording and replay using the same value).
 
 ## Start Face Tracking Mode
 
@@ -142,7 +201,7 @@ ros2 topic echo /cmd_vel --once
 Check current Tello-related processes:
 
 ```bash
-pgrep -af "real_follow.launch.py|tello_direct_io|aruco_controller"
+pgrep -af "real_follow.launch.py|trajectory_following.launch.py|tello_direct_io|aruco_controller|trajectory_follow_controller"
 ```
 
 ## Main Files
@@ -150,6 +209,10 @@ pgrep -af "real_follow.launch.py|tello_direct_io|aruco_controller"
 - `src/my_drone_vision/launch/real_follow.launch.py`
   - Launch file for real Tello following.
   - Currently configured to land after 5 seconds of tag loss.
+- `src/my_drone_vision/launch/trajectory_following.launch.py`
+  - Same `tello_direct_io` parameters as real follow; runs `trajectory_follow_controller` for record → wait → replay → land.
+- `src/my_drone_vision/my_drone_vision/trajectory_follow_controller.py`
+  - ArUco follow with timed recording of `cmd_vel`, open-loop replay, and mission parameters (`memory_sec`, `wait_before_replay_sec`, etc.).
 - `src/my_drone_vision/my_drone_vision/tello_direct_io.py`
   - Connects directly to the Tello, reads video, detects ArUco, and sends RC control commands.
 - `src/my_drone_vision/my_drone_vision/aruco_controller.py`
@@ -238,7 +301,7 @@ If the drone takes off but does not follow:
 If the Tello video stream is still occupied after testing:
 
 ```bash
-pgrep -af "real_follow.launch.py|tello_direct_io|aruco_controller"
+pgrep -af "real_follow.launch.py|trajectory_following.launch.py|tello_direct_io|aruco_controller|trajectory_follow_controller"
 ```
 
 Confirm the process IDs, then stop the related processes.
