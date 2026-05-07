@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 import os
+os.environ.setdefault("YOLO_OFFLINE", "True")
+os.environ.setdefault("YOLO_CONFIG_DIR", "/tmp/Ultralytics")
+
 import threading
 import time
+from pathlib import Path
 
 import cv2
 import rclpy
 from geometry_msgs.msg import Pose, Twist
+from ament_index_python.packages import PackageNotFoundError, get_package_share_directory
 from rclpy.node import Node
 from tello_msgs.srv import TelloAction
 
@@ -77,6 +82,119 @@ class TelloFrameSource:
             self.logger.warn(f"Tello shutdown warning: {exc}")
 
 
+class HaarFaceBackend:
+    def __init__(self):
+        cascade_path = self.find_cascade_path()
+        self.face_cascade = cv2.CascadeClassifier(cascade_path)
+        if self.face_cascade.empty():
+            raise RuntimeError(f"Failed to load OpenCV face cascade: {cascade_path}")
+        self.name = "haar"
+
+    @staticmethod
+    def find_cascade_path():
+        candidates = []
+        if hasattr(cv2, "data") and hasattr(cv2.data, "haarcascades"):
+            candidates.append(os.path.join(cv2.data.haarcascades, "haarcascade_frontalface_default.xml"))
+        candidates.extend([
+            "haarcascade_frontalface_default.xml",
+            "/usr/share/opencv4/haarcascades/haarcascade_frontalface_default.xml",
+            "/usr/share/opencv/haarcascades/haarcascade_frontalface_default.xml",
+        ])
+        for path in candidates:
+            if path and os.path.exists(path):
+                return path
+        return candidates[-2]
+
+    def detect_largest_face(self, frame):
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        gray = cv2.equalizeHist(gray)
+        faces = self.face_cascade.detectMultiScale(
+            gray,
+            scaleFactor=1.1,
+            minNeighbors=5,
+            minSize=(45, 45),
+            flags=cv2.CASCADE_SCALE_IMAGE,
+        )
+        if len(faces) == 0:
+            return None
+        x, y, w, h = max(faces, key=lambda rect: rect[2] * rect[3])
+        return (int(x), int(y), int(w), int(h), 1.0)
+
+
+class YoloFaceBackend:
+    def __init__(self, model_path, confidence, image_size, class_id, logger):
+        try:
+            from ultralytics import YOLO
+        except ImportError as exc:
+            raise RuntimeError(
+                "ultralytics is required for detector_backend='yolo'. "
+                "Install it with: python3 -m pip install --user ultralytics"
+            ) from exc
+
+        self.name = "yolo"
+        self.confidence = float(confidence)
+        self.image_size = int(image_size)
+        self.class_id = int(class_id)
+        self.model_path = self.resolve_model_path(model_path)
+        if not self.model_path.exists():
+            raise RuntimeError(
+                f"YOLO face model not found: {self.model_path}. "
+                "Place a YOLOv8 face model such as yolov8n-face.pt there, "
+                "or set the yolo_model_path launch parameter."
+            )
+
+        logger.info(f"Loading YOLOv8 face model: {self.model_path}")
+        self.model = YOLO(str(self.model_path))
+
+    @staticmethod
+    def resolve_model_path(model_path):
+        expanded = Path(os.path.expanduser(str(model_path)))
+        if expanded.is_absolute():
+            return expanded
+
+        candidates = [Path.cwd() / expanded]
+        try:
+            share_dir = Path(get_package_share_directory("my_drone_vision"))
+            candidates.append(share_dir / expanded)
+            candidates.append(share_dir / "models" / expanded.name)
+        except PackageNotFoundError:
+            pass
+        for candidate in candidates:
+            if candidate.exists():
+                return candidate
+        return candidates[0]
+
+    def detect_largest_face(self, frame):
+        results = self.model.predict(
+            source=frame,
+            conf=self.confidence,
+            imgsz=self.image_size,
+            verbose=False,
+        )
+        if not results:
+            return None
+
+        boxes = results[0].boxes
+        if boxes is None or len(boxes) == 0:
+            return None
+
+        best = None
+        best_area = 0.0
+        for box in boxes:
+            cls = int(box.cls[0].item()) if box.cls is not None else -1
+            if self.class_id >= 0 and cls != self.class_id:
+                continue
+            x1, y1, x2, y2 = box.xyxy[0].tolist()
+            w = max(0.0, x2 - x1)
+            h = max(0.0, y2 - y1)
+            area = w * h
+            if area > best_area:
+                confidence = float(box.conf[0].item()) if box.conf is not None else 0.0
+                best = (int(x1), int(y1), int(w), int(h), confidence)
+                best_area = area
+        return best
+
+
 class FaceDetector(Node):
     def __init__(self):
         super().__init__("face_detector_node")
@@ -88,6 +206,11 @@ class FaceDetector(Node):
         self.declare_parameter("frame_width", 640)
         self.declare_parameter("frame_height", 480)
         self.declare_parameter("show_window", True)
+        self.declare_parameter("detector_backend", "yolo")
+        self.declare_parameter("yolo_model_path", "src/my_drone_vision/models/yolov8n-face.pt")
+        self.declare_parameter("yolo_confidence", 0.45)
+        self.declare_parameter("yolo_image_size", 640)
+        self.declare_parameter("yolo_class_id", -1)
         self.declare_parameter("publish_cmd_vel", False)
         self.declare_parameter("direct_tello_control", False)
         self.declare_parameter("auto_takeoff", False)
@@ -123,6 +246,11 @@ class FaceDetector(Node):
         self.frame_width = int(self.get_parameter("frame_width").value)
         self.frame_height = int(self.get_parameter("frame_height").value)
         self.show_window = bool(self.get_parameter("show_window").value)
+        self.detector_backend = str(self.get_parameter("detector_backend").value).lower()
+        self.yolo_model_path = self.get_parameter("yolo_model_path").value
+        self.yolo_confidence = float(self.get_parameter("yolo_confidence").value)
+        self.yolo_image_size = int(self.get_parameter("yolo_image_size").value)
+        self.yolo_class_id = int(self.get_parameter("yolo_class_id").value)
         self.publish_cmd_vel = bool(self.get_parameter("publish_cmd_vel").value)
         self.direct_tello_control = bool(self.get_parameter("direct_tello_control").value)
         self.auto_takeoff_enabled = bool(self.get_parameter("auto_takeoff").value)
@@ -154,10 +282,7 @@ class FaceDetector(Node):
         self.face_pub = self.create_publisher(Pose, self.face_pose_topic, 10)
         self.cmd_pub = self.create_publisher(Twist, self.cmd_vel_topic, 10)
 
-        cascade_path = self.find_cascade_path()
-        self.face_cascade = cv2.CascadeClassifier(cascade_path)
-        if self.face_cascade.empty():
-            raise RuntimeError(f"Failed to load OpenCV face cascade: {cascade_path}")
+        self.detector = self.make_detector()
 
         self.frame_source = self.open_frame_source(self.video_source)
         if self.direct_tello_control and not isinstance(self.frame_source, TelloFrameSource):
@@ -191,23 +316,21 @@ class FaceDetector(Node):
         self.create_timer(0.5, self.auto_takeoff)
         self.get_logger().info(
             f"Face detector started on video_source={self.video_source}; "
-            f"publishing pose={self.face_pose_topic}, cmd_vel={self.cmd_vel_topic}."
+            f"backend={self.detector.name}; publishing pose={self.face_pose_topic}, cmd_vel={self.cmd_vel_topic}."
         )
 
-    @staticmethod
-    def find_cascade_path():
-        candidates = []
-        if hasattr(cv2, "data") and hasattr(cv2.data, "haarcascades"):
-            candidates.append(os.path.join(cv2.data.haarcascades, "haarcascade_frontalface_default.xml"))
-        candidates.extend([
-            "haarcascade_frontalface_default.xml",
-            "/usr/share/opencv4/haarcascades/haarcascade_frontalface_default.xml",
-            "/usr/share/opencv/haarcascades/haarcascade_frontalface_default.xml",
-        ])
-        for path in candidates:
-            if path and os.path.exists(path):
-                return path
-        return candidates[-2]
+    def make_detector(self):
+        if self.detector_backend == "haar":
+            return HaarFaceBackend()
+        if self.detector_backend == "yolo":
+            return YoloFaceBackend(
+                self.yolo_model_path,
+                self.yolo_confidence,
+                self.yolo_image_size,
+                self.yolo_class_id,
+                self.get_logger(),
+            )
+        raise RuntimeError("Unsupported detector_backend. Use 'yolo' or 'haar'.")
 
     def open_frame_source(self, source):
         if source.lower() == "tello":
@@ -279,21 +402,10 @@ class FaceDetector(Node):
         return True
 
     def detect_largest_face(self, frame):
-        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        gray = cv2.equalizeHist(gray)
-        faces = self.face_cascade.detectMultiScale(
-            gray,
-            scaleFactor=1.1,
-            minNeighbors=5,
-            minSize=(45, 45),
-            flags=cv2.CASCADE_SCALE_IMAGE,
-        )
-        if len(faces) == 0:
-            return None
-        return max(faces, key=lambda rect: rect[2] * rect[3])
+        return self.detector.detect_largest_face(frame)
 
     def make_face_pose(self, face):
-        x, y, w, h = face
+        x, y, w, h = face[:4]
         cx = x + w / 2.0
         cy = y + h / 2.0
         area_ratio = (w * h) / float(self.frame_width * self.frame_height)
@@ -484,15 +596,26 @@ class FaceDetector(Node):
 
     def draw_debug(self, frame, face):
         if face is not None:
-            x, y, w, h = face
+            x, y, w, h = face[:4]
+            confidence = face[4] if len(face) > 4 else 1.0
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             cv2.circle(frame, (x + w // 2, y + h // 2), 5, (0, 255, 255), cv2.FILLED)
+            cv2.putText(
+                frame,
+                f"{self.detector.name} {confidence:.2f}",
+                (x, max(20, y - 8)),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.55,
+                (0, 255, 0),
+                2,
+                cv2.LINE_AA,
+            )
 
         cv2.line(frame, (self.frame_width // 2, 0), (self.frame_width // 2, self.frame_height), (255, 255, 0), 1)
         cv2.line(frame, (0, self.frame_height // 2), (self.frame_width, self.frame_height // 2), (255, 255, 0), 1)
         cv2.putText(
             frame,
-            "face tracking",
+            f"face tracking: {self.detector.name}",
             (20, 35),
             cv2.FONT_HERSHEY_SIMPLEX,
             0.7,
