@@ -12,8 +12,8 @@ This branch is for testing ArUco tag following on a real DJI/Ryze Tello drone. I
 - Automatically lands if the tag is lost for more than 5 seconds during follow mode.
 - **Trajectory following mode** (`trajectory_following.launch.py`): after a stabilized tag sighting, auto takeoff, record `cmd_vel` while following for a configurable interval, hover, replay the recorded command sequence in open loop, then land.
 - Supports manual landing and emergency motor stop.
-- Adds real-drone face tracking using OpenCV Haar cascade detection.
-- Face tracking waits for a stable face, takes off automatically, keeps the face near image center, follows at about 1 m, and lands after target loss.
+- Adds real-drone face tracking using a YOLOv8 face detector, with Haar cascade available as a fallback.
+- Face tracking waits for a stable face, takes off automatically, keeps the face near image center, follows at about 1.5 m, and lands after target loss.
 
 ## Setup
 
@@ -46,6 +46,20 @@ Install the Python dependency:
 ```bash
 python3 -m pip install --user djitellopy
 ```
+
+For YOLOv8 face tracking, install Ultralytics:
+
+```bash
+python3 -m pip install --user ultralytics
+```
+
+This branch includes a lightweight YOLOv8 face model at:
+
+```text
+src/my_drone_vision/models/yolov8n-face.pt
+```
+
+You can also point to a different `.pt` file by changing `yolo_model_path` in `face_tracking.launch.py`.
 
 Do not manually upgrade `numpy` or `opencv-python`, because that can break the OpenCV version provided by ROS Humble.
 
@@ -146,12 +160,12 @@ ros2 launch my_drone_vision face_tracking.launch.py
 
 Expected flow:
 
-1. `face_detector` connects to the Tello, reads video, detects the largest face, publishes `/face/pose`, accepts `/cmd_vel`, and exposes `/tello_action`.
+1. `face_detector` connects to the Tello, reads video, detects the largest face with YOLOv8, publishes `/face/pose`, accepts `/cmd_vel`, and exposes `/tello_action`.
 2. `face_controller` waits until a face is stable for about 2 seconds.
 3. The system sends `takeoff`.
 4. The drone waits 2 seconds after takeoff.
 5. Face follow mode starts.
-6. The controller tries to keep the face centered in the image and maintain about 1 m distance using face area as the distance estimate.
+6. The controller tries to keep the face centered in the image and maintain about 1.5 m distance using face area as the distance estimate.
 7. If the face is lost for more than 5 seconds, the system sends `land`.
 
 ## Manual Landing
@@ -221,9 +235,9 @@ pgrep -af "real_follow.launch.py|trajectory_following.launch.py|tello_direct_io|
 - `src/my_drone_vision/launch/face_tracking.launch.py`
   - Launch file for real Tello face tracking.
 - `src/my_drone_vision/my_drone_vision/face_detector.py`
-  - Connects directly to the Tello, reads video, detects the largest face, publishes `/face/pose`, and translates `/cmd_vel` into Tello RC commands.
+  - Connects directly to the Tello, reads video, detects the largest face with YOLOv8 or Haar cascade, publishes `/face/pose`, and translates `/cmd_vel` into Tello RC commands.
 - `src/my_drone_vision/my_drone_vision/face_controller.py`
-  - Handles stable-face takeoff, face-centered tracking, approximate 1 m distance control, and face-loss landing.
+  - Handles stable-face takeoff, face-centered tracking, approximate 1.5 m distance control, and face-loss landing.
 
 ## Key Parameters
 
@@ -256,18 +270,34 @@ These values are conservative and are intended for initial real-drone testing.
 Face tracking parameters can be adjusted in `face_tracking.launch.py`:
 
 ```python
-'target_face_area_ratio': 0.032,
-'forward_area_threshold': 0.030,
-'min_forward_speed': 0.14,
-'max_forward_speed': 0.35,
-'max_vertical_speed': 0.18,
-'max_yaw_speed': 0.55,
-'kp_forward': 1.35,
-'kp_vertical': 0.70,
-'kp_yaw': 1.25,
+'detector_backend': 'yolo',
+'yolo_model_path': 'models/yolov8n-face.pt',
+'yolo_confidence': 0.45,
+'yolo_image_size': 640,
+'target_face_area_ratio': 0.014,
+'forward_area_threshold': 0.013,
+'min_forward_speed': 0.22,
+'pose_filter_alpha': 0.32,
+'max_forward_speed': 0.60,
+'max_vertical_speed': 0.28,
+'max_yaw_speed': 0.36,
+'kp_forward': 2.10,
+'kp_vertical': 0.95,
+'kp_yaw': 0.85,
+'kd_yaw': 0.24,
+'kd_forward': 0.07,
 ```
 
-`target_face_area_ratio` is the main distance tuning value. Smaller values keep the drone farther away, and larger values bring it closer. The current value is tuned to approximate 1 m with a normal frontal face in the Tello camera.
+`target_face_area_ratio` is the main distance tuning value. Smaller values keep the drone farther away, and larger values bring it closer. The current value is tuned to approximate 1.5 m with a normal frontal face in the Tello camera.
+
+`pose_filter_alpha` smooths YOLO bounding-box jitter before control. Lower values are steadier but slower; higher values respond faster but may oscillate. `kd_yaw` adds damping to reduce left-right yaw oscillation.
+
+If YOLOv8 is not available during quick local testing, switch the detector in
+`face_tracking.launch.py`:
+
+```python
+'detector_backend': 'haar',
+```
 
 ## Safety Notes
 
@@ -298,6 +328,14 @@ If the drone takes off but does not follow:
 - The system waits 2 seconds after takeoff before follow mode starts.
 - If the tag is lost for more than 5 seconds, the drone will land automatically.
 - Check whether `/aruco/pose_3d` is still updating.
+
+If face tracking does not start:
+
+- Wait for YOLO and PyTorch to finish loading; the first launch can take longer.
+- Check that `src/my_drone_vision/models/yolov8n-face.pt` exists.
+- Check that `/face/pose` is publishing.
+- If the camera window does not appear, make sure the Tello Wi-Fi connection is active and no other process is using the Tello stream.
+- If left-right yaw oscillates, reduce `kp_yaw` or `max_yaw_speed`, increase `deadband_x`, or increase `kd_yaw`.
 
 If the Tello video stream is still occupied after testing:
 
