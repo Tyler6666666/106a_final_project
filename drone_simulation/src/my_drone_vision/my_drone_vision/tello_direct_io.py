@@ -43,9 +43,10 @@ class TelloDirectIO(Node):
         self.declare_parameter("flight_data_topic", "/flight_data")
         self.declare_parameter("marker_id", 0)
         self.declare_parameter("marker_size", 0.15)
-        self.declare_parameter("frame_width", 320) #640 before
-        self.declare_parameter("frame_height", 240) #480 before
+        self.declare_parameter("frame_width", 640) #640 before
+        self.declare_parameter("frame_height", 480) #480 before
         self.declare_parameter("publish_debug_image", True)
+        self.declare_parameter("show_window", False)
         self.declare_parameter("image_topic", "/tello/debug_image")
         self.declare_parameter("image_frame_id", "tello_camera")
         self.declare_parameter("max_lr_rc", 12)
@@ -63,6 +64,7 @@ class TelloDirectIO(Node):
         self.frame_width = int(self.get_parameter("frame_width").value)
         self.frame_height = int(self.get_parameter("frame_height").value)
         self.publish_debug_image = bool(self.get_parameter("publish_debug_image").value)
+        self.show_window = bool(self.get_parameter("show_window").value)
         self.image_topic = str(self.get_parameter("image_topic").value)
         self.image_frame_id = str(self.get_parameter("image_frame_id").value)
         self.max_lr_rc = int(self.get_parameter("max_lr_rc").value)
@@ -211,9 +213,15 @@ class TelloDirectIO(Node):
             pose = self.make_pose(tag)
             self.pose_pub.publish(pose)
 
-        if self.publish_debug_image:
+        if self.publish_debug_image or self.show_window:
             self.draw_debug(frame, tag, corners, ids)
+
+        if self.publish_debug_image:
             self.publish_image(frame)
+
+        if self.show_window:
+            cv2.imshow("Tello ArUco Vision", frame)
+            cv2.waitKey(1)
 
     def detect_marker(self, frame):
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)

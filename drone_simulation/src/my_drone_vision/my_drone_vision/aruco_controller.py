@@ -25,6 +25,8 @@ class SmartTracker(Node):
         self.declare_parameter("max_forward_speed", 0.18)
         self.declare_parameter("max_side_speed", 0.12)
         self.declare_parameter("max_vertical_speed", 0.12)
+        self.declare_parameter("min_vertical_speed", 0.08)
+        self.declare_parameter("vertical_deadband", 0.015)
         self.declare_parameter("max_yaw_speed", 0.25)
         self.declare_parameter("kp_side", 0.25)
         self.declare_parameter("kd_side", 0.03)
@@ -49,6 +51,8 @@ class SmartTracker(Node):
         self.max_forward_speed = float(self.get_parameter("max_forward_speed").value)
         self.max_side_speed = float(self.get_parameter("max_side_speed").value)
         self.max_vertical_speed = float(self.get_parameter("max_vertical_speed").value)
+        self.min_vertical_speed = float(self.get_parameter("min_vertical_speed").value)
+        self.vertical_deadband = float(self.get_parameter("vertical_deadband").value)
         self.max_yaw_speed = float(self.get_parameter("max_yaw_speed").value)
 
         self.vel_pub = self.create_publisher(Twist, cmd_vel_topic, 10)
@@ -244,10 +248,21 @@ class SmartTracker(Node):
         def smooth_deadzone(val, threshold):
             return 0.0 if abs(val) < threshold else val
 
+        def deadzone_with_min_speed(val, threshold, minimum):
+            if abs(val) < threshold:
+                return 0.0
+            return float(np.sign(val) * max(abs(val), minimum))
+
         cmd.angular.z = float(np.clip(smooth_deadzone(v_yaw, 0.06), -self.max_yaw_speed, self.max_yaw_speed))
         cmd.linear.x = float(np.clip(smooth_deadzone(vx, 0.04), -self.max_forward_speed, self.max_forward_speed))
         cmd.linear.y = float(np.clip(smooth_deadzone(vy, 0.04), -self.max_side_speed, self.max_side_speed))
-        cmd.linear.z = float(np.clip(smooth_deadzone(vz, 0.04), -self.max_vertical_speed, self.max_vertical_speed))
+        cmd.linear.z = float(
+            np.clip(
+                deadzone_with_min_speed(vz, self.vertical_deadband, self.min_vertical_speed),
+                -self.max_vertical_speed,
+                self.max_vertical_speed,
+            )
+        )
 
     def auto_takeoff(self):
         if not self.auto_takeoff_enabled or self.has_sent_takeoff:
